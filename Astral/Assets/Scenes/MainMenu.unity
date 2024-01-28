@@ -435,7 +435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START GAME
+  m_Text: SETTINGS
 --- !u!222 &131855325
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6257,7 +6257,7 @@ GameObject:
   - component: {fileID: 841020322}
   - component: {fileID: 841020321}
   m_Layer: 5
-  m_Name: Start Game
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17441,9 +17441,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: 'SETTINGS
 
 '
+=======
+  m_Text: SETTINGS
+>>>>>>> a3fb8a679263a509f553e671a5e89ab7546946fb
 --- !u!222 &1634664579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17464,7 +17468,7 @@ GameObject:
   - component: {fileID: 1655678389}
   - component: {fileID: 1655678388}
   m_Layer: 5
-  m_Name: START (1)
+  m_Name: SETTINGS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17598,7 +17602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START GAME
+  m_Text: START GAM
 --- !u!222 &1684525282
 CanvasRenderer:
   m_ObjectHideFlags: 0
