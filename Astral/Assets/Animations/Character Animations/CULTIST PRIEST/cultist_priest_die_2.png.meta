@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cultist_priest_die_2_0: 3141080560643067056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

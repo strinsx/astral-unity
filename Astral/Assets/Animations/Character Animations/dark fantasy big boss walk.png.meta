@@ -490,7 +490,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dark fantasy big boss walk_0: -5316671062461025354
+      dark fantasy big boss walk_1: -2070069183767456361
+      dark fantasy big boss walk_10: -2635244813920690610
+      dark fantasy big boss walk_11: 1982756562990520180
+      dark fantasy big boss walk_12: 5820474903571703799
+      dark fantasy big boss walk_13: -2432775722371749587
+      dark fantasy big boss walk_14: -8682495358057178009
+      dark fantasy big boss walk_15: -4209606102510360831
+      dark fantasy big boss walk_2: 2726467285430511877
+      dark fantasy big boss walk_3: -2060588480469599287
+      dark fantasy big boss walk_4: -6429545595259787760
+      dark fantasy big boss walk_5: 3697919318832426260
+      dark fantasy big boss walk_6: 4357114327883444861
+      dark fantasy big boss walk_7: 5665885387492823135
+      dark fantasy big boss walk_8: -6639194637417393968
+      dark fantasy big boss walk_9: -1681941090964871337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
