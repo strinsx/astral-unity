@@ -6270,11 +6270,8 @@ GameObject:
   - component: {fileID: 841020322}
   - component: {fileID: 841020321}
   m_Layer: 5
-<<<<<<< Updated upstream
   m_Name: Settings
-=======
   m_Name: Setting Menu
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17492,11 +17489,8 @@ GameObject:
   - component: {fileID: 1655678389}
   - component: {fileID: 1655678388}
   m_Layer: 5
-<<<<<<< Updated upstream
   m_Name: STTINGS
-=======
   m_Name: SETTINGS
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
