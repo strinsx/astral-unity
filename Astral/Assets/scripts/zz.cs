@@ -21,6 +21,11 @@ public class zz : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
         
+    }   
+
+    public void Loading() { 
+    
+        SceneManager.LoadSceneAsync(4);
     }
 
     public void QuitGame()
