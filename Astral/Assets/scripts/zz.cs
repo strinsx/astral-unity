@@ -17,10 +17,21 @@ public class zz : MonoBehaviour
         SceneManager.LoadSceneAsync(3);
 
     }
+       public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
+        
+    }   
+
+    public void Loading() { 
+    
+        SceneManager.LoadSceneAsync(4);
+    }
 
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Quit");
     }
+
 }
