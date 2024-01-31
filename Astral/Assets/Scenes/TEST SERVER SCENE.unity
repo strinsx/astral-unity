@@ -269,10 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137aee5627fedaf4b8a81887c7518bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 750
   jump: 24000
   isFacingright: 1
   body: {fileID: 929045697}
+  animator: {fileID: 929045698}
 --- !u!61 &929045696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -334,7 +335,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 120
+  m_GravityScale: 90
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

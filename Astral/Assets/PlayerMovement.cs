@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isFacingright = true;
     private float horizontal;
     public Rigidbody2D body;
+    public Animator animator;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         body.velocity = new Vector2(speed * horizontal, body.velocity.y);
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         PixelFlip();
 
         if(Input.GetButtonDown("Jump"))
