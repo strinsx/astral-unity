@@ -25,14 +25,20 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
 
         body.velocity = new Vector2(speed * horizontal, body.velocity.y);
-
+        animator.SetBool("isJumping", true);
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         PixelFlip();
 
         if(Input.GetButtonDown("Jump"))
         {
             body.AddForce(new Vector2(body.velocity.x, jump));
+
         }
+    }
+
+    public void migsLanding()
+    {
+        animator.SetBool("isJumping", false);
     }
 
     public void PixelFlip()
