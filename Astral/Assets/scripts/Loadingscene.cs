@@ -5,26 +5,34 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Loadingscene : MonoBehaviour
-{
- public GameObject LoadingScreen;
- public Image Loadbar;
+{       
+    public GameObject LoaderUI;
+    public Slider progressSlider;
 
-public void LoadScene(int sceneId)
-{
-    StartCoroutine(LoadSceneAsync(sceneId));
-}
- IEnumerator LoadSceneAsync(int sceneId)
- {
-    AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
-    LoadingScreen.SetActive(true);
-    while (!operation.isDone)
+    public void LoadScene(int index)
     {
-        float progress = Mathf.Clamp01(operation.progress / 0.9f);
-        Loadbar.fillAmount = progress;
-
-        yield return null;
+        StartCoroutine(LoadScene_Coroutine(index));
     }
-            yield return new WaitForSeconds(3); 
-        LoadingScreen.SetActive(false);
- }
+
+    public IEnumerator LoadScene_Coroutine(int index)
+    {
+        progressSlider.value = 0;
+        LoaderUI.SetActive(true);
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(4);
+        asyncOperation.allowSceneActivation = false;
+        float progress = 0;
+
+        while (!asyncOperation.isDone)
+        {
+            progress = Mathf.MoveTowards(progress, asyncOperation.progress, Time.deltaTime);
+            progressSlider.value = progress;
+            if (progress >= 0.9f)
+            {
+                progressSlider.value = 1;
+                asyncOperation.allowSceneActivation = true;
+            }
+            yield return null;
+        }
+    }
 }
