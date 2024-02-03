@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      astrals 1_0: -2333491941936927313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
