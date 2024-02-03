@@ -24,17 +24,28 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HorizontalInput = Input.GetAxis("Horizontal");
+        horizontal = Input.GetAxis("Horizontal");
+
+        body.velocity = new Vector2(speed * horizontal, body.velocity.y);
+        animator.SetBool("isJumping", true);
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         PixelFlip();
         if(Input.GetButtonDown("Jump")  && !isGrounded)
         {
             body.velocity = new Vector2(body.velocity.x, jump);
             isGrounded = false;
             animator.SetBool("ifJumping", !isGrounded);
-
+            body.AddForce(new Vector2(body.velocity.x, jump));
         }
     }
 
     private void FixedUpdate()
+    public void migsLanding()
+    {
+        animator.SetBool("isJumping", false);
+    }
+
+    public void PixelFlip()
     {
         body.velocity = new Vector2(HorizontalInput * Speed, body.velocity.y);
         animator.SetFloat("xVelocity", Math.Abs(body.velocity.x));

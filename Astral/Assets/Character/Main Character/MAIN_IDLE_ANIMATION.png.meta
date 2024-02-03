@@ -6,23 +6,6 @@ TextureImporter:
       213: -4650731879785767415
     second: MAIN_IDLE_ANIMATION_0
   - first:
-      213: -594532955354291384
-    second: MAIN_IDLE_ANIMATION_1
-  - first:
-      213: -7329647253165185629
-    second: MAIN_IDLE_ANIMATION_2
-  - first:
-      213: -2475337680817336923
-    second: MAIN_IDLE_ANIMATION_3
-  - first:
-      213: -4077568023508257853
-    second: MAIN_IDLE_ANIMATION_4
-  - first:
-      213: 3930597365647196336
-    second: MAIN_IDLE_ANIMATION_5
-  - first:
-      213: 2389394418802369047
-    second: MAIN_IDLE_ANIMATION_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
