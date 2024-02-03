@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,7 +101,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -346,7 +346,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MAIN_RUN_ANIMATION_2_0: -3955478685385615298
+      MAIN_RUN_ANIMATION_2_1: -3572304150629920593
+      MAIN_RUN_ANIMATION_2_2: 176617752247125659
+      MAIN_RUN_ANIMATION_2_3: 1639542986465250106
+      MAIN_RUN_ANIMATION_2_4: -2827931778879781736
+      MAIN_RUN_ANIMATION_2_5: 2081524181774786273
+      MAIN_RUN_ANIMATION_2_6: -818880589229097533
+      MAIN_RUN_ANIMATION_2_7: -7868739708017936809
+      MAIN_RUN_ANIMATION_2_8: -7923870108105599686
+      MAIN_RUN_ANIMATION_2_9: -8719879878843932830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
