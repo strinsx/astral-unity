@@ -23,12 +23,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HorizontalInput = Input.GetAxis("Horizontal");
-        horizontal = Input.GetAxis("Horizontal");
-
-        body.velocity = new Vector2(speed * horizontal, body.velocity.y);
-        animator.SetBool("isJumping", true);
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         PixelFlip();
         if(Input.GetButtonDown("Jump")  && !isGrounded)
         {
@@ -40,17 +34,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
-    public void migsLanding()
     {
-        animator.SetBool("isJumping", false);
-    }
-
-    public void PixelFlip()
-    {
-        body.velocity = new Vector2(HorizontalInput * Speed, body.velocity.y);
+                body.velocity = new Vector2(HorizontalInput * Speed, body.velocity.y);
         animator.SetFloat("xVelocity", Math.Abs(body.velocity.x));
         animator.SetFloat("yVelocity",(body.velocity.y));
-
     }
 
     void PixelFlip()
