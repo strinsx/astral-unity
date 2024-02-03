@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 1395c8af7a9706a4b820a51518a7238e
+guid: 8b692e25df5271048b77ed9c023dfc01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3624141828879840293
-    second: Idle_KG_2_0
+      213: 6155352861827376939
+    second: DASH_0
   - first:
-      213: 2061022368705192916
-    second: Idle_KG_2_1
+      213: 5246564588947137625
+    second: DASH_1
   - first:
-      213: 25434505459828151
-    second: Idle_KG_2_2
+      213: 869278189650150507
+    second: DASH_2
   - first:
-      213: 6166110345489382641
-    second: Idle_KG_2_3
+      213: -7105362046883229490
+    second: DASH_3
+  - first:
+      213: -6140239544766606957
+    second: DASH_4
+  - first:
+      213: 1491388436357712059
+    second: DASH_5
+  - first:
+      213: -3017777526634739843
+    second: DASH_6
+  - first:
+      213: -1381015812776631685
+    second: DASH_7
+  - first:
+      213: 7694633364753761464
+    second: DASH_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -83,7 +98,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -109,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_KG_2_0
+      name: DASH_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 0
-        width: 51
-        height: 62
+        x: 4
+        y: 4
+        width: 73
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdb8bf9453674bdc0800000000000000
-      internalID: -3624141828879840293
+      spriteID: b27a76cb0d43c6550800000000000000
+      internalID: 6155352861827376939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_KG_2_1
+      name: DASH_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
-        width: 51
-        height: 63
+        x: 93
+        y: 4
+        width: 62
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d3aec0bce83a9c10800000000000000
-      internalID: 2061022368705192916
+      spriteID: 954665732ba8fc840800000000000000
+      internalID: 5246564588947137625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_KG_2_2
+      name: DASH_2
       rect:
         serializedVersion: 2
-        x: 220
-        y: 0
-        width: 51
-        height: 62
+        x: 180
+        y: 4
+        width: 55
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b588f64c8c5a5000800000000000000
-      internalID: 25434505459828151
+      spriteID: b64871968eb401c00800000000000000
+      internalID: 869278189650150507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_KG_2_3
+      name: DASH_3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 52
-        height: 61
+        x: 203
+        y: 44
+        width: 12
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,8 +201,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fc71c490bc629550800000000000000
-      internalID: 6166110345489382641
+      spriteID: ec09bfa3ddea46d90800000000000000
+      internalID: -7105362046883229490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DASH_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 4
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391516a9aac79caa0800000000000000
+      internalID: -6140239544766606957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DASH_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb80a3391e972b410800000000000000
+      internalID: 1491388436357712059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DASH_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 4
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7787c11453be16d0800000000000000
+      internalID: -3017777526634739843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DASH_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 4
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72604a6f65a5dce0800000000000000
+      internalID: -1381015812776631685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DASH_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 22
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4440ff644d8ca60800000000000000
+      internalID: 7694633364753761464
       vertices: []
       indices: 
       edges: []
@@ -202,11 +322,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Idle_KG_2_0: -3624141828879840293
-      Idle_KG_2_1: 2061022368705192916
-      Idle_KG_2_2: 25434505459828151
-      Idle_KG_2_3: 6166110345489382641
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,46 +6,56 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float speed;
-    public float jump;
-    public bool isFacingright = true;
-    private float horizontal;
-    public Rigidbody2D body;
-    public Animator animator;
-
-
+    float HorizontalInput;
+    float Speed = 15f;
+    bool isFlipped = true;
+    float jump = 4f;
+    bool isGrounded = false;
+    Animator animator;
+    Rigidbody2D body;
     // Start is called before the first frame update
     void Start()
     {
-        
+        body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-
-        body.velocity = new Vector2(speed * horizontal, body.velocity.y);
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        HorizontalInput = Input.GetAxis("Horizontal");
         PixelFlip();
-
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump")  && !isGrounded)
         {
-            body.AddForce(new Vector2(body.velocity.x, jump));
+            body.velocity = new Vector2(body.velocity.x, jump);
+            isGrounded = false;
+            animator.SetBool("ifJumping", !isGrounded);
+
         }
     }
 
-    public void PixelFlip()
+    private void FixedUpdate()
     {
+        body.velocity = new Vector2(HorizontalInput * Speed, body.velocity.y);
+        animator.SetFloat("xVelocity", Math.Abs(body.velocity.x));
+        animator.SetFloat("yVelocity",(body.velocity.y));
 
-        if(isFacingright && horizontal < 0f || !isFacingright && horizontal > 0f)
+    }
+
+    void PixelFlip()
+    {
+        if (isFlipped && HorizontalInput < 0f || !isFlipped && HorizontalInput > 0f)
         {
-            isFacingright = !isFacingright;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            isFlipped = !isFlipped;
+            Vector3 Scales = transform.localScale;
+            Scales.x *= -1f;
+            transform.localScale = Scales;
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        isGrounded = true;
+        animator.SetFloat("yVelocity", (body.velocity.x));
+
     }
 }
-
