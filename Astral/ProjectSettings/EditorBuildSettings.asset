@@ -20,5 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 5a7376e07f897e4499ee102d46e4867b
+  - enabled: 1
+    path: Assets/Scenes/Main Menu Scenes/Game Control.unity
+    guid: 5118d361c68c1b643b0b17ce06f14855
+  - enabled: 0
+    path: Assets/Scenes/Game Controls.unity
+    guid: 1f92d4d52c89b04469b520356894540e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
