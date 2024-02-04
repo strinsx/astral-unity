@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 1395c8af7a9706a4b820a51518a7238e
+guid: 7e98b2ded6bb19643b7c128c3a62859a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3624141828879840293
-    second: Idle_KG_2_0
-  - first:
-      213: 2061022368705192916
-    second: Idle_KG_2_1
-  - first:
-      213: 25434505459828151
-    second: Idle_KG_2_2
-  - first:
-      213: 6166110345489382641
-    second: Idle_KG_2_3
+      213: 5395075281142601175
+    second: bg_3 rafales_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -83,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_KG_2_0
+      name: bg_3 rafales_0
       rect:
         serializedVersion: 2
-        x: 20
+        x: 0
         y: 0
-        width: 51
-        height: 62
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,71 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdb8bf9453674bdc0800000000000000
-      internalID: -3624141828879840293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_KG_2_1
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 51
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d3aec0bce83a9c10800000000000000
-      internalID: 2061022368705192916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_KG_2_2
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 0
-        width: 51
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b588f64c8c5a5000800000000000000
-      internalID: 25434505459828151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_KG_2_3
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 52
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fc71c490bc629550800000000000000
-      internalID: 6166110345489382641
+      spriteID: 7d5def442682fda40800000000000000
+      internalID: 5395075281142601175
       vertices: []
       indices: 
       edges: []
@@ -203,10 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_KG_2_0: -3624141828879840293
-      Idle_KG_2_1: 2061022368705192916
-      Idle_KG_2_2: 25434505459828151
-      Idle_KG_2_3: 6166110345489382641
+      bg_3 rafales_0: 5395075281142601175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

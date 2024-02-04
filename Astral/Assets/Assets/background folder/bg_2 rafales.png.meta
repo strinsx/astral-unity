@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c093f1e804b287249ab2010288527495
+guid: 868846952a8a05a4696c16354c3d8397
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2070837855693099215
-    second: Layer_0010_1_0
+      213: 1591059431623095533
+    second: bg_2 rafales_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +37,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Layer_0010_1_0
+      name: bg_2 rafales_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 928
-        height: 793
+        width: 640
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc0d408de081dbc10800000000000000
-      internalID: 2070837855693099215
+      spriteID: de4fd6e8f14941610800000000000000
+      internalID: 1591059431623095533
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Layer_0010_1_0: 2070837855693099215
+      bg_2 rafales_0: 1591059431623095533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
