@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class ParallaxRafales : MonoBehaviour
 {
-    public Camera cam;
-    public Transform subject;
+    private float lenght, startpos;
+    public GameObject cam;
+    public float parallaxSpeed;
 
-    Vector2 startpos;
-    float startZ;
-    float distanceFromsub => transform.position.z - subject.position.z;
-    float clippingplane => (cam.transform.position.z + (distanceFromsub > 0 ? cam.farClipPlane : cam.nearClipPlane));
-    float parallaxFactor => Mathf.Abs(distanceFromsub) / clippingplane;
-    Vector2 travel => (Vector2)cam.transform.position - startpos;
-
-    public void Start()
+   void Start()
     {
-      startpos = transform.position;
-        startZ = transform.position.z;
+        startpos = transform.position.x;
+        lenght = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    public void Update()
+
+     void FixedUpdate()
     {
-        Vector2 newPos = transform.position = startpos + travel * 0.9f;
-        transform.position = new Vector3(newPos.x, newPos.y, startZ);
+
+        float temp = (cam.transform.position.x * (1 - parallaxSpeed)); 
+        float dist = (cam.transform.position.x * parallaxSpeed);
+
+        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+
+        if (temp > startpos + lenght) startpos += lenght;
+        else if (temp < startpos - lenght) startpos -= lenght;
 
     }
 
