@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
     bool jump = false;
     public Animator animator;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+
+ 
     }
 
-
-   
 }
