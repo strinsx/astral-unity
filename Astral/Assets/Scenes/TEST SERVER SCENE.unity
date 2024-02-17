@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18292667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18292669}
+  - component: {fileID: 18292668}
+  m_Layer: 0
+  m_Name: Minions Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &18292668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18292667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986437a1e8596b4ebc2f61915fce3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swarmerPrefab: {fileID: 225871373}
+  swarmerInterval: 3.5
+--- !u!4 &18292669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18292667}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46247427
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +266,7 @@ GameObject:
   - component: {fileID: 225871376}
   - component: {fileID: 225871375}
   - component: {fileID: 225871374}
+  - component: {fileID: 225871381}
   m_Layer: 0
   m_Name: Minions (2)
   m_TagString: Untagged
@@ -419,6 +466,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 172.962, z: 0}
+--- !u!114 &225871381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225871373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b151f6e8c48bebf41a78dcee4cbd5712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 3
 --- !u!1 &305238723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1912,6 @@ GameObject:
   - component: {fileID: 1742659587}
   - component: {fileID: 1742659588}
   - component: {fileID: 1742659589}
-  - component: {fileID: 1742659590}
   m_Layer: 7
   m_Name: mainCharacter
   m_TagString: Player
@@ -2097,18 +2157,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 923259873}
---- !u!114 &1742659590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742659580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41f9fc0fbadc71d42874527513e5af4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1745919983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,4 +2849,5 @@ SceneRoots:
   - {fileID: 1929783283}
   - {fileID: 807282963}
   - {fileID: 225871380}
+  - {fileID: 18292669}
   - {fileID: 2008235583}

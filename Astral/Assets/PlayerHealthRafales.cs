@@ -18,15 +18,6 @@ public class PlayerHealthRafales : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-
-         
-
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
