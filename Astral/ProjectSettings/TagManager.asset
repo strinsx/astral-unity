@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Floor
   - Playeer
+  - EnemySpawn
+  - EnemyCollide
   layers:
   - Default
   - TransparentFX

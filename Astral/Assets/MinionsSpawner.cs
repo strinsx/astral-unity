@@ -18,6 +18,7 @@ public class MinionsSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
         GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f,5), Random.Range(-6f,6f),0), Quaternion.identity);
+        newEnemy.tag = "EnemyCollide";
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 
