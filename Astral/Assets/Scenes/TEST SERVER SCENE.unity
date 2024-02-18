@@ -374,7 +374,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &225871378
 Animator:
   serializedVersion: 7
@@ -797,13 +797,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - enemyPrefab: {fileID: 225871373}
-    cost: 2
+    cost: 1
   currWave: 0
   enemiesToSpawn: []
   spawnLocation:
   - {fileID: 569626526}
   spawnIndex: 0
-  waveDuration: 3
+  waveDuration: 20
   spawnedEnemies: []
 --- !u!4 &569626526
 Transform:
