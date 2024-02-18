@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 225871375}
   - component: {fileID: 225871374}
   - component: {fileID: 225871381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Minions (2)
   m_TagString: EnemyCollide
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1742659581}
-  isFlipped: 0
+  flip: 1
 --- !u!61 &225871376
 BoxCollider2D:
   m_ObjectHideFlags: 0

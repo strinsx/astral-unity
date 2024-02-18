@@ -4,30 +4,26 @@ using UnityEngine;
 
 public class MinionFlip : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
 
-    public bool isFlipped = false;
+    public bool flip = true; 
 
-    public void LookatMain()
+    public void Update()
     {
+        Vector3 scale = transform.localScale;
 
-        Vector3 flipped = transform.localScale;
-        flipped.z *= -1f;
 
-        if (transform.position.x > player.position.x && isFlipped )
+        if (player.transform.position.x > transform.position.x)
         {
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
 
-            transform.localScale = flipped;
-            transform.Rotate(0f, -180f, 0f);
-            isFlipped = false;
+        }
+        else
+        {
+            scale.x = Mathf.Abs(scale.x) *  (flip ? -1 : 1);
         }
 
-        else if(transform.position.x < player.position.x &&  !isFlipped ) {
+        transform.localScale = scale;
 
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
-            isFlipped = true;      
-        
-        }
     }
 }
