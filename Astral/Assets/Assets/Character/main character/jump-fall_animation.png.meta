@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 35728a9481a628342a6e8acbe4b6a14d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3840335663529401075
+    second: jump-fall_animation_0
+  - first:
+      213: -2130428380678100819
+    second: jump-fall_animation_1
+  - first:
+      213: -2668464253178002773
+    second: jump-fall_animation_2
+  - first:
+      213: -6275568225273747690
+    second: jump-fall_animation_3
+  - first:
+      213: -2816061878118418057
+    second: jump-fall_animation_4
+  - first:
+      213: 4559557505337118268
+    second: jump-fall_animation_5
+  - first:
+      213: -7486929024658568996
+    second: jump-fall_animation_6
+  - first:
+      213: 1277803751656016793
+    second: jump-fall_animation_7
+  - first:
+      213: -6249530932899430379
+    second: jump-fall_animation_8
+  - first:
+      213: 6783936142965111436
+    second: jump-fall_animation_9
+  - first:
+      213: 1011802585658808621
+    second: jump-fall_animation_10
+  - first:
+      213: -4675757956815453505
+    second: jump-fall_animation_11
+  - first:
+      213: 30976169233847651
+    second: jump-fall_animation_12
+  - first:
+      213: -5661265709827269044
+    second: jump-fall_animation_13
+  - first:
+      213: -7472567290034145897
+    second: jump-fall_animation_14
+  - first:
+      213: -8703171781713719872
+    second: jump-fall_animation_15
+  - first:
+      213: -5353402166187828580
+    second: jump-fall_animation_16
+  - first:
+      213: 7553341824003936827
+    second: jump-fall_animation_17
+  - first:
+      213: 7398407180050579008
+    second: jump-fall_animation_18
+  - first:
+      213: 984470371725775712
+    second: jump-fall_animation_19
+  - first:
+      213: 4691026178855124274
+    second: jump-fall_animation_20
+  - first:
+      213: 5429576119829097931
+    second: jump-fall_animation_21
+  - first:
+      213: 2775207504996980733
+    second: jump-fall_animation_22
+  - first:
+      213: -3329920809239506011
+    second: jump-fall_animation_23
+  - first:
+      213: -5693818085032969307
+    second: jump-fall_animation_24
+  - first:
+      213: -5781598371885411242
+    second: jump-fall_animation_25
+  - first:
+      213: 3927887418920608951
+    second: jump-fall_animation_26
+  - first:
+      213: 4436481400967522261
+    second: jump-fall_animation_27
+  - first:
+      213: 1485660762932358594
+    second: jump-fall_animation_28
+  - first:
+      213: -8692280277612323254
+    second: jump-fall_animation_29
+  - first:
+      213: -2318314849764999992
+    second: jump-fall_animation_30
+  - first:
+      213: 7112115818334084276
+    second: jump-fall_animation_31
+  - first:
+      213: -7816961954899726290
+    second: jump-fall_animation_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jump-fall_animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa1fe260fc9b4530800000000000000
+      internalID: 3840335663529401075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8654edca23f62e0800000000000000
+      internalID: -2130428380678100819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba24f7d56e5b7fad0800000000000000
+      internalID: -2668464253178002773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61764d0d2f3b8e8a0800000000000000
+      internalID: -6275568225273747690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7797b3954a65be8d0800000000000000
+      internalID: -2816061878118418057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ec59eb46dc64f30800000000000000
+      internalID: 4559557505337118268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_6
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd80aa238b5191890800000000000000
+      internalID: -7486929024658568996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_7
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b4e16fdbbabb110800000000000000
+      internalID: 1277803751656016793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_8
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510c6bb5ab43549a0800000000000000
+      internalID: -6249530932899430379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a7e5caaf1652e50800000000000000
+      internalID: 6783936142965111436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_10
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29d3054715aa0e00800000000000000
+      internalID: 1011802585658808621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_11
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb20f4859ee5c1fb0800000000000000
+      internalID: -4675757956815453505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump-fall_animation_12
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3659fab69ac0e6000800000000000000
+      internalID: 30976169233847651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d120b8af25e0b7e43b6ad6a78dca0e7a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      jump-fall_animation_0: 3840335663529401075
+      jump-fall_animation_1: -2130428380678100819
+      jump-fall_animation_10: 1011802585658808621
+      jump-fall_animation_11: -4675757956815453505
+      jump-fall_animation_12: 30976169233847651
+      jump-fall_animation_2: -2668464253178002773
+      jump-fall_animation_3: -6275568225273747690
+      jump-fall_animation_4: -2816061878118418057
+      jump-fall_animation_5: 4559557505337118268
+      jump-fall_animation_6: -7486929024658568996
+      jump-fall_animation_7: 1277803751656016793
+      jump-fall_animation_8: -6249530932899430379
+      jump-fall_animation_9: 6783936142965111436
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
