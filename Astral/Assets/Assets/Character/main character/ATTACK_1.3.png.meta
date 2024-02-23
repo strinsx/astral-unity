@@ -1,49 +1,31 @@
 fileFormatVersion: 2
-guid: 90f8bd1e4ed3f8640b25c6693fb8da49
+guid: 8dd8e2fbe4bc30843a76a95d7f14745d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2592484411489413282
-    second: ATTACK RAFALESSS_0
+      213: -2976728698938575061
+    second: ATTACK_1.3_0
   - first:
-      213: -6386098906900198864
-    second: ATTACK RAFALESSS_1
+      213: 6649481820896392670
+    second: ATTACK_1.3_1
   - first:
-      213: -8765078934924649210
-    second: ATTACK RAFALESSS_2
+      213: 6231663809881276160
+    second: ATTACK_1.3_2
   - first:
-      213: 3564380494595331724
-    second: ATTACK RAFALESSS_3
+      213: -7276363387781759063
+    second: ATTACK_1.3_3
   - first:
-      213: 6091919090226707367
-    second: ATTACK RAFALESSS_4
+      213: 7014675312515860704
+    second: ATTACK_1.3_4
   - first:
-      213: 7297458577940398123
-    second: ATTACK RAFALESSS_5
+      213: -2883944411189242806
+    second: ATTACK_1.3_5
   - first:
-      213: -7404190886122082177
-    second: ATTACK RAFALESSS_6
+      213: 6893596065090159714
+    second: ATTACK_1.3_6
   - first:
-      213: -2936902891064615767
-    second: ATTACK RAFALESSS_7
-  - first:
-      213: 8002861290122142976
-    second: ATTACK RAFALESSS_8
-  - first:
-      213: -2978182142385907907
-    second: ATTACK RAFALESSS_9
-  - first:
-      213: 1188801274262534728
-    second: ATTACK RAFALESSS_10
-  - first:
-      213: -67272716698076537
-    second: ATTACK RAFALESSS_11
-  - first:
-      213: -7356408465774135533
-    second: ATTACK RAFALESSS_12
-  - first:
-      213: -5618112157827723258
-    second: ATTACK RAFALESSS_13
+      213: -4935554044076167764
+    second: ATTACK_1.3_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 187
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,7 +95,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,127 +121,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ATTACK RAFALESSS_0
+      name: ATTACK_1.3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 250
-        height: 90
+        width: 400
+        height: 200
       alignment: 9
-      pivot: {x: 0.4779541, y: 0.48775193}
+      pivot: {x: 0.22, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fa8255e73a592284792f891cb5499583
-      internalID: 1240537008
+      spriteID: b273e0b050980b6d0800000000000000
+      internalID: -2976728698938575061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK RAFALESSS_1
+      name: ATTACK_1.3_1
       rect:
         serializedVersion: 2
-        x: 250
+        x: 400
         y: 0
-        width: 250
-        height: 90
+        width: 400
+        height: 200
       alignment: 9
-      pivot: {x: 0.4779541, y: 0.4877519}
+      pivot: {x: 0.22, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d239fd01d73e47c42a277b68d3fa85e9
-      internalID: -927848205
+      spriteID: ed572f25c74b74c50800000000000000
+      internalID: 6649481820896392670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK RAFALESSS_2
+      name: ATTACK_1.3_2
       rect:
         serializedVersion: 2
-        x: 500
+        x: 800
         y: 0
-        width: 250
-        height: 90
+        width: 400
+        height: 200
       alignment: 9
-      pivot: {x: 0.4779541, y: 0.4877519}
+      pivot: {x: 0.22, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f752d461f68a1b14fb5f6ff03a2f0253
-      internalID: -941403884
+      spriteID: 00f71a3e7315b7650800000000000000
+      internalID: 6231663809881276160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK RAFALESSS_3
+      name: ATTACK_1.3_3
       rect:
         serializedVersion: 2
-        x: 750
+        x: 1200
         y: 0
-        width: 250
-        height: 90
+        width: 400
+        height: 200
       alignment: 9
-      pivot: {x: 0.4779541, y: 0.4877519}
+      pivot: {x: 0.22, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 145e0a09d4ca29547815801a95dbcc9b
-      internalID: 736899458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ATTACK RAFALESSS_4
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 22
-        width: 958
-        height: 68
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 90, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e533bd80024b78448f099a6e67846e8
-      internalID: 115385042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ATTACK RAFALESSS_5
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 59
-        width: 200
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45d26d049f688ec4991c76034c95b86b
-      internalID: -947482556
+      spriteID: 9af3c96fc0a250b90800000000000000
+      internalID: -7276363387781759063
       vertices: []
       indices: 
       edges: []
@@ -267,7 +207,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 67e57ab175f09264c9edcdb6258a3021
+    spriteID: f94699a7a36e9c64e869ab2e1d2f00fa
     internalID: 0
     vertices: []
     indices: 
@@ -275,12 +215,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ATTACK RAFALESSS_0: 1240537008
-      ATTACK RAFALESSS_1: -927848205
-      ATTACK RAFALESSS_2: -941403884
-      ATTACK RAFALESSS_3: 736899458
-      ATTACK RAFALESSS_4: 115385042
-      ATTACK RAFALESSS_5: -947482556
+      ATTACK_1.3_0: -2976728698938575061
+      ATTACK_1.3_1: 6649481820896392670
+      ATTACK_1.3_2: 6231663809881276160
+      ATTACK_1.3_3: -7276363387781759063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
