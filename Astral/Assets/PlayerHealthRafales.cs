@@ -8,10 +8,13 @@ public class PlayerHealthRafales : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public bool alive;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         
@@ -23,5 +26,14 @@ public class PlayerHealthRafales : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+        Alive();
+    }
+
+    public void Alive()
+    {
+        if (currentHealth <= 0)
+        {
+            animator.SetBool("Die", true);
+        }
     }
 }

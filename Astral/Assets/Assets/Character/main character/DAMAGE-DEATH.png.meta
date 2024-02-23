@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: 2a9194bed9bb2694ea41fa8f444348cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -212028019394709335
+    second: DAMAGE-DEATH_0
+  - first:
+      213: 9222027002244092504
+    second: DAMAGE-DEATH_1
+  - first:
+      213: -8219046566477989813
+    second: DAMAGE-DEATH_2
+  - first:
+      213: 248099458046675653
+    second: DAMAGE-DEATH_3
+  - first:
+      213: -326646363975811816
+    second: DAMAGE-DEATH_4
+  - first:
+      213: -2609659330828771396
+    second: DAMAGE-DEATH_5
+  - first:
+      213: 2724187561304807083
+    second: DAMAGE-DEATH_6
+  - first:
+      213: 6096337321039825356
+    second: DAMAGE-DEATH_7
+  - first:
+      213: -2853519609418943339
+    second: DAMAGE-DEATH_8
+  - first:
+      213: 5804567407274477517
+    second: DAMAGE-DEATH_9
+  - first:
+      213: 8838475520488430596
+    second: DAMAGE-DEATH_10
+  - first:
+      213: -2163429539568468012
+    second: DAMAGE-DEATH_11
+  - first:
+      213: 3939153761922538363
+    second: DAMAGE-DEATH_12
+  - first:
+      213: 3802953256249740153
+    second: DAMAGE-DEATH_13
+  - first:
+      213: -2710187295463971812
+    second: DAMAGE-DEATH_14
+  - first:
+      213: 8925399968945491837
+    second: DAMAGE-DEATH_15
+  - first:
+      213: 8100704811774836228
+    second: DAMAGE-DEATH_16
+  - first:
+      213: 9182109234701359440
+    second: DAMAGE-DEATH_17
+  - first:
+      213: 8006624893124361594
+    second: DAMAGE-DEATH_18
+  - first:
+      213: -3380050497733286366
+    second: DAMAGE-DEATH_19
+  - first:
+      213: -4704660198372048853
+    second: DAMAGE-DEATH_20
+  - first:
+      213: -6520942250807957812
+    second: DAMAGE-DEATH_21
+  - first:
+      213: -8112304599274522556
+    second: DAMAGE-DEATH_22
+  - first:
+      213: 2953560327423713604
+    second: DAMAGE-DEATH_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a87c85c3a9be0df0800000000000000
+      internalID: -212028019394709335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852d1d9b2b83bff70800000000000000
+      internalID: 9222027002244092504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b487fa4b1b410fd80800000000000000
+      internalID: -8219046566477989813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cac6d1842d617300800000000000000
+      internalID: 248099458046675653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d7c04dcd4877bf0800000000000000
+      internalID: -326646363975811816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfda294aa0a8cbd0800000000000000
+      internalID: -2609659330828771396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_6
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba65c1557224ec520800000000000000
+      internalID: 2724187561304807083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_7
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc909836e7a8a9450800000000000000
+      internalID: 6096337321039825356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_8
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594f8f8a8034668d0800000000000000
+      internalID: -2853519609418943339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DAMAGE-DEATH_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7c7619d47fd8050800000000000000
+      internalID: 5804567407274477517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e82b64651fc09f2488f4103b6ae33df2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DAMAGE-DEATH_0: -212028019394709335
+      DAMAGE-DEATH_1: 9222027002244092504
+      DAMAGE-DEATH_2: -8219046566477989813
+      DAMAGE-DEATH_3: 248099458046675653
+      DAMAGE-DEATH_4: -326646363975811816
+      DAMAGE-DEATH_5: -2609659330828771396
+      DAMAGE-DEATH_6: 2724187561304807083
+      DAMAGE-DEATH_7: 6096337321039825356
+      DAMAGE-DEATH_8: -2853519609418943339
+      DAMAGE-DEATH_9: 5804567407274477517
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

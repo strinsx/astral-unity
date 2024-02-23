@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
     bool jump = false;
     public Animator animator;
+    private bool djump;
+
     
 
     // Start is called before the first frame update
@@ -28,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            
+            
             jump = true;
             animator.SetBool("isJumping", true); 
         }
