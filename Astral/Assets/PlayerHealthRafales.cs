@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerHealthRafales : MonoBehaviour
 {
 
-    public int maxHealth = 100;
+    public int maxHealth = 50;
     public int currentHealth;
     public HealthBar healthBar;
-    public bool alive;
-    Animator animator;
+    private bool isDead;
+    public GameManagerScript gameManager;
+    
+    //public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +33,11 @@ public class PlayerHealthRafales : MonoBehaviour
 
     public void Alive()
     {
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
-            animator.SetBool("Die", true);
+            isDead = true;
+            gameManager.gameOver();
+            //animator.SetBool("Die", true);
         }
     }
 }
