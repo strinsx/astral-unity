@@ -8,7 +8,7 @@ public class zz : MonoBehaviour
     
        public void StartGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadScene("TEST SERVER SCENE");
         
     }
 

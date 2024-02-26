@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Game Controls.unity
     guid: 1f92d4d52c89b04469b520356894540e
+  - enabled: 1
+    path: Assets/Scenes/TEST SERVER SCENE.unity
+    guid: 82c6c740cac0d9841a59ab8dcefd2862
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
