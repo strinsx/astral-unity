@@ -30,7 +30,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        if(Input.GetMouseButton(0) && !isAttacking)
+        if(Input.GetKeyDown(KeyCode.Z)&& !isAttacking)
         {
             isAttacking = true;
         }

@@ -6,7 +6,7 @@ public class MinionHealth : MonoBehaviour
 {   
     public int maxHealth = 100;
     int currentHealth;
-    void start()
+    void Start()
     {
         currentHealth = maxHealth;
     }

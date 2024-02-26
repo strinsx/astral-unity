@@ -12,42 +12,53 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     public Animator animator;
     private bool djump;
+    bool isjuumping;
+    private KnockBackMainRafales knockback;
 
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-       
+       knockback  = GetComponent<KnockBackMainRafales>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        animator.SetFloat("Speed",Mathf.Abs(horizontalMove));
-
-        if (Input.GetButtonDown("Jump"))
+        if (!knockback.GettingBack)
         {
-            
-            
-            jump = true;
-            animator.SetBool("isJumping", true); 
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+            if (Input.GetButtonDown("Jump"))
+            {
+
+
+                jump = true;
+                animator.SetBool("isJumping", true);
+            }
+        }
+        
+    }
+
+    void FixedUpdate()
+    {
+        if (!knockback.GettingBack)
+        {
+
+            controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+            jump = false;
         }
     }
 
-   public void Onland()
+    public void Onland()
     {
         animator.SetBool("isJumping", false);
     }
 
-     void FixedUpdate()
-    {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
-
- 
-    }
+   
 
 }
