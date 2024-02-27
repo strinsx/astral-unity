@@ -11,6 +11,7 @@ public class PlayerHealthRafales : MonoBehaviour
     public bool alive;
     Animator animator;
     private KnockBackMainRafales knocback;
+    public GameManagerScript gamemanager;
 
     // Start is called before the first frame update
 
@@ -33,6 +34,8 @@ public class PlayerHealthRafales : MonoBehaviour
     // Update is called once per frame
     public void TakeDamage(int damage, Vector2 hitDirection)
     {
+
+      
         currentHealth -= damage;
 
         knocback.CallKnockback(hitDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
@@ -41,7 +44,7 @@ public class PlayerHealthRafales : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            animator.SetBool("isDeath", true);
+            Die();
 
         }
 
@@ -53,6 +56,14 @@ public class PlayerHealthRafales : MonoBehaviour
 
     }
 
+    void Die()
+    {
+
+        if (animator != null)
+            animator.SetBool("isDeath", true);
+        if (gamemanager != null)
+            gamemanager.gameOver();
+    }
    
  
     

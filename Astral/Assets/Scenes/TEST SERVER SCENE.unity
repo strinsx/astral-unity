@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1778260202}
   respawnPoint: {fileID: 0}
-  mainCharacter: {fileID: 0}
+  mainCharacter: {fileID: 1742659580}
 --- !u!1 &46247427
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +793,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   currenthealth: 0
+  main_death: {fileID: 0}
+  animationcomponent: {fileID: 0}
 --- !u!1 &255502922
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,6 +3365,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 923259873}
   alive: 0
+  gamemanager: {fileID: 0}
 --- !u!114 &1742659590
 MonoBehaviour:
   m_ObjectHideFlags: 0
