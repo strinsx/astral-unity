@@ -3678,7 +3678,7 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 225871373}
     cost: 2
   - enemyPrefab: {fileID: 2100799865}
-    cost: 5
+    cost: 4
   currWave: 0
   enemiesToSpawn: []
   spawnLocation:
@@ -4161,7 +4161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b151f6e8c48bebf41a78dcee4cbd5712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 150
   currenthealth: 0
   main_death: {fileID: 0}
   animationcomponent: {fileID: 0}
@@ -4337,7 +4337,7 @@ Transform:
   m_GameObject: {fileID: 2100799865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.783, y: -1.99, z: -1.1}
+  m_LocalPosition: {x: -4.783, y: -2.315, z: -1.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

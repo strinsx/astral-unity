@@ -148,12 +148,12 @@ TextureImporter:
       name: dark fantasy big boss death_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 7
-        width: 38
-        height: 40
+        x: 0
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: dark fantasy big boss death_1
       rect:
         serializedVersion: 2
-        x: 102
-        y: 7
-        width: 35
-        height: 39
+        x: 80
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: dark fantasy big boss death_2
       rect:
         serializedVersion: 2
-        x: 185
-        y: 7
-        width: 29
-        height: 36
+        x: 160
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: dark fantasy big boss death_3
       rect:
         serializedVersion: 2
-        x: 264
-        y: 7
-        width: 31
-        height: 35
+        x: 240
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: dark fantasy big boss death_4
       rect:
         serializedVersion: 2
-        x: 345
-        y: 7
-        width: 29
-        height: 36
+        x: 320
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: dark fantasy big boss death_5
       rect:
         serializedVersion: 2
-        x: 427
-        y: 7
-        width: 26
-        height: 37
+        x: 400
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: dark fantasy big boss death_6
       rect:
         serializedVersion: 2
-        x: 508
-        y: 7
-        width: 24
-        height: 38
+        x: 480
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: dark fantasy big boss death_7
       rect:
         serializedVersion: 2
-        x: 589
-        y: 7
-        width: 24
-        height: 39
+        x: 560
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: dark fantasy big boss death_8
       rect:
         serializedVersion: 2
-        x: 669
-        y: 7
-        width: 24
-        height: 36
+        x: 640
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: dark fantasy big boss death_9
       rect:
         serializedVersion: 2
-        x: 749
-        y: 7
-        width: 27
-        height: 36
+        x: 720
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: dark fantasy big boss death_10
       rect:
         serializedVersion: 2
-        x: 829
-        y: 7
-        width: 31
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.58103406, y: 0.49706385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: dark fantasy big boss death_11
       rect:
         serializedVersion: 2
-        x: 909
-        y: 7
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 880
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5942802, y: 0.48148662}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: dark fantasy big boss death_12
       rect:
         serializedVersion: 2
-        x: 989
-        y: 7
-        width: 43
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 960
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5942802, y: 0.4814866}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: dark fantasy big boss death_13
       rect:
         serializedVersion: 2
-        x: 1069
-        y: 7
-        width: 47
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1040
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5942802, y: 0.4814866}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: dark fantasy big boss death_14
       rect:
         serializedVersion: 2
-        x: 1149
-        y: 7
-        width: 46
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1121
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5942802, y: 0.4814866}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: dark fantasy big boss death_15
       rect:
         serializedVersion: 2
-        x: 1229
-        y: 7
-        width: 47
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1200
+        y: 0
+        width: 80
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5942802, y: 0.4814866}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,7 +483,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 878c62756f8eb344f83fded781c39093
     internalID: 0
     vertices: []
     indices: 
