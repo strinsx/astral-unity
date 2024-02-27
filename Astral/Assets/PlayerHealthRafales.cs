@@ -12,6 +12,7 @@ public class PlayerHealthRafales : MonoBehaviour
     Animator animator;
     private KnockBackMainRafales knocback;
     public GameManagerScript gamemanager;
+    private bool isDead;
 
     // Start is called before the first frame update
 
@@ -42,10 +43,14 @@ public class PlayerHealthRafales : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
 
-        if (currentHealth <= 0)
-        {
-            Die();
 
+        if (currentHealth <= 0 && !isDead)
+        {
+
+            animator.SetBool("Die", true);
+            isDead = true;
+            ///gamemanager.enabled = true;
+            ////gamemanager.gameOver();
         }
 
         else 
@@ -56,14 +61,7 @@ public class PlayerHealthRafales : MonoBehaviour
 
     }
 
-    void Die()
-    {
-
-        if (animator != null)
-            animator.SetBool("isDeath", true);
-        if (gamemanager != null)
-            gamemanager.gameOver();
-    }
+  
    
  
     
