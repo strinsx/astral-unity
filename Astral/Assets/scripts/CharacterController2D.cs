@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+	private bool m_isKnockedBack = false;
 
 	private KnockBackMainRafales knockback;
 
@@ -70,7 +72,7 @@ public class CharacterController2D : MonoBehaviour
 
 
 		// If crouching, check to see if the character can stand up
-		if (!knockback.GettingBack)
+		if (!m_isKnockedBack)
 		{
 
 
@@ -143,6 +145,16 @@ public class CharacterController2D : MonoBehaviour
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 			}
 		}
+	}
+
+	public void StartKnockback()
+	{
+		m_isKnockedBack = true;
+	}
+
+	public void EndKnockBack()
+	{
+		m_isKnockedBack=false;
 	}
 
 

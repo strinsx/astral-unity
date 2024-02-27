@@ -5,39 +5,55 @@ using UnityEngine;
 public class PlayerHealthRafales : MonoBehaviour
 {
 
-    public int maxHealth = 50;
+    public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-    private bool isDead;
-    public GameManagerScript gameManager;
-    
-    //public Animator animator;
+    public bool alive;
+    Animator animator;
+    private KnockBackMainRafales knocback;
 
     // Start is called before the first frame update
+
+   
     void Start()
     {
         
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        knocback  = GetComponent<KnockBackMainRafales>();
+        animator = GetComponent<Animator>();
         
     }
 
+    private void Update()
+    {
+
+    }
+
     // Update is called once per frame
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector2 hitDirection)
     {
         currentHealth -= damage;
 
+        knocback.CallKnockback(hitDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
+
         healthBar.SetHealth(currentHealth);
-        Alive();
+
+        if (currentHealth <= 0)
+        {
+            animator.SetBool("isDeath", true);
+
+        }
+
+        else 
+        {
+            animator.SetTrigger("Hit");
+            
+        }
+
     }
 
-    public void Alive()
-    {
-        if (currentHealth <= 0 && !isDead)
-        {
-            isDead = true;
-            gameManager.gameOver();
-            //animator.SetBool("Die", true);
-        }
-    }
+   
+ 
+    
 }

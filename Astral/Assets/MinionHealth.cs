@@ -1,27 +1,68 @@
+using NUnit.Framework;
+using NUnit.Framework.Internal;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MinionHealth : MonoBehaviour
-{   
-    public int maxHealth = 100;
-    int currentHealth;
-    void Start()
+{
+    public float health;
+    public float currenthealth;
+    private Animator anim;
+    private bool attacked;
+    private float despawnae = 2f;
+    public AnimationClip main_death;
+    public Animation animationcomponent;
+    private void Start()
     {
-        currentHealth = maxHealth;
-    }
-    public void TakeDamege(int damage)
-    {
-        currentHealth -= damage;
+        anim = GetComponent<Animator>();
+        currenthealth = health;
+       
 
-        if(currentHealth <= 0)
+  
+
+    }
+
+
+    private void Update()
+    {
+       
+        hit();
+
+    }
+
+
+    private void hit()
+    {
+        if (health < currenthealth)
         {
-            Die();
+            currenthealth = health;
+            anim.SetTrigger("Attacked");
+
+            
+            
         }
 
+        if (health <= 0)
+        {
+            anim.SetBool("isDead", true);
+            Debug.Log("EnemyDead");
+
+            StartCoroutine(DestroyGameob());
+        }
+   
+
     }
-    void Die()
+
+    IEnumerator DestroyGameob()
     {
-        Debug.Log("patay na");
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+
+        yield return new WaitForSeconds(despawnae);
+
+        Destroy(this.gameObject);
     }
+
+
+
 }

@@ -57,6 +57,14 @@ public class WaveSpawner : MonoBehaviour
             spawnTimer -= Time.fixedDeltaTime;
             waveTimer -= Time.fixedDeltaTime;
         }
+
+        for(int i = spawnedEnemies.Count - 1; i>= 0; i--)
+        {
+            if (spawnedEnemies[i] == null)
+            {
+                spawnedEnemies.RemoveAt(i);
+            }
+        }
  
         if(waveTimer<=0 && spawnedEnemies.Count <=0)
         {

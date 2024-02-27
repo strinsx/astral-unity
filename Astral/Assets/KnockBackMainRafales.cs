@@ -8,6 +8,7 @@ public class KnockBackMainRafales : MonoBehaviour
     public float hitDirectForce = 10f;
     public float constForce = 5f;
     public float inputForce = 7.5f;
+    public float inputScale = 0.4f;
 
 
 
@@ -44,8 +45,9 @@ public class KnockBackMainRafales : MonoBehaviour
 
             if(inputDirection != 0)
             {
-                combinedforce = knockbackForce + new Vector2(inputDirection, 0f);
+                combinedforce = knockbackForce + new Vector2(inputDirection, 0f) * inputScale;
 
+      
             }
             else
             {

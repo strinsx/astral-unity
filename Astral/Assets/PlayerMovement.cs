@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool djump;
     bool isjuumping;
     private KnockBackMainRafales knockback;
+    private bool isKnockedBack;
 
 
 
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!knockback.GettingBack)
+        if (!isKnockedBack)
         {
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!knockback.GettingBack)
+        if (!isKnockedBack)
         {
 
             controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
@@ -59,6 +60,15 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isJumping", false);
     }
 
+    public void StartKnockback()
+    {
+        isKnockedBack = true;
+    }
+
+    public void EndKnockBack()
+    {
+        isKnockedBack = false;
+    }
    
 
 }
