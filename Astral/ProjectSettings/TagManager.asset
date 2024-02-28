@@ -8,6 +8,7 @@ TagManager:
   - Playeer
   - EnemySpawn
   - EnemyCollide
+  - Shaker
   layers:
   - Default
   - TransparentFX
@@ -18,11 +19,11 @@ TagManager:
   - Ground
   - Player
   - EnemyCollision
+  - lighhtning
   - 
   - 
   - 
-  - 
-  - 
+  - open
   - 
   - 
   - 
@@ -47,6 +48,12 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2824402339
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1061766807
+    locked: 0
+  - name: light
+    uniqueID: 674335307
     locked: 0
   - name: ForeBack
     uniqueID: 3940843247

@@ -13,11 +13,10 @@ public class PlayerCombat : MonoBehaviour
     public float radius;
     public LayerMask enemies;
 
-
-
     private void Awake()
     {
        instance = this;
+        
     }
 
    void Start()
