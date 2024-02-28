@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class MinionHealth : MonoBehaviour
 {
+
+    [SerializeField] private ParticleSystem damageparticles;
+
+
     public float health;
     public float currenthealth;
     private Animator anim;
@@ -13,6 +17,8 @@ public class MinionHealth : MonoBehaviour
     private float despawnae = 2f;
     public AnimationClip main_death;
     public Animation animationcomponent;
+    private ParticleSystem damageparticleInstance;
+    
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -38,16 +44,16 @@ public class MinionHealth : MonoBehaviour
         {
             currenthealth = health;
             anim.SetTrigger("Attacked");
-
-            
-            
+            SpawnDamageParticles();
         }
+
+
 
         if (health <= 0)
         {
             anim.SetBool("isDead", true);
             Debug.Log("EnemyDead");
-
+           
             StartCoroutine(DestroyGameob());
         }
    
@@ -63,6 +69,9 @@ public class MinionHealth : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-
+    private void SpawnDamageParticles()
+    {
+        damageparticleInstance = Instantiate(damageparticles, transform.position, Quaternion.identity);
+    }
 
 }
