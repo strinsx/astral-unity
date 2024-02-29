@@ -34,7 +34,7 @@ public class CameraShakeRafales : MonoBehaviour
     public void JumpSHAKE()
     {
         CinemachineBasicMultiChannelPerlin cmbp = cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        cmbp.m_AmplitudeGain = 0.5f;
+        cmbp.m_AmplitudeGain = 1.5f;
 
         timer = ShakeTime;
     }
