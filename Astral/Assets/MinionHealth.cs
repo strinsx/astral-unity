@@ -73,9 +73,6 @@ public class MinionHealth : MonoBehaviour
     {
         damageparticleInstance = Instantiate(damageparticles, transform.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(3);
-
-        Destroy.this(gameObject);
-    }
+        }
 
 }
