@@ -39,7 +39,7 @@ TextureImporter:
       213: -3501790371417165708
     second: ExtraTiles1_11
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -118,6 +118,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -394,7 +420,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ExtraTiles1_0: 6556425223422910083
+      ExtraTiles1_1: -4857978385761564963
+      ExtraTiles1_10: -6301567238209342386
+      ExtraTiles1_11: -3501790371417165708
+      ExtraTiles1_2: 190888020802786794
+      ExtraTiles1_3: -2759812476894961262
+      ExtraTiles1_4: 2630720658418780706
+      ExtraTiles1_5: 8141240565512770664
+      ExtraTiles1_6: 2442633979019324042
+      ExtraTiles1_7: 7601620737625484198
+      ExtraTiles1_8: 8375415717034257610
+      ExtraTiles1_9: -4415964023264274412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
