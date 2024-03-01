@@ -3668,7 +3668,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682217987}
-  - component: {fileID: 682217988}
   m_Layer: 0
   m_Name: layer4
   m_TagString: Untagged
@@ -3692,20 +3691,6 @@ Transform:
   - {fileID: 1657210196}
   m_Father: {fileID: 811556711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &682217988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682217986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b1720ad107b57468e4ad5a679e7f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1526749660}
-  parallaxSpeed: 1
 --- !u!114 &734945762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13406,7 +13391,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693467704}
-  - component: {fileID: 1693467705}
   m_Layer: 0
   m_Name: layer3
   m_TagString: Untagged
@@ -13430,20 +13414,6 @@ Transform:
   - {fileID: 609675492}
   m_Father: {fileID: 811556711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1693467705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693467703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b1720ad107b57468e4ad5a679e7f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1526749660}
-  parallaxSpeed: 1
 --- !u!1 &1750237234
 GameObject:
   m_ObjectHideFlags: 0
@@ -33294,7 +33264,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914068481}
-  - component: {fileID: 1914068482}
   m_Layer: 0
   m_Name: layer5
   m_TagString: Untagged
@@ -33318,20 +33287,6 @@ Transform:
   - {fileID: 941001913}
   m_Father: {fileID: 811556711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1914068482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914068480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b1720ad107b57468e4ad5a679e7f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1526749660}
-  parallaxSpeed: 1
 --- !u!1 &1937140546
 GameObject:
   m_ObjectHideFlags: 0
@@ -34107,6 +34062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 411e86aceae20634ca702a063efc5ac3, type: 2}
   animator: {fileID: 2032050947}
+  dust: {fileID: 0}
   _groundCheckPoint: {fileID: 1259435336}
   _groundCheckSize: {x: 1.68, y: 0.05}
   _frontWallCheckPoint: {fileID: 1750237235}

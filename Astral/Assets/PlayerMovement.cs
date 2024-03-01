@@ -387,7 +387,7 @@ public class PlayerMovement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         IsFacingRight = !IsFacingRight;
-        createDust();
+  
     }
     #endregion
 
@@ -405,7 +405,7 @@ public class PlayerMovement : MonoBehaviour
         float force = Data.jumpForce;
         if (RB.velocity.y < 0)
             force -= RB.velocity.y;
-        createDust();
+
         RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
         #endregion
     }
@@ -512,10 +512,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void createDust()
-    {
-        dust.Play();
-    }
+  
 }
 
 // created by Dawnosaur :D
