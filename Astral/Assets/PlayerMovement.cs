@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
     private float _wallJumpStartTime;
     private int _lastWallJumpDir;
     private bool canDoubleJump;
+    private bool isTouchingtheWalls;
     private Vector2 _moveInput;
     public ParticleSystem dust;
     public float LastPressedJumpTime { get; private set; }
@@ -94,17 +95,20 @@ public class PlayerMovement : MonoBehaviour
         _moveInput.y = Input.GetAxisRaw("Vertical");
 
         Grounded();
-        Debug.Log(isGrounded);
+        Debug.Log(isTouchingWall);
 
 
         #region FALLING ANIMATION OPTIMIZED - Rafales
         // Check if the character is falling
         if (!Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) &&
-     RB.velocity.y < 0)
+     RB.velocity.y < 0 || isTouchingWall)
         {
             // Trigger the falling animation
             animator.SetBool("isFalling", true);
         }
+
+
+
         else if (!IsJumping && !IsWallJumping)
         {
             // Reset the falling animation trigger if not falling
@@ -121,14 +125,14 @@ public class PlayerMovement : MonoBehaviour
         if (_moveInput.x != 0)
             CheckDirectionToFace(_moveInput.x > 0);
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
+        if ( Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
             OnJumpInput();
             animator.SetBool("isJumping", true);
 
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
+        if (Input.GetKeyUp(KeyCode.I) || Input.GetKeyUp(KeyCode.O) || Input.GetKeyUp(KeyCode.P))
         {
             OnJumpUpInput();
         }
@@ -284,6 +288,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (IsJumping && RB.velocity.y <= 0 && isGrounded)
+        {
+            // Reset jump animation when landing after a jump
+            animator.SetBool("isJumping", false);
+        }
+
         //Handle Run
         if (IsWallJumping)
         {
@@ -306,7 +317,11 @@ public class PlayerMovement : MonoBehaviour
     //Methods which whandle input detected in Update()
     public void OnJumpInput()
     {
-        LastPressedJumpTime = Data.jumpInputBufferTime;
+        if (CanJump() || CanWallJump())
+        {
+            LastPressedJumpTime = Data.jumpInputBufferTime;
+            animator.SetBool("isJumping", true);
+        }
     }
 
     public void OnJumpUpInput()
@@ -387,7 +402,7 @@ public class PlayerMovement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         IsFacingRight = !IsFacingRight;
-  
+        createDust();
     }
     #endregion
 
@@ -403,10 +418,30 @@ public class PlayerMovement : MonoBehaviour
         //This means we'll always feel like we jump the same amount 
         //(setting the player's Y velocity to 0 beforehand will likely work the same, but I find this more elegant :D)
         float force = Data.jumpForce;
-        if (RB.velocity.y < 0)
+        
+        if (isGrounded)
+        {
+            canDoubleJump = true;
+        }
+        
+            if (isGrounded)
+            {
             force -= RB.velocity.y;
-
-        RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+            createDust();
+            RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+            canDoubleJump = true;
+            }
+            else
+            {
+                if (canDoubleJump)
+                {
+                    force -= RB.velocity.y;
+                    createDust();
+                    RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+                    canDoubleJump = false;
+                }
+            }
+        
         #endregion
     }
 
@@ -483,7 +518,10 @@ public class PlayerMovement : MonoBehaviour
     public bool CanSlide()
     {
         if (LastOnWallTime > 0 && !IsJumping && !IsWallJumping && LastOnGroundTime <= 0)
+        {
             return true;
+        }
+
         else
             return false;
     }
@@ -508,11 +546,15 @@ public class PlayerMovement : MonoBehaviour
     }
     void Grounded()
     {
-        isGrounded = (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer));
+        isGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
+        isTouchingtheWalls = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _wallLayer);
 
     }
 
-  
+    void createDust()
+    {
+        dust.Play();
+    }
 }
 
 // created by Dawnosaur :D
