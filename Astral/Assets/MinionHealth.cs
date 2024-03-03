@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class MinionHealth : MonoBehaviour
 {
 
     [SerializeField] private ParticleSystem damageparticles;
-
-
+    [SerializeField] public GameObject zxc;
+    public GameObject FloatingTextPrefab;
     public float health;
     public float currenthealth;
     private Animator anim;
@@ -17,13 +18,14 @@ public class MinionHealth : MonoBehaviour
     public AnimationClip main_death;
     public Animation animationcomponent;
     private ParticleSystem damageparticleInstance;
+    private CinemachineImpulseSource impulseSource;
     
     private void Start()
     {
         anim = GetComponent<Animator>();
         currenthealth = health;
        
-
+        impulseSource = GetComponent<CinemachineImpulseSource>(); // Corrected the spelling
   
 
     }
@@ -43,6 +45,7 @@ public class MinionHealth : MonoBehaviour
         {
             currenthealth = health;
             anim.SetTrigger("Attacked");
+            CameraShakeManager.instance.CameraShake(impulseSource);
             SpawnDamageParticles();
         }
 

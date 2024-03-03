@@ -105,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Trigger the falling animation
             animator.SetBool("isFalling", true);
+            animator.SetBool("isJumping", false);
         }
 
 
@@ -128,7 +129,6 @@ public class PlayerMovement : MonoBehaviour
         if ( Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
             OnJumpInput();
-            animator.SetBool("isJumping", true);
 
         }
 
@@ -186,7 +186,6 @@ public class PlayerMovement : MonoBehaviour
             if (!Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer))
             {
                 IsJumping = false;
-                animator.SetBool("isJumping", false);
                 if (!IsWallJumping)
                     _isJumpFalling = true;
             }
@@ -195,7 +194,6 @@ public class PlayerMovement : MonoBehaviour
         if (IsWallJumping && Time.time - _wallJumpStartTime > Data.wallJumpTime)
         {
             IsWallJumping = false;
-            animator.SetBool("isJumping", true);
 
         }
 
@@ -220,19 +218,6 @@ public class PlayerMovement : MonoBehaviour
             _isJumpFalling = false;
             Jump();
             animator.SetBool("isJumping", true);
-        }
-        //WALL JUMP
-        else if (CanWallJump() && LastPressedJumpTime > 0)
-        {
-            IsWallJumping = true;
-            IsJumping = false;
-            _isJumpCut = false;
-            _isJumpFalling = false;
-            _wallJumpStartTime = Time.time;
-            _lastWallJumpDir = (LastOnWallRightTime > 0) ? -1 : 1;
-            animator.SetBool("isJumping", true);
-
-            WallJump(_lastWallJumpDir);
         }
         #endregion
 
@@ -429,8 +414,9 @@ public class PlayerMovement : MonoBehaviour
             force -= RB.velocity.y;
             createDust();
             RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
-            canDoubleJump = true;
+
             }
+           
             else
             {
                 if (canDoubleJump)
@@ -445,29 +431,7 @@ public class PlayerMovement : MonoBehaviour
         #endregion
     }
 
-    private void WallJump(int dir)
-    {
-        //Ensures we can't call Wall Jump multiple times from one press
-        LastPressedJumpTime = 0;
-        LastOnGroundTime = 0;
-        LastOnWallRightTime = 0;
-        LastOnWallLeftTime = 0;
-
-        #region Perform Wall Jump
-        Vector2 force = new Vector2(Data.wallJumpForce.x, Data.wallJumpForce.y);
-        force.x *= dir; //apply force in opposite direction of wall
-
-        if (Mathf.Sign(RB.velocity.x) != Mathf.Sign(force.x))
-            force.x -= RB.velocity.x;
-
-        if (RB.velocity.y < 0) //checks whether player is falling, if so we subtract the velocity.y (counteracting force of gravity). This ensures the player always reaches our desired jump force or greater
-            force.y -= RB.velocity.y;
-
-        //Unlike in the run we want to use the Impulse mode.
-        //The default mode will apply are force instantly ignoring masss
-        RB.AddForce(force, ForceMode2D.Impulse);
-        #endregion
-    }
+    
     #endregion
 
     #region OTHER MOVEMENT METHODS
