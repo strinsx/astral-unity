@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8fcc7cb2c1ac36d48bd25bc892857179
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - jumpSound: {fileID: 8300000, guid: 32de8f995f3349e47a7a0f28efe09c5a, type: 3}
+  - attackSound: {fileID: 8300000, guid: 0f1e6620453d93c46865e831d974235b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
