@@ -45,8 +45,9 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider2D enemyGameobject in enemy)
         {
+            
             Debug.Log("HIT ENEMY");
-            enemyGameobject.GetComponent<MinionHealth>().health -= 10;
+          enemyGameobject.GetComponent<MinionHealth>().health -= 10;
         }
 
         } 

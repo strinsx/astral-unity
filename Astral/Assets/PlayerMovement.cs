@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouchingtheWalls;
     private Vector2 _moveInput;
     public ParticleSystem dust;
+    public ParticleSystem onLand;
     public float LastPressedJumpTime { get; private set; }
 
     //Set all of these up in the inspector
@@ -106,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
             // Trigger the falling animation
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
+            OnLandParticle();
         }
 
 
@@ -518,6 +520,12 @@ public class PlayerMovement : MonoBehaviour
     void createDust()
     {
         dust.Play();
+        
+    }
+
+    void OnLandParticle()
+    {
+        onLand.Play();
     }
 }
 

@@ -45,7 +45,7 @@ TextureImporter:
       213: -5618112157827723258
     second: ATTACK RAFALESSS_13
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -147,7 +173,7 @@ TextureImporter:
         width: 250
         height: 90
       alignment: 9
-      pivot: {x: 0.4779541, y: 0.48775193}
+      pivot: {x: 0.45967743, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +194,7 @@ TextureImporter:
         width: 250
         height: 90
       alignment: 9
-      pivot: {x: 0.5048362, y: 0.5001968}
+      pivot: {x: 0.45, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +215,7 @@ TextureImporter:
         width: 250
         height: 90
       alignment: 9
-      pivot: {x: 0.5048362, y: 0.5001968}
+      pivot: {x: 0.45, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +236,7 @@ TextureImporter:
         width: 250
         height: 90
       alignment: 9
-      pivot: {x: 0.5048362, y: 0.5001968}
+      pivot: {x: 0.45, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,48 +244,6 @@ TextureImporter:
       bones: []
       spriteID: 145e0a09d4ca29547815801a95dbcc9b
       internalID: 736899458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ATTACK RAFALESSS_4
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 22
-        width: 958
-        height: 68
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 90, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e533bd80024b78448f099a6e67846e8
-      internalID: 115385042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ATTACK RAFALESSS_5
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 59
-        width: 200
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45d26d049f688ec4991c76034c95b86b
-      internalID: -947482556
       vertices: []
       indices: 
       edges: []
@@ -279,8 +263,6 @@ TextureImporter:
       ATTACK RAFALESSS_1: -927848205
       ATTACK RAFALESSS_2: -941403884
       ATTACK RAFALESSS_3: 736899458
-      ATTACK RAFALESSS_4: 115385042
-      ATTACK RAFALESSS_5: -947482556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

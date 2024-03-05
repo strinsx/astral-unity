@@ -19,34 +19,38 @@ public class MinionHealth : MonoBehaviour
     public Animation animationcomponent;
     private ParticleSystem damageparticleInstance;
     private CinemachineImpulseSource impulseSource;
+    public DamageFlash1 _damageFlash;
+    private Vector2 attackDirection;
+    public KnockBackMainRafales knockback;
     
     private void Start()
     {
         anim = GetComponent<Animator>();
         currenthealth = health;
-       
+       _damageFlash  = GetComponent<DamageFlash1>();
         impulseSource = GetComponent<CinemachineImpulseSource>(); // Corrected the spelling
-  
+        Vector2 attackDirection = (this.gameObject.transform.position - transform.position).normalized;
+        knockback = GetComponent<KnockBackMainRafales>();
 
     }
 
 
     private void Update()
     {
-       
         hit();
-
     }
 
-
-    private void hit()
+    public void hit()
     {
+
         if (health < currenthealth)
         {
+            knockback.CallKnockback(attackDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
             currenthealth = health;
             anim.SetTrigger("Attacked");
             CameraShakeManager.instance.CameraShake(impulseSource);
-            SpawnDamageParticles();
+            SpawnDamageParticles(attackDirection);
+            _damageFlash.CallDps();
         }
 
 
@@ -55,11 +59,9 @@ public class MinionHealth : MonoBehaviour
         {
             anim.SetBool("isDead", true);
             Debug.Log("EnemyDead");
-           
+
             StartCoroutine(DestroyGameob());
         }
-   
-
     }
 
     IEnumerator DestroyGameob()
@@ -71,10 +73,13 @@ public class MinionHealth : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void SpawnDamageParticles()
+    private void SpawnDamageParticles(Vector2 attackDirection)
     {
+
+        Quaternion spawnRotation = Quaternion.FromToRotation(Vector2.right, attackDirection); 
         damageparticleInstance = Instantiate(damageparticles, transform.position, Quaternion.identity);
 
         }
 
+ 
 }

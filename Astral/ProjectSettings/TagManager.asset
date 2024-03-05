@@ -64,3 +64,15 @@ TagManager:
   - name: Top
     uniqueID: 2948506459
     locked: 0
+  - name: Tilemap3
+    uniqueID: 1638797119
+    locked: 0
+  - name: Tilemap2
+    uniqueID: 3346450409
+    locked: 0
+  - name: Tilemap1
+    uniqueID: 560882297
+    locked: 0
+  - name: Tilemap .1
+    uniqueID: 2179730811
+    locked: 0
