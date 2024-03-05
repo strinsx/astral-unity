@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 818102964}
   - component: {fileID: 818102963}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: Overlay HERE ZHY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,8 +891,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19920003, y: 0.15404993, z: 0}
-    m_Extent: {x: 3.3611999, y: 1.92015, z: 0}
+    m_Center: {x: -0.20015001, y: 0.15375006, z: 0}
+    m_Extent: {x: 3.36215, y: 1.91935, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1707,8 +1707,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4338002, y: -0.1868999, z: 0}
-    m_Extent: {x: 6.7835, y: 3.7916, z: 0}
+    m_Center: {x: 2.4335501, y: -0.1875, z: 0}
+    m_Extent: {x: 6.7842503, y: 3.7912, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
