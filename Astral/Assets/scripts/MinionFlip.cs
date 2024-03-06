@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class MinionFlip : MonoBehaviour
 {
-    public GameObject player;
+    GameObject player;
 
     public bool flip = true; 
+
+    public void Start()
+    {
+        player = GameObject.Find("mainCharacter");
+    }
 
     public void Update()
     {

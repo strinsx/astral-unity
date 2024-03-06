@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
+
 public class MinionAttack : MonoBehaviour
 {
     public int damage;
     Animator anim;
-    public PlayerHealthRafales playerhealth;
+    PlayerHealthRafales playerhealth;
+    
 
 
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        playerhealth = FindObjectOfType<PlayerHealthRafales>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

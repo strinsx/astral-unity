@@ -13,6 +13,8 @@ public class PlayerHealthRafales : MonoBehaviour
     private KnockBackMainRafales knocback;
     public GameManagerScript gamemanager;
     private bool isDead;
+    GameObject mainChar;
+    public HealthBar healthbar;
 
     // Start is called before the first frame update
 
@@ -24,6 +26,7 @@ public class PlayerHealthRafales : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         knocback  = GetComponent<KnockBackMainRafales>();
         animator = GetComponent<Animator>();
+        mainChar = GameObject.Find("mainCharacter");
         
     }
 
@@ -62,7 +65,15 @@ public class PlayerHealthRafales : MonoBehaviour
     }
 
   
-   
+   public void RestoreHealth(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+
+        // UPDATES NOW YESYES
+
+        healthBar.SetHealth(currentHealth);
+    }
  
     
 }
