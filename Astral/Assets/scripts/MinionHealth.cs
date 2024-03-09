@@ -22,6 +22,7 @@ public class MinionHealth : MonoBehaviour
     public DamageFlash1 _damageFlash;
     private Vector2 attackDirection;
     public KnockBackMainRafales knockback;
+    private bool isAlive;
     
     private void Start()
     {
@@ -42,25 +43,25 @@ public class MinionHealth : MonoBehaviour
 
     public void hit()
     {
-
-        if (health < currenthealth)
+        if (isAlive) 
         {
-            knockback.CallKnockback(attackDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
-            currenthealth = health;
-            anim.SetTrigger("Attacked");
-            CameraShakeManager.instance.CameraShake(impulseSource);
-            SpawnDamageParticles(attackDirection);
-            _damageFlash.CallDps();
-        }
+            if (health < currenthealth)
+            {
+                knockback.CallKnockback(attackDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
+                currenthealth = health;
+                anim.SetTrigger("Attacked");
+                CameraShakeManager.instance.CameraShake(impulseSource);
+                SpawnDamageParticles(attackDirection);
+                _damageFlash.CallDps();
+            }
 
-
-
-        if (health <= 0)
-        {
-            anim.SetBool("isDead", true);
-            Debug.Log("EnemyDead");
-
-            StartCoroutine(DestroyGameob());
+            if (health <= 0)
+            {
+                anim.SetBool("isDead", true);
+                Debug.Log("EnemyDead");
+                isAlive = false;
+                StartCoroutine(DestroyGameob());
+            }
         }
     }
 
