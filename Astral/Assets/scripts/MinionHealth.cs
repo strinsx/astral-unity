@@ -43,8 +43,8 @@ public class MinionHealth : MonoBehaviour
 
     public void hit()
     {
-        if (isAlive) 
-        {
+        
+        
             if (health < currenthealth)
             {
                 knockback.CallKnockback(attackDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
@@ -62,7 +62,7 @@ public class MinionHealth : MonoBehaviour
                 isAlive = false;
                 StartCoroutine(DestroyGameob());
             }
-        }
+        
     }
 
     IEnumerator DestroyGameob()
