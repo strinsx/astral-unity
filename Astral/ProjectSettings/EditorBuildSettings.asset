@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scenes/MainMenu.unity
     guid: a472cc3487e67d8489e659b5fd2d67be
   - enabled: 1
+    path: Assets/Scenes/Main Menu Scenes/Mainmenutest.unity
+    guid: 3a39fa62b6e24c04f9eac010427756fc
+  - enabled: 1
+    path: Assets/Scenes/Main Menu Scenes/SETTING.unity
+    guid: f6da6ecaa72803b4d8f4892c7bf7da2d
+  - enabled: 1
     path: Assets/Scenes/Startgame.unity
     guid: 106481b3952607f469895942029e179c
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Main Menu Scenes/SETTINGS.unity
-    guid: 4cdd746b9835c434ba9a98aa073b445b
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 5a7376e07f897e4499ee102d46e4867b
@@ -26,5 +29,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Game Controls.unity
     guid: 1f92d4d52c89b04469b520356894540e
+  - enabled: 1
+    path: Assets/Scenes/MenuTest.unity
+    guid: 6f88990b8d0151e4386e9c9d34a91ee4
+  - enabled: 1
+    path: Assets/Scenes/Main Menu Scenes/SETTINGS.unity
+    guid: 4cdd746b9835c434ba9a98aa073b445b
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0

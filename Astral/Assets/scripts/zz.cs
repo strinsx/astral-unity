@@ -8,18 +8,18 @@ public class zz : MonoBehaviour
     
        public void StartGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(3);
         
     }
 
     public void Settings()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(2);
 
     }
-       public void MainMenu()
+       public void Mainmenutest()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
         
     }   
 
