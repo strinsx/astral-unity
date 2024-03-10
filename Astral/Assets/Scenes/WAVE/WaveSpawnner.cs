@@ -16,7 +16,7 @@ public class WaveSpawnner : MonoBehaviour
     public Transform[] spawnPoints;
     public Animator animator;
     public TMP_Text waveName;
-
+    public GameObject portal;
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
@@ -24,6 +24,11 @@ public class WaveSpawnner : MonoBehaviour
     private bool canSpawn = true;
     private bool canAnimate = false;
 
+
+    void Start()
+{
+    portal.SetActive(false);
+}
 
     private void Update()
     {
@@ -48,10 +53,13 @@ public class WaveSpawnner : MonoBehaviour
             {
                 Debug.Log("GameFinish");
             }
+            if (currentWaveNumber == 2 && totalEnemies.Length == 0) {
+                portal.SetActive(true);
+                Debug.Log("Open The gate!");
+                } 
 
-
+ 
         }
-
     }
 
     void SpawnNextWave()
