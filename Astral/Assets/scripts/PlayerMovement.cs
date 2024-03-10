@@ -46,11 +46,11 @@ public class PlayerMovement : MonoBehaviour
     //Wall Jump
     private float _wallJumpStartTime;
     private int _lastWallJumpDir;
-    private bool canDoubleJump;
     private bool isTouchingtheWalls;
     private Vector2 _moveInput;
     public ParticleSystem dust;
     public ParticleSystem onLand;
+    public bool canDoubleJump;
     public float LastPressedJumpTime { get; private set; }
 
     //Set all of these up in the inspector
@@ -78,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     {
         SetGravityScale(Data.gravityScale);
         IsFacingRight = true;
+        canDoubleJump = false;
     }
 
     private void Update()
@@ -108,6 +109,10 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
             OnLandParticle();
+        }
+        else  if (canDoubleJump){
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isJumping", true);
         }
 
 
@@ -304,7 +309,7 @@ public class PlayerMovement : MonoBehaviour
     //Methods which whandle input detected in Update()
     public void OnJumpInput()
     {
-        if (CanJump() || CanWallJump())
+        if (CanJump() || CanWallJump() || canDoubleJump)
         {
             LastPressedJumpTime = Data.jumpInputBufferTime;
             animator.SetBool("isJumping", true);
@@ -406,13 +411,11 @@ public class PlayerMovement : MonoBehaviour
         //(setting the player's Y velocity to 0 beforehand will likely work the same, but I find this more elegant :D)
         float force = Data.jumpForce;
         
-        if (isGrounded)
-        {
-            canDoubleJump = true;
-        }
+    
         
             if (isGrounded)
             {
+                canDoubleJump = true;
             force -= RB.velocity.y;
             createDust();
             RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
@@ -514,6 +517,11 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
         isTouchingtheWalls = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _wallLayer);
+
+        if(isGrounded){
+            canDoubleJump = false;
+
+        }
 
     }
 

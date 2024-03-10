@@ -20,7 +20,6 @@ GameObject:
   - component: {fileID: 7374046095314736474}
   - component: {fileID: 7652400804171266216}
   - component: {fileID: 8352219132214295982}
-  - component: {fileID: 97925531105378747}
   m_Layer: 8
   m_Name: MinionsMain
   m_TagString: EnemySpawn
@@ -349,20 +348,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
   _flashTime: 0.25
---- !u!114 &97925531105378747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6616279028274420705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92ab4405ef3f2645bec742cff6899c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knockbacktime: 0.2
-  hitDirectForce: 29
-  constForce: 5
-  inputForce: 23
-  inputScale: 0.4

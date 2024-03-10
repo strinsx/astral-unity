@@ -32,6 +32,7 @@ public class MinionHealth : MonoBehaviour
         impulseSource = GetComponent<CinemachineImpulseSource>(); // Corrected the spelling
         Vector2 attackDirection = (this.gameObject.transform.position - transform.position).normalized;
         knockback = GetComponent<KnockBackMainRafales>();
+        isAlive = true;
 
     }
 
@@ -44,10 +45,11 @@ public class MinionHealth : MonoBehaviour
     public void hit()
     {
         
+        if(!isAlive)
+        return;
         
             if (health < currenthealth)
             {
-                knockback.CallKnockback(attackDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
                 currenthealth = health;
                 anim.SetTrigger("Attacked");
                 CameraShakeManager.instance.CameraShake(impulseSource);
