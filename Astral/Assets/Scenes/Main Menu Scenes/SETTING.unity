@@ -428,6 +428,7 @@ RectTransform:
   m_Children:
   - {fileID: 1231281627}
   - {fileID: 254313719}
+  - {fileID: 1331000419}
   - {fileID: 262219460}
   - {fileID: 1207746642}
   - {fileID: 2040772610}
@@ -859,7 +860,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 194305245}
-  - {fileID: 1331000419}
   m_Father: {fileID: 1436131201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: 707295488}
   - component: {fileID: 707295487}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: SFX MUSIC T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2100,7 +2100,7 @@ GameObject:
   - component: {fileID: 1139983528}
   - component: {fileID: 1139983527}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: BG MUSIC T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2431,16 +2431,16 @@ RectTransform:
   m_GameObject: {fileID: 1331000418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1530083563}
   - {fileID: 971856798}
-  m_Father: {fileID: 290458842}
+  m_Father: {fileID: 194305245}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.666664, y: 107.19846}
+  m_AnchoredPosition: {x: 369.1836, y: 321.59534}
   m_SizeDelta: {x: 85.9671, y: 88.3815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1331000420
@@ -2749,7 +2749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1350836712}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1436131196}
+        m_TargetAssemblyTypeName: zz, Assembly-CSharp
+        m_MethodName: GameInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1350836712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3300,7 +3312,7 @@ GameObject:
   - component: {fileID: 1708410253}
   - component: {fileID: 1708410252}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: N HELP T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
