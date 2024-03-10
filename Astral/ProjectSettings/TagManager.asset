@@ -9,6 +9,8 @@ TagManager:
   - EnemySpawn
   - EnemyCollide
   - Shaker
+  - Ground
+  - Pathlayer
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - EnemyCollision
   - lighhtning
   - Wall
-  - 
+  - ' Pathfinding'
   - 
   - open
   - 
