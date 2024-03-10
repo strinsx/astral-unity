@@ -26,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu Scenes/GameInformation.unity
     guid: 835701b787f8b06438b9fdc5269ce3f6
-  - enabled: 0
-    path: Assets/Scenes/Game Controls.unity
-    guid: 1f92d4d52c89b04469b520356894540e
   - enabled: 1
     path: Assets/Scenes/MenuTest.unity
     guid: 6f88990b8d0151e4386e9c9d34a91ee4
@@ -38,4 +35,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main Menu Scenes/SETTINGS.unity
     guid: 4cdd746b9835c434ba9a98aa073b445b
+  - enabled: 1
+    path: Assets/Scenes/FIRSTMAP.unity
+    guid: edff19c1733a17045b81edb3dccdbebb
+  - enabled: 1
+    path: Assets/Scenes/SECONDMAP.unity
+    guid: 190a2c6a4b612874bbcff6aab6e27e64
   m_configObjects: {}
