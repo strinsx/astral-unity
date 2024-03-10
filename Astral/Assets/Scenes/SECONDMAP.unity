@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 16844967}
   - component: {fileID: 16844966}
   - component: {fileID: 16844965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 21283630}
   - component: {fileID: 21283629}
   - component: {fileID: 21283628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43246,7 +43246,7 @@ GameObject:
   - component: {fileID: 708403731}
   - component: {fileID: 708403730}
   - component: {fileID: 708403729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43932,7 +43932,7 @@ GameObject:
   - component: {fileID: 829032711}
   - component: {fileID: 829032710}
   - component: {fileID: 829032709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59100,7 +59100,7 @@ GameObject:
   - component: {fileID: 870038832}
   - component: {fileID: 870038831}
   - component: {fileID: 870038830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73383,7 +73383,7 @@ GameObject:
   - component: {fileID: 1394426467}
   - component: {fileID: 1394426466}
   - component: {fileID: 1394426465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78807,7 +78807,7 @@ GameObject:
   - component: {fileID: 1580588468}
   - component: {fileID: 1580588467}
   - component: {fileID: 1580588466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79272,7 +79272,7 @@ GameObject:
   - component: {fileID: 1769407947}
   - component: {fileID: 1769407952}
   - component: {fileID: 1769407951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85465,7 +85465,7 @@ GameObject:
   - component: {fileID: 1997326381}
   - component: {fileID: 1997326380}
   - component: {fileID: 1997326379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
