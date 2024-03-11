@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class zz : MonoBehaviour
 {
     
-       public void Mainmenutest()
+       public void Newmainmeny()
     {
         SceneManager.LoadSceneAsync(0);
         
     }
 
-    public void Settings()
+    public void NewSettings()
     {
         SceneManager.LoadSceneAsync(1);
 
