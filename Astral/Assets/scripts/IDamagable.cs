@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IDamagable
 {
     // Start is called before the first frame update
-    public void onHit(Vector2 knockbackDirection);
+    public void z(float damageAmount, Vector2 attackDirection);
 
  
 }

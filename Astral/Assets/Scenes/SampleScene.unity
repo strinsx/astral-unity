@@ -4864,14 +4864,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overlay
       objectReference: {fileID: 0}
-    - target: {fileID: 3373248211764568151, guid: 23851d6576ce9b54dbba829be5660aef, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3373248211764568151, guid: 23851d6576ce9b54dbba829be5660aef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4497280649223703610, guid: 23851d6576ce9b54dbba829be5660aef, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
