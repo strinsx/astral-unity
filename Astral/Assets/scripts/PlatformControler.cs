@@ -22,14 +22,14 @@ public class PlatformControler : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position,targetPos,Speed * Time.deltaTime);
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
             collision.transform.SetParent(this.transform);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
