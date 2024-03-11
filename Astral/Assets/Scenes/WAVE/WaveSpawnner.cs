@@ -52,11 +52,12 @@ public class WaveSpawnner : MonoBehaviour
             else
             {
                 Debug.Log("GameFinish");
+               
+                    portal.SetActive(true);
+                    Debug.Log("Open The gate!");
+               
             }
-            if (currentWaveNumber == 2 && totalEnemies.Length == 0) {
-                portal.SetActive(true);
-                Debug.Log("Open The gate!");
-                } 
+           
 
  
         }
