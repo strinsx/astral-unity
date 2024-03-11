@@ -683,7 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionA: {fileID: 943184878}
   PositionB: {fileID: 1393245426}
-  Speed: 10
+  Speed: 5
 --- !u!50 &21283630
 Rigidbody2D:
   serializedVersion: 4
@@ -7162,7 +7162,7 @@ Transform:
   m_GameObject: {fileID: 189312488}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.910828, y: 9.518234, z: 0.6598667}
+  m_LocalPosition: {x: 53.910828, y: 7.98, z: 0.6598667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -73363,7 +73363,7 @@ Transform:
   m_GameObject: {fileID: 1393245425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.07, y: 0.9, z: 0.3607216}
+  m_LocalPosition: {x: -1.07, y: -2.21, z: 0.3607216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
