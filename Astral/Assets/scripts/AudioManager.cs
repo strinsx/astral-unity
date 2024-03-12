@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -14,11 +15,24 @@ public class AudioManager : MonoBehaviour
         } else {
             Destroy(gameObject);
         }
-        
     }
     public void Start()
     {
         musicsource.clip = background;
         musicsource.Play();
-}
+    }
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "FIRSTMAP")
+        {
+            StopAudio();
+            Destroy(gameObject);
+        }
+    }
+
+    public void StopAudio()
+    {
+        musicsource.Stop();
+    }
+
 }
