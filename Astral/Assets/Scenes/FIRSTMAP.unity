@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 104953763}
   - component: {fileID: 104953765}
   - component: {fileID: 104953766}
+  - component: {fileID: 104953767}
   m_Layer: 11
   m_Name: portal
   m_TagString: portal
@@ -155,9 +156,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104953761}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.26, y: -15.32, z: 0}
-  m_LocalScale: {x: 0.521613, y: 1.0394982, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.2600007, y: -15.32, z: 0}
+  m_LocalScale: {x: 7.6200004, y: 5.73, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 162619427}
@@ -204,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -705705736052035184, guid: 4fd2fdd41be49cf40a8ce4afd43f6cd3, type: 3}
+  m_Sprite: {fileID: 282398981, guid: da6ab4fb0207a0e458140cb5e6017554, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -251,7 +252,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.26, y: 3.84}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 4.26, y: 3.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -274,6 +275,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBuildIndex: 9
   sceneFader: {fileID: 210699069}
+--- !u!95 &104953767
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104953761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbde8faed9e694e409b57456345590cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &162619426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,7 +3375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &439369329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8256,7 +8278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1437222060541134659, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2304620598475725653, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: m_IsActive
