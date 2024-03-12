@@ -5,29 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class zz : MonoBehaviour
 {
-    
-       public void Mainmenutest()
+       public void Mainmenu()
     {
         SceneManager.LoadSceneAsync(0);
         
     }
+    public void Credits(){
+        SceneManager.LoadSceneAsync(1);
+    }
 
     public void Settings()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2);
 
     }
         public void GameInformation()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(3);
     }
        public void Firstmap()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(4);
         
     }   
        public void secondmap(){
-        SceneManager.LoadSceneAsync(4);
+        SceneManager.LoadSceneAsync(5);
        }
 
     public void QuitGame()

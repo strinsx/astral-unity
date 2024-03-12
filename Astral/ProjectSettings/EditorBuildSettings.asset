@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu Scenes/Mainmenutest.unity
+    path: Assets/Scenes/Main Menu Scenes/Mainmenu.unity
     guid: 1babfa680b770e84ba059049c46d8e3c
+  - enabled: 1
+    path: Assets/Scenes/Main Menu Scenes/CREDITS.unity
+    guid: eae54e614f5720b4d8fbcc99d18c8945
   - enabled: 1
     path: Assets/Scenes/Main Menu Scenes/SETTING.unity
     guid: f6da6ecaa72803b4d8f4892c7bf7da2d
@@ -15,10 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scenes/GameInformation.unity
     guid: 835701b787f8b06438b9fdc5269ce3f6
   - enabled: 1
-    path: Assets/Scenes/FIRSTMAP.unity
+    path: Assets/Scenes/Stages/FIRSTMAP.unity
     guid: edff19c1733a17045b81edb3dccdbebb
   - enabled: 1
-    path: Assets/Scenes/SECONDMAP.unity
+    path: Assets/Scenes/Stages/SECONDMAP.unity
+    guid: 240da4ddf6f5c7e48b05644363e99e05
+  - enabled: 1
+    path: Assets/Scenes/Stages/THIRDMAP.unity
     guid: 190a2c6a4b612874bbcff6aab6e27e64
   - enabled: 1
     path: Assets/Scenes/Startgame.unity
