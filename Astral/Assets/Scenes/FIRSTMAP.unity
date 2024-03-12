@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &104953762
 Transform:
   m_ObjectHideFlags: 0
@@ -157,7 +157,7 @@ Transform:
   m_GameObject: {fileID: 104953761}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2600007, y: -15.32, z: 0}
+  m_LocalPosition: {x: -1.16, y: -15.05, z: 0}
   m_LocalScale: {x: 7.6200004, y: 5.73, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -259,7 +259,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.26, y: 3.84}
+  m_Size: {x: 0.4, y: 0.65}
   m_EdgeRadius: 0
 --- !u!114 &104953766
 MonoBehaviour:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82f2810278795b47aeca0e3a021733c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 9
+  sceneBuildIndex: 4
   sceneFader: {fileID: 210699069}
 --- !u!95 &104953767
 Animator:
@@ -3375,7 +3375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &439369329
 MonoBehaviour:
   m_ObjectHideFlags: 0
