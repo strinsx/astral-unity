@@ -237,6 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 65155917}
   - component: {fileID: 65155916}
+  - component: {fileID: 65155918}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -299,6 +300,29 @@ Transform:
   - {fileID: 585156540}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65155918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65155915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &147503068
 GameObject:
   m_ObjectHideFlags: 0
@@ -51684,7 +51708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282733732881052454, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: waves.Array.data[2].noOfEnemies
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7282733732881052454, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: waves.Array.data[0].spawnInterval
@@ -54366,11 +54390,11 @@ PrefabInstance:
       objectReference: {fileID: 938578848}
     - target: {fileID: 2208557264972612625, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2208557264972612625, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: currentHealth
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 5933112948969873411, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: m_LocalPosition.x

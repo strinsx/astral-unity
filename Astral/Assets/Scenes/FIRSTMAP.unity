@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &104953762
 Transform:
   m_ObjectHideFlags: 0
@@ -8145,11 +8145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282733732881052454, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: waves.Array.data[1].noOfEnemies
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7282733732881052454, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: waves.Array.data[2].noOfEnemies
-      value: 20
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7282733732881052454, guid: 0e5342eaee74e7f4b9895b32b30fa938, type: 3}
       propertyPath: waves.Array.data[0].spawnInterval
@@ -61994,7 +61994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 208}
+  m_AnchoredPosition: {x: 0.000011444, y: 89}
   m_SizeDelta: {x: 538.7786, y: 119.1486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070828534
@@ -62522,7 +62522,7 @@ MonoBehaviour:
   m_Follow: {fileID: 463339407}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 11.25
+    OrthographicSize: 5.625
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -65066,7 +65066,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.25
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -65106,6 +65106,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 324427934930879820, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: constForce
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 324427934930879820, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: inputForce
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 324427934930879820, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: hitDirectForce
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 1179425725311975190, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: m_SortingLayer
       value: 10
@@ -65120,11 +65132,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2208557264972612625, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: maxHealth
-      value: 250
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2208557264972612625, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: currentHealth
-      value: 250
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 5933112948969873411, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65164,6 +65176,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5933112948969873411, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186216425932304232, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: canDoubleJump
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7237672276189533001, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
