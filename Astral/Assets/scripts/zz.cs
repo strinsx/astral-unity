@@ -17,21 +17,18 @@ public class zz : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
 
     }
-       public void Startgame()
+        public void GameInformation()
     {
         SceneManager.LoadSceneAsync(2);
+    }
+       public void Firstmap()
+    {
+        SceneManager.LoadSceneAsync(3);
         
     }   
-
-    public void Loading() { 
-    
+       public void secondmap(){
         SceneManager.LoadSceneAsync(4);
-    }
-
-    public void GameInformation()
-    {
-        SceneManager.LoadSceneAsync(5);
-    }
+       }
 
     public void QuitGame()
     {
