@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     //These are fields which can are public allowing for other sctipts to read them
     //but can only be privately written to.
     public bool IsFacingRight { get; private set; }
+    private bool isSkillKeyPressed = Input.GetKeyDown(KeyCode.G);
     public bool IsJumping { get; private set; }
     public bool IsWallJumping { get; private set; }
     public bool IsSliding { get; private set; }
@@ -83,18 +84,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        #region TIMERS
-        LastOnGroundTime -= Time.deltaTime;
-        LastOnWallTime -= Time.deltaTime;
-        LastOnWallRightTime -= Time.deltaTime;
-        LastOnWallLeftTime -= Time.deltaTime;
-        wasCheck();
-        LastPressedJumpTime -= Time.deltaTime;
-        #endregion
 
-        #region INPUT HANDLER
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
+
+        if(isSkillKeyPressed)
+        {
+            _moveInput = Vector2.zero;
+
+
+        }
+        else
+        {
+
+            #region TIMERS
+            LastOnGroundTime -= Time.deltaTime;
+            LastOnWallTime -= Time.deltaTime;
+            LastOnWallRightTime -= Time.deltaTime;
+            LastOnWallLeftTime -= Time.deltaTime;
+            wasCheck();
+            LastPressedJumpTime -= Time.deltaTime;
+            #endregion
+
+            #region INPUT HANDLER
+            _moveInput.x = Input.GetAxisRaw("Horizontal");
+            _moveInput.y = Input.GetAxisRaw("Vertical");
+
+        }
+
+      
 
         Grounded();
         Debug.Log(isTouchingWall);
