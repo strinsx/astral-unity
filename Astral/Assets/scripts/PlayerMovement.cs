@@ -439,7 +439,7 @@ public class PlayerMovement : MonoBehaviour
             }
            
             else
-            {
+            
                 if (canDoubleJump)
                 {
                     force -= RB.velocity.y;
@@ -447,7 +447,7 @@ public class PlayerMovement : MonoBehaviour
                     RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
                     canDoubleJump = false;
                 }
-            }
+            
         
         #endregion
     }
