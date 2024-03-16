@@ -2677,7 +2677,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicsource: {fileID: 226338055}
   background: {fileID: 0}
-  playMusicInThisScene: 1
 --- !u!82 &498226061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14598,8 +14597,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19990003, y: 0.15394992, z: 0}
-    m_Extent: {x: 3.3621001, y: 1.9200499, z: 0}
+    m_Center: {x: -0.19919991, y: 0.15375, z: 0}
+    m_Extent: {x: 3.3615, y: 1.9196501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16239,8 +16238,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4333, y: -0.18675005, z: 0}
-    m_Extent: {x: 6.7831, y: 3.7908502, z: 0}
+    m_Center: {x: 2.4343, y: -0.18624997, z: 0}
+    m_Extent: {x: 6.7834, y: 3.79095, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
