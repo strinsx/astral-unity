@@ -12270,8 +12270,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19875002, y: 0.15474993, z: 0}
-    m_Extent: {x: 3.36215, y: 1.91945, z: 0}
+    m_Center: {x: -0.19935, y: 0.15415001, z: 0}
+    m_Extent: {x: 3.3617501, y: 1.91945, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14050,8 +14050,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4342997, y: -0.18675005, z: 0}
-    m_Extent: {x: 6.7838, y: 3.7908502, z: 0}
+    m_Center: {x: 2.43425, y: -0.18595004, z: 0}
+    m_Extent: {x: 6.7835503, y: 3.79105, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14500,6 +14500,10 @@ PrefabInstance:
     - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_Name
       value: Levelloader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
