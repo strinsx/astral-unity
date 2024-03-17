@@ -360,7 +360,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1169265487}
         m_TargetAssemblyTypeName: zz, Assembly-CSharp
-        m_MethodName: Firstmap
+        m_MethodName: Fcutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12272,6 +12272,8 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: -0.19935, y: 0.15415001, z: 0}
     m_Extent: {x: 3.3617501, y: 1.91945, z: 0}
+    m_Center: {x: -0.19914997, y: 0.15350002, z: 0}
+    m_Extent: {x: 3.36265, y: 1.9196999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14052,6 +14054,8 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 2.43425, y: -0.18595004, z: 0}
     m_Extent: {x: 6.7835503, y: 3.79105, z: 0}
+    m_Center: {x: 2.43305, y: -0.18700004, z: 0}
+    m_Extent: {x: 6.7838497, y: 3.7913, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
