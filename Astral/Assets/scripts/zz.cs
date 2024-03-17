@@ -32,7 +32,10 @@ public class zz : MonoBehaviour
        public void secondmap(){
         SceneManager.LoadSceneAsync(5);
        }
-
+    public void Fcutscene()
+    {
+        SceneManager.LoadSceneAsync(7);
+    }
     public void QuitGame()
     {
         Application.Quit();
