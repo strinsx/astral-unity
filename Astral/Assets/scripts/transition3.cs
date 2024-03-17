@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class transition3 : StateMachineBehaviour
 {
+
+        [SerializeField] private AudioClip combo4;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
@@ -16,6 +19,8 @@ public class transition3 : StateMachineBehaviour
         if (PlayerCombat.instance.isAttacking)
         {
             PlayerCombat.instance.charanim.Play("main_attack4");
+        SoundEffectManager.instance.SkillCLip(combo4, animator.transform , 1f);
+
         }
     }
 

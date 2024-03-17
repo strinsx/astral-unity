@@ -14,6 +14,9 @@ public class PlayerCombat : MonoBehaviour
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
+    [SerializeField] private AudioClip baselinetest;
+        [SerializeField] private AudioClip baselinetest1;
+
 
     private void Awake()
     {
@@ -37,10 +40,12 @@ public class PlayerCombat : MonoBehaviour
             isAttacking = true;
             charanim.SetTrigger("Attack");
         }
-        else if (Input.GetKeyDown(KeyCode.X) && !isAttacking)
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking)
         {
-            isAttacking = true;
+            isAttacking = false;
             charanim.SetTrigger("Skills");
+     SoundEffectManager.instance.SkillCLip(baselinetest1 , transform , 1f);
+
         }
     }
 
@@ -69,10 +74,11 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemyCollider in enemy)
         {
             Debug.Log("HIT ENEMY WITH SKILL");
+
             Rigidbody2D enemyRigidbody = enemyCollider.gameObject.GetComponent<Rigidbody2D>();
             if (enemyRigidbody != null)
             {
-               
+               SoundEffectManager.instance.SkillCLip(baselinetest , transform , 1f);
                 Vector2 knockbackDirection = (enemyRigidbody.position - GetComponent<Rigidbody2D>().position).normalized;
                 enemyRigidbody.AddForce(knockbackDirection * skillKBForce, ForceMode2D.Impulse);
             }

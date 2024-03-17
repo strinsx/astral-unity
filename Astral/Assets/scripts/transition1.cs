@@ -5,11 +5,18 @@ using UnityEngine;
 public class transition1 : StateMachineBehaviour
 {
 
+    [SerializeField] private AudioClip combo1;
+        [SerializeField] private AudioClip combo2;
+
+
     PlayerMovement playerMovement;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        SoundEffectManager.instance.SkillCLip(combo1 , animator.transform , 1f);
+
         Debug.Log("Atttack Anim");
+
 
         playerMovement = animator.GetComponent<PlayerMovement>();
 
@@ -25,7 +32,12 @@ public class transition1 : StateMachineBehaviour
        
         if(PlayerCombat.instance.isAttacking)
         {
+
+
             PlayerCombat.instance.charanim.Play("mainattack2");
+                SoundEffectManager.instance.SkillCLip(combo2 , animator.transform , 1f);
+
+
         }
     }
 

@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     //Jump
     private bool _isJumpCut;
     private bool _isJumpFalling;
+    private bool wasGrounded;
 
     //Wall Jump
     private float _wallJumpStartTime;
@@ -56,6 +57,10 @@ public class PlayerMovement : MonoBehaviour
 
     //Set all of these up in the inspector
     [Header("Checks")]
+    [SerializeField] private AudioClip jumnpSoundClip;
+        [SerializeField] private AudioClip landSoundsClip;
+
+
     [SerializeField] private Transform _groundCheckPoint;
     //Size of groundCheck depends on the size of your character generally you want them slightly small than width (for ground) and height (for the wall check)
     [SerializeField] private Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
@@ -113,7 +118,6 @@ public class PlayerMovement : MonoBehaviour
       
 
         Grounded();
-        Debug.Log(isTouchingWall);
 
 
         #region FALLING ANIMATION OPTIMIZED - Rafales
@@ -170,6 +174,8 @@ public class PlayerMovement : MonoBehaviour
             if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
             {
 
+               
+
                 LastOnGroundTime = Data.coyoteTime; //if so sets the lastff to coyoteTime
 
             }
@@ -211,6 +217,7 @@ public class PlayerMovement : MonoBehaviour
                 IsJumping = false;
                 if (!IsWallJumping)
                     _isJumpFalling = true;
+                    Debug.Log("Onland");
             }
         }
 
@@ -241,6 +248,7 @@ public class PlayerMovement : MonoBehaviour
             _isJumpFalling = false;
             Jump();
             animator.SetBool("isJumping", true);
+            SoundEffectManager.instance.JumpClip(jumnpSoundClip, transform, 1f);
         }
         #endregion
 
@@ -297,10 +305,15 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (IsJumping && RB.velocity.y <= 0 && isGrounded)
+
+
+        
+
+        if (IsJumping && RB.velocity.y <= 0 && iswasGrouded())
         {
             // Reset jump animation when landing after a jump
             animator.SetBool("isJumping", false);
+            Debug.Log("DONOENEONE");
         }
 
         //Handle Run
@@ -510,6 +523,17 @@ public class PlayerMovement : MonoBehaviour
         else
             return false;
     }
+    
+    private bool iswasGrouded(){
+
+    return Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
+
+    }
+
+
+
+
+
     #endregion
 
 
@@ -523,6 +547,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireCube(_backWallCheckPoint.position, _wallCheckSize);
     }
     #endregion
+    
 
     void wasCheck()
     {
