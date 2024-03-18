@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - Pathlayer
   - portal
+  - Menu
   layers:
   - Default
   - TransparentFX

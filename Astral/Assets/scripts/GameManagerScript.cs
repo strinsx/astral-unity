@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
-    public GameObject respawnPoint;
     public GameObject mainCharacter;
+    public GameObject Menu;
     // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -18,7 +18,7 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameOverUI.activeInHierarchy)
+        f (gameOverUI.activeInHierarchy)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -28,24 +28,24 @@ public class GameManagerScript : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-    }   
+    }   */
     public void gameOver()
     {
         gameOverUI.SetActive(true);
     }
-    public void restart()
+
+    public void close()
+    {
+        Menu.SetActive(false);
+    }
+    /*public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("restart");
-    }
-    public void MainMenu()
+        Debug.Log("RESTART");
+    }  */
+    public void quit()
     {
-        SceneManager.LoadScene("MainMenu");
-        Debug.Log("MainMenu");
-    }
-    public void Setting()
-    {
-        SceneManager.LoadScene("SETTINGS");
-        Debug.Log("SETTINGS");
+        Application.Quit();
+        Debug.Log("QUIT");
     }
 }

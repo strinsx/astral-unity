@@ -49,11 +49,11 @@ public class PlayerHealthRafales : MonoBehaviour
 
         if (currentHealth <= 0 && !isDead)
         {
-
-            animator.SetBool("Die", true);
             isDead = true;
-            ///gamemanager.enabled = true;
-            ////gamemanager.gameOver();
+            animator.SetBool("Die", true);
+            gameObject.SetActive(false);
+            //gamemanager.enabled = true;
+            gamemanager.gameOver();
         }
 
         else 
