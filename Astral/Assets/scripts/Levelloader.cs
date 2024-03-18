@@ -11,10 +11,6 @@ public class Levelloader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Loadnextlevel();
-        }
     } 
     public void Loadnextlevel()
     {

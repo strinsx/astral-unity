@@ -12270,10 +12270,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19935, y: 0.15415001, z: 0}
-    m_Extent: {x: 3.3617501, y: 1.91945, z: 0}
-    m_Center: {x: -0.19914997, y: 0.15350002, z: 0}
-    m_Extent: {x: 3.36265, y: 1.9196999, z: 0}
+    m_Center: {x: -0.19844997, y: 0.15445, z: 0}
+    m_Extent: {x: 3.3621502, y: 1.91995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14052,10 +14050,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.43425, y: -0.18595004, z: 0}
-    m_Extent: {x: 6.7835503, y: 3.79105, z: 0}
-    m_Center: {x: 2.43305, y: -0.18700004, z: 0}
-    m_Extent: {x: 6.7838497, y: 3.7913, z: 0}
+    m_Center: {x: 2.4338, y: -0.18710005, z: 0}
+    m_Extent: {x: 6.7839003, y: 3.7917, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14507,7 +14503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

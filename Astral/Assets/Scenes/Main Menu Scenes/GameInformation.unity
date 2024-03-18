@@ -14597,8 +14597,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19885004, y: 0.15495002, z: 0}
-    m_Extent: {x: 3.3621502, y: 1.9195501, z: 0}
+    m_Center: {x: -0.19924998, y: 0.15434998, z: 0}
+    m_Extent: {x: 3.36295, y: 1.9200499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15952,6 +15952,10 @@ PrefabInstance:
     - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_Name
       value: Levelloader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9189423840986765064, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_Pivot.x
