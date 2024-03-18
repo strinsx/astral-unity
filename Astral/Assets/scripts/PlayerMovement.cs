@@ -377,6 +377,8 @@ public class PlayerMovement : MonoBehaviour
             accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Data.runAccelAmount : Data.runDeccelAmount;
         else
             accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Data.runAccelAmount * Data.accelInAir : Data.runDeccelAmount * Data.deccelInAir;
+           
+        
         #endregion
 
         #region Add Bonus Jump Apex Acceleration

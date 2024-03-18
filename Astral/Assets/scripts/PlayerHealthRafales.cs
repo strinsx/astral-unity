@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthRafales : MonoBehaviour
 {
@@ -11,10 +12,10 @@ public class PlayerHealthRafales : MonoBehaviour
     public bool alive;
     Animator animator;
     private KnockBackMainRafales knocback;
-    public GameManagerScript gamemanager;
     private bool isDead;
     GameObject mainChar;
     public HealthBar healthbar;
+    public GameOverManager gamemanager;
 
     // Start is called before the first frame update
 
@@ -53,7 +54,8 @@ public class PlayerHealthRafales : MonoBehaviour
             animator.SetBool("Die", true);
             gameObject.SetActive(false);
             //gamemanager.enabled = true;
-            gamemanager.gameOver();
+            gamemanager.Gameover();
+            Debug.Log("Dead");
         }
 
         else 

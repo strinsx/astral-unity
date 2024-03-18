@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class PlayerCombat : MonoBehaviour
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
+    public float cooldown;
+    float lastSkillTime = -999f;
     [SerializeField] private AudioClip baselinetest;
         [SerializeField] private AudioClip baselinetest1;
 
@@ -40,13 +43,14 @@ public class PlayerCombat : MonoBehaviour
             isAttacking = true;
             charanim.SetTrigger("Attack");
         }
-        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking)
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= cooldown)
         {
             isAttacking = false;
             charanim.SetTrigger("Skills");
      SoundEffectManager.instance.SkillCLip(baselinetest1 , transform , 1f);
-
+     lastSkillTime = Time.time;
         }
+
     }
 
     public void OnRegularAttack()
