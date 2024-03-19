@@ -360,7 +360,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1169265487}
         m_TargetAssemblyTypeName: zz, Assembly-CSharp
-        m_MethodName: Fcutscene
+        m_MethodName: Firstmap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12270,8 +12270,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19844997, y: 0.15445, z: 0}
-    m_Extent: {x: 3.3621502, y: 1.91995, z: 0}
+    m_Center: {x: -0.1996001, y: 0.15389997, z: 0}
+    m_Extent: {x: 3.3614001, y: 1.9200001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14050,8 +14050,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4338, y: -0.18710005, z: 0}
-    m_Extent: {x: 6.7839003, y: 3.7917, z: 0}
+    m_Center: {x: 2.4343503, y: -0.18660009, z: 0}
+    m_Extent: {x: 6.7836504, y: 3.7903, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14503,7 +14503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

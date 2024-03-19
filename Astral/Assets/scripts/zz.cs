@@ -26,11 +26,12 @@ public class zz : MonoBehaviour
     }
        public void Firstmap()
     {
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(4);
         
     }   
        public void secondmap(){
-        SceneManager.LoadSceneAsync(5);
+        SceneManager.LoadSceneAsync(5); 
        }
     public void Fcutscene()
     {
