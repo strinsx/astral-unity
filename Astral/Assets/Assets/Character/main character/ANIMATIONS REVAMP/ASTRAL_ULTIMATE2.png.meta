@@ -1,91 +1,7 @@
 fileFormatVersion: 2
-guid: f101ee95915a1af46a9c2526a985ec62
+guid: 4899b045312e75049972f3db7033644b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6554555098259155492
-    second: IDLE_ANIMATION   RAFALES_0
-  - first:
-      213: 7019882735687502960
-    second: IDLE_ANIMATION   RAFALES_1
-  - first:
-      213: 8786306733373244273
-    second: IDLE_ANIMATION   RAFALES_2
-  - first:
-      213: -6260568159343158080
-    second: IDLE_ANIMATION   RAFALES_3
-  - first:
-      213: 4429345702450420865
-    second: IDLE_ANIMATION   RAFALES_4
-  - first:
-      213: -7825464816841073446
-    second: IDLE_ANIMATION   RAFALES_5
-  - first:
-      213: 1406782526044668525
-    second: IDLE_ANIMATION   RAFALES_6
-  - first:
-      213: 8540382690957042034
-    second: IDLE_ANIMATION   RAFALES_7
-  - first:
-      213: -2714171067910597435
-    second: IDLE_ANIMATION   RAFALES_8
-  - first:
-      213: -3030696200496376000
-    second: IDLE_ANIMATION   RAFALES_9
-  - first:
-      213: 2506012129669953203
-    second: IDLE_ANIMATION   RAFALES_10
-  - first:
-      213: -4843635463325767232
-    second: IDLE_ANIMATION   RAFALES_11
-  - first:
-      213: -5204478966994321932
-    second: IDLE_ANIMATION   RAFALES_12
-  - first:
-      213: 3058755515573887203
-    second: IDLE_ANIMATION   RAFALES_13
-  - first:
-      213: -850371815212013213
-    second: IDLE_ANIMATION   RAFALES_14
-  - first:
-      213: -7313177589922581742
-    second: IDLE_ANIMATION   RAFALES_15
-  - first:
-      213: -6360905518768658071
-    second: IDLE_ANIMATION   RAFALES_16
-  - first:
-      213: 1006321103250154591
-    second: IDLE_ANIMATION   RAFALES_17
-  - first:
-      213: 3406024728887753085
-    second: IDLE_ANIMATION   RAFALES_18
-  - first:
-      213: 5969267910597408685
-    second: IDLE_ANIMATION   RAFALES_19
-  - first:
-      213: -8358077406622285190
-    second: IDLE_ANIMATION   RAFALES_20
-  - first:
-      213: -2758469561120190042
-    second: IDLE_ANIMATION   RAFALES_21
-  - first:
-      213: 3158629799032550106
-    second: IDLE_ANIMATION   RAFALES_22
-  - first:
-      213: 6541015397838170228
-    second: IDLE_ANIMATION   RAFALES_23
-  - first:
-      213: 4185103640409342298
-    second: IDLE_ANIMATION   RAFALES_24
-  - first:
-      213: 5531992825352582474
-    second: IDLE_ANIMATION   RAFALES_25
-  - first:
-      213: -3225524143792931427
-    second: IDLE_ANIMATION   RAFALES_26
-  - first:
-      213: 7670934829559752883
-    second: IDLE_ANIMATION   RAFALES_27
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -165,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -178,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -207,148 +123,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_0
+      name: ASTRAL_ULTIMATE2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd5998b9dda8905a0800000000000000
-      internalID: -6554555098259155492
+      spriteID: 9ea7316df016d154280845731c36dd21
+      internalID: -708816367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_1
+      name: ASTRAL_ULTIMATE2_1
       rect:
         serializedVersion: 2
-        x: 90
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 260
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07c0d89b722ab6160800000000000000
-      internalID: 7019882735687502960
+      spriteID: 75bc79b76011d954a85115e94bba69c2
+      internalID: -326948589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_2
+      name: ASTRAL_ULTIMATE2_2
       rect:
         serializedVersion: 2
-        x: 180
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 520
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 173c5521c6b3fe970800000000000000
-      internalID: 8786306733373244273
+      spriteID: a86543d50ed8bd84cb71db8f1b64a367
+      internalID: 1801007551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_3
+      name: ASTRAL_ULTIMATE2_3
       rect:
         serializedVersion: 2
-        x: 270
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 780
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ccda32dd6efd19a0800000000000000
-      internalID: -6260568159343158080
+      spriteID: 515ee5367bd1c1b49b30c0165b4325ac
+      internalID: -2035772578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_4
+      name: ASTRAL_ULTIMATE2_4
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 1040
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18cd5fdd272387d30800000000000000
-      internalID: 4429345702450420865
+      spriteID: abe375a835bb4e640b9208ad98e0903f
+      internalID: -463873296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_5
+      name: ASTRAL_ULTIMATE2_5
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 1300
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: adcdeddc53d566390800000000000000
-      internalID: -7825464816841073446
+      spriteID: 62eed2c8c2ad1eb41994caec7a375a45
+      internalID: -401122072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_6
+      name: ASTRAL_ULTIMATE2_6
       rect:
         serializedVersion: 2
-        x: 540
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        x: 1560
+        y: 5
+        width: 260
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d628e150145e58310800000000000000
-      internalID: 1406782526044668525
+      spriteID: 95bcbf4f7027c6b43ba966351c6500d7
+      internalID: -2004002604
       vertices: []
       indices: 
       edges: []
@@ -356,7 +272,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 72fb99eab9f483a4ab13c963b179ffa7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -364,13 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IDLE_ANIMATION   RAFALES_0: -6554555098259155492
-      IDLE_ANIMATION   RAFALES_1: 7019882735687502960
-      IDLE_ANIMATION   RAFALES_2: 8786306733373244273
-      IDLE_ANIMATION   RAFALES_3: -6260568159343158080
-      IDLE_ANIMATION   RAFALES_4: 4429345702450420865
-      IDLE_ANIMATION   RAFALES_5: -7825464816841073446
-      IDLE_ANIMATION   RAFALES_6: 1406782526044668525
+      ASTRAL_ULTIMATE2_0: -708816367
+      ASTRAL_ULTIMATE2_1: -326948589
+      ASTRAL_ULTIMATE2_2: 1801007551
+      ASTRAL_ULTIMATE2_3: -2035772578
+      ASTRAL_ULTIMATE2_4: -463873296
+      ASTRAL_ULTIMATE2_5: -401122072
+      ASTRAL_ULTIMATE2_6: -2004002604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

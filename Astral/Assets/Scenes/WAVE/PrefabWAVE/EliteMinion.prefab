@@ -79,11 +79,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -354124049
+  m_SortingLayer: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7561745151680243969, guid: 4b37e96f76657ab4687c38a42073babf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4716981, g: 0.42942327, b: 0.42942327, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   damageparticles: {fileID: 6169485249954349454, guid: d6b5995f0c96c1e46b4465df0ffa2c54, type: 3}
   zxc: {fileID: 0}
   FloatingTextPrefab: {fileID: 0}
-  health: 530
+  health: 100
   currenthealth: 0
   main_death: {fileID: 0}
   animationcomponent: {fileID: 0}

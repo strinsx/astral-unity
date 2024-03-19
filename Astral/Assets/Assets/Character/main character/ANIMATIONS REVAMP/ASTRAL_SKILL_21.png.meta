@@ -1,91 +1,7 @@
 fileFormatVersion: 2
-guid: f101ee95915a1af46a9c2526a985ec62
+guid: 9a4381f5b36132e4aa1ccc702200abd0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6554555098259155492
-    second: IDLE_ANIMATION   RAFALES_0
-  - first:
-      213: 7019882735687502960
-    second: IDLE_ANIMATION   RAFALES_1
-  - first:
-      213: 8786306733373244273
-    second: IDLE_ANIMATION   RAFALES_2
-  - first:
-      213: -6260568159343158080
-    second: IDLE_ANIMATION   RAFALES_3
-  - first:
-      213: 4429345702450420865
-    second: IDLE_ANIMATION   RAFALES_4
-  - first:
-      213: -7825464816841073446
-    second: IDLE_ANIMATION   RAFALES_5
-  - first:
-      213: 1406782526044668525
-    second: IDLE_ANIMATION   RAFALES_6
-  - first:
-      213: 8540382690957042034
-    second: IDLE_ANIMATION   RAFALES_7
-  - first:
-      213: -2714171067910597435
-    second: IDLE_ANIMATION   RAFALES_8
-  - first:
-      213: -3030696200496376000
-    second: IDLE_ANIMATION   RAFALES_9
-  - first:
-      213: 2506012129669953203
-    second: IDLE_ANIMATION   RAFALES_10
-  - first:
-      213: -4843635463325767232
-    second: IDLE_ANIMATION   RAFALES_11
-  - first:
-      213: -5204478966994321932
-    second: IDLE_ANIMATION   RAFALES_12
-  - first:
-      213: 3058755515573887203
-    second: IDLE_ANIMATION   RAFALES_13
-  - first:
-      213: -850371815212013213
-    second: IDLE_ANIMATION   RAFALES_14
-  - first:
-      213: -7313177589922581742
-    second: IDLE_ANIMATION   RAFALES_15
-  - first:
-      213: -6360905518768658071
-    second: IDLE_ANIMATION   RAFALES_16
-  - first:
-      213: 1006321103250154591
-    second: IDLE_ANIMATION   RAFALES_17
-  - first:
-      213: 3406024728887753085
-    second: IDLE_ANIMATION   RAFALES_18
-  - first:
-      213: 5969267910597408685
-    second: IDLE_ANIMATION   RAFALES_19
-  - first:
-      213: -8358077406622285190
-    second: IDLE_ANIMATION   RAFALES_20
-  - first:
-      213: -2758469561120190042
-    second: IDLE_ANIMATION   RAFALES_21
-  - first:
-      213: 3158629799032550106
-    second: IDLE_ANIMATION   RAFALES_22
-  - first:
-      213: 6541015397838170228
-    second: IDLE_ANIMATION   RAFALES_23
-  - first:
-      213: 4185103640409342298
-    second: IDLE_ANIMATION   RAFALES_24
-  - first:
-      213: 5531992825352582474
-    second: IDLE_ANIMATION   RAFALES_25
-  - first:
-      213: -3225524143792931427
-    second: IDLE_ANIMATION   RAFALES_26
-  - first:
-      213: 7670934829559752883
-    second: IDLE_ANIMATION   RAFALES_27
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -132,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -165,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -178,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -207,148 +123,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_0
+      name: ASTRAL_SKILL_21_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd5998b9dda8905a0800000000000000
-      internalID: -6554555098259155492
+      spriteID: 2ea104631f1099b4cb3d845de4dc7c88
+      internalID: -1557698727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_1
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07c0d89b722ab6160800000000000000
-      internalID: 7019882735687502960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_2
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 173c5521c6b3fe970800000000000000
-      internalID: 8786306733373244273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_3
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ccda32dd6efd19a0800000000000000
-      internalID: -6260568159343158080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_4
+      name: ASTRAL_SKILL_21_1
       rect:
         serializedVersion: 2
         x: 360
         y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18cd5fdd272387d30800000000000000
-      internalID: 4429345702450420865
+      spriteID: 8a9493bba7c8c8646a67408a3599fdff
+      internalID: -1175213393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_5
+      name: ASTRAL_SKILL_21_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 720
         y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: adcdeddc53d566390800000000000000
-      internalID: -7825464816841073446
+      spriteID: 4ffb39e086772034f995c511c6f9c094
+      internalID: 1725776587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_ANIMATION   RAFALES_6
+      name: ASTRAL_SKILL_21_3
       rect:
         serializedVersion: 2
-        x: 540
+        x: 1080
         y: 0
-        width: 90
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.53}
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d628e150145e58310800000000000000
-      internalID: 1406782526044668525
+      spriteID: 0528f580f9106be49917e45dd88364f6
+      internalID: 1396541471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_4
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334f8345eea1b024293e4b8e9eb13193
+      internalID: -1172315102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_5
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3699d831e9602d5479f979acc1174912
+      internalID: 2006514998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_6
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d709eb18ade844f834d4c769739ee6
+      internalID: -903276928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_7
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506969e03a2c0d438eae02cca256afd
+      internalID: -1794982884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_8
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19362ffad9de9a41a6d82f82cdac3cb
+      internalID: -520196945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASTRAL_SKILL_21_9
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 360
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aabf20bda23ce48be625f2a409969e
+      internalID: 730289641
       vertices: []
       indices: 
       edges: []
@@ -356,7 +335,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 72fb99eab9f483a4ab13c963b179ffa7
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -364,13 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IDLE_ANIMATION   RAFALES_0: -6554555098259155492
-      IDLE_ANIMATION   RAFALES_1: 7019882735687502960
-      IDLE_ANIMATION   RAFALES_2: 8786306733373244273
-      IDLE_ANIMATION   RAFALES_3: -6260568159343158080
-      IDLE_ANIMATION   RAFALES_4: 4429345702450420865
-      IDLE_ANIMATION   RAFALES_5: -7825464816841073446
-      IDLE_ANIMATION   RAFALES_6: 1406782526044668525
+      ASTRAL_SKILL_21_0: -1557698727
+      ASTRAL_SKILL_21_1: -1175213393
+      ASTRAL_SKILL_21_2: 1725776587
+      ASTRAL_SKILL_21_3: 1396541471
+      ASTRAL_SKILL_21_4: -1172315102
+      ASTRAL_SKILL_21_5: 2006514998
+      ASTRAL_SKILL_21_6: -903276928
+      ASTRAL_SKILL_21_7: -1794982884
+      ASTRAL_SKILL_21_8: -520196945
+      ASTRAL_SKILL_21_9: 730289641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
