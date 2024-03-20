@@ -9,6 +9,10 @@ public class MinionAttack : MonoBehaviour
     public int damage;
     Animator anim;
     PlayerHealthRafales playerhealth;
+    public Vector3 attackOffset;
+    public float attackRange = 1f;
+    public LayerMask attackMask;
+    public int attackDamage = 20;
     
 
 
@@ -19,17 +23,21 @@ public class MinionAttack : MonoBehaviour
         playerhealth = FindObjectOfType<PlayerHealthRafales>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+   public void Attack()
     {
-        if (collision.gameObject.tag == "Player")
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x;
+        pos += transform.forward * attackOffset.y;
+
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+
+        if(colInfo != null)
         {
-
-
-            Vector3 enemyToCharacter = transform.position - transform.position;
-            Vector2 knockbackDirection = new Vector2(enemyToCharacter.x, 10f).normalized;
-            playerhealth.TakeDamage(damage, (collision.gameObject.transform.position - transform.position).normalized);
-
-
+            colInfo.GetComponent<PlayerHealthRafales>();
+            if(playerhealth != null)
+            {
+                playerhealth.TakeDamage(attackDamage);
+            }
         }
     } 
 }

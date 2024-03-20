@@ -37,13 +37,11 @@ public class PlayerHealthRafales : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void TakeDamage(int damage, Vector2 hitDirection)
+    public void TakeDamage(int damage)
     {
 
       
         currentHealth -= damage;
-
-        knocback.CallKnockback(hitDirection, Vector2.up, Input.GetAxisRaw("Horizontal"));
 
         healthBar.SetHealth(currentHealth);
 
