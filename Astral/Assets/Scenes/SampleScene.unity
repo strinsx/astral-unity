@@ -4728,7 +4728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991389882380419736, guid: d8d83603ec3c04541a7cf183807f7469, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5133,6 +5133,10 @@ PrefabInstance:
     - target: {fileID: 1843365561020970468, guid: 170b93d4de5e331409346a015cd71d7c, type: 3}
       propertyPath: m_Name
       value: KangKang_BOSS1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843365561020970468, guid: 170b93d4de5e331409346a015cd71d7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5812321839188771116, guid: 170b93d4de5e331409346a015cd71d7c, type: 3}
       propertyPath: m_LocalPosition.x

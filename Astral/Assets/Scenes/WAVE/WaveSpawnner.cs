@@ -55,6 +55,7 @@ public class WaveSpawnner : MonoBehaviour
                
                     portal.SetActive(true);
                     Debug.Log("Open The gate!");
+                
                
             }
            

@@ -131,7 +131,7 @@ TextureImporter:
         width: 200
         height: 100
       alignment: 9
-      pivot: {x: 0.2354498, y: 0.3589069}
+      pivot: {x: 0.29, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: ATTACK_1FIX_1
       rect:
         serializedVersion: 2
-        x: 201
+        x: 200
         y: 0
         width: 200
         height: 100
       alignment: 9
-      pivot: {x: 0.2971785, y: 0.3589069}
+      pivot: {x: 0.29, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
         width: 200
         height: 100
       alignment: 9
-      pivot: {x: 0.30599672, y: 0.35890687}
+      pivot: {x: 0.29, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
         width: 200
         height: 100
       alignment: 9
-      pivot: {x: 0.29276946, y: 0.3589069}
+      pivot: {x: 0.29, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

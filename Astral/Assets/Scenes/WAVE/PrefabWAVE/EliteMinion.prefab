@@ -234,11 +234,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
+  attackRange: 3
   attackMask:
     serializedVersion: 2
     m_Bits: 128
-  attackDamage: 20
+  attackDamage: 3
 --- !u!210 &8105427481128935510
 SortingGroup:
   m_ObjectHideFlags: 0

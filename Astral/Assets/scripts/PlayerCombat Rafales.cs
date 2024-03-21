@@ -14,8 +14,11 @@ public class PlayerCombat : MonoBehaviour
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
-    public float cooldown;
+    public float skillCooldown = 5f;
+    public float cooldown = 1.5f;
     float lastSkillTime = -999f;
+    public float skillActivationDelay = 0.5f;
+    float lastSkillTime2 = -999f;
     [SerializeField] private AudioClip baselinetest;
         [SerializeField] private AudioClip baselinetest1;
 
@@ -48,6 +51,15 @@ public class PlayerCombat : MonoBehaviour
             charanim.SetTrigger("Skills");
      SoundEffectManager.instance.SkillCLip(baselinetest1 , transform , 1f);
      lastSkillTime = Time.time;
+            skillActivationDelay = Time.time;
+        } 
+        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skillCooldown)
+        {
+            isAttacking = false;
+            charanim.SetTrigger("Skill2");
+            lastSkillTime2 = Time.time;
+            skillActivationDelay = Time.time;
+
         }
 
     }
@@ -90,6 +102,44 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    public void OnSkillAttack1()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackpoint.transform.position, radius, enemies);
+
+        foreach (Collider2D enemyCollider in enemy)
+        {
+            Debug.Log("HIT ENEMY WITH SKILL");
+
+            Rigidbody2D enemyRigidbody = enemyCollider.gameObject.GetComponent<Rigidbody2D>();
+            if (enemyRigidbody != null)
+            {
+                Vector2 knockbackDirection = (enemyRigidbody.position - GetComponent<Rigidbody2D>().position).normalized;
+                enemyRigidbody.AddForce(knockbackDirection * skillKBForce, ForceMode2D.Impulse);
+            }
+
+            enemyCollider.GetComponent<MinionHealth>().health -= 100;
+        }
+    }
+
+
+
+    public void OnRegularDash()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackpoint.transform.position, radius, enemies);
+
+        foreach (Collider2D enemyCollider in enemy)
+        {
+            Debug.Log("HIT BY DASH");
+            Rigidbody2D enemyRigidbody = enemyCollider.gameObject.GetComponent<Rigidbody2D>();
+            if (enemyRigidbody != null)
+            {
+                Vector2 knockbackDirection = (enemyRigidbody.position - GetComponent<Rigidbody2D>().position).normalized;
+                enemyRigidbody.AddForce(knockbackDirection * 10, ForceMode2D.Impulse);
+            }
+            enemyCollider.GetComponent<MinionHealth>().health -= 0.1f;
+        }
+
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackpoint.transform.position, radius);

@@ -50,15 +50,26 @@ public class PlayerMovement : MonoBehaviour
     private int _lastWallJumpDir;
     private bool isTouchingtheWalls;
     private Vector2 _moveInput;
+    private float _moveInputFloat;
     public ParticleSystem dust;
     public ParticleSystem onLand;
     public bool canDoubleJump;
     public float LastPressedJumpTime { get; private set; }
 
+    //Dash 
+    public float dashSpeed;
+    public float dashTime;
+    public float startDash;
+    private int direction;
+    
+
+    private AudioSource audioSource;
+
     //Set all of these up in the inspector
     [Header("Checks")]
     [SerializeField] private AudioClip jumnpSoundClip;
-        [SerializeField] private AudioClip landSoundsClip;
+    [SerializeField] private AudioClip landSoundsClip;
+    [SerializeField] private AudioClip dashSoundClip;
 
 
     [SerializeField] private Transform _groundCheckPoint;
@@ -85,6 +96,8 @@ public class PlayerMovement : MonoBehaviour
         SetGravityScale(Data.gravityScale);
         IsFacingRight = true;
         canDoubleJump = false;
+        audioSource = GetComponent<AudioSource>();
+        dashTime = startDash;
     }
 
     private void Update()
@@ -200,10 +213,29 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(_moveInput.x) > 0 && Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) != null)
         {
             animator.SetBool("isRunning", true);
+            if(!audioSource.isPlaying && !IsJumping && !IsWallJumping && !IsSliding)
+            {
+                audioSource.Play();
+            }
         }
         else
         {
             animator.SetBool("isRunning", false);
+            if (audioSource.isPlaying && !IsJumping && !IsWallJumping && !IsSliding)
+            {
+                audioSource.Stop();
+            }
+        }
+
+
+        #endregion
+
+        #region DASH
+
+        if(Input.GetKeyDown(KeyCode.Q) && Time.time >= startDash) 
+        {
+            direction = IsFacingRight ? 1 : -1;
+            StartCoroutine(Dash());
         }
 
 
@@ -326,7 +358,6 @@ public class PlayerMovement : MonoBehaviour
             Run(1);
         }
 
-        animator.SetBool("isRunning", RB.velocity.magnitude > 0);
 
         //Handle Slide
         if (IsSliding)
@@ -550,6 +581,23 @@ public class PlayerMovement : MonoBehaviour
     }
     #endregion
     
+
+    private IEnumerator Dash()
+    {
+        isSkillKeyPressed = true;
+
+        animator.SetTrigger("dash");
+        SoundEffectManager.instance.JumpClip(dashSoundClip, transform, 1f);
+
+
+        RB.velocity = new Vector2(direction * dashSpeed, RB.velocity.y);
+
+        startDash = Time.time + dashTime;
+
+        yield return new WaitForSeconds(dashTime);
+
+        isSkillKeyPressed = false;
+    }
 
     void wasCheck()
     {
