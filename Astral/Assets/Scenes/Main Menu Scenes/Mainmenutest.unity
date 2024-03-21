@@ -12487,6 +12487,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: -0.1999501, y: 0.15394998, z: 0}
     m_Extent: {x: 3.3617501, y: 1.91995, z: 0}
+    m_Center: {x: -0.19914997, y: 0.15474993, z: 0}
+    m_Extent: {x: 3.36125, y: 1.91945, z: 0}
+    m_Center: {x: -0.19984996, y: 0.15389997, z: 0}
+    m_Extent: {x: 3.3617501, y: 1.9198, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13127,7 +13131,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 2304df1ab7e824543ad8bebccdffe87b, type: 2}
+  sharedProfile: {fileID: 11400000, guid: ca4619d27ec5e094c93aef47ac027e6e, type: 2}
 --- !u!4 &1313885436
 Transform:
   m_ObjectHideFlags: 0
@@ -14742,6 +14746,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 2.4336998, y: -0.18630004, z: 0}
     m_Extent: {x: 6.7838, y: 3.7914, z: 0}
+    m_Center: {x: 2.4338, y: -0.18615007, z: 0}
+    m_Extent: {x: 6.7831, y: 3.79105, z: 0}
+    m_Center: {x: 2.43425, y: -0.18655002, z: 0}
+    m_Extent: {x: 6.7836504, y: 3.79065, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

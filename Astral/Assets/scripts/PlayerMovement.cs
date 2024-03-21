@@ -95,7 +95,6 @@ public class PlayerMovement : MonoBehaviour
     {
         SetGravityScale(Data.gravityScale);
         IsFacingRight = true;
-        canDoubleJump = false;
         audioSource = GetComponent<AudioSource>();
         dashTime = startDash;
     }
@@ -143,10 +142,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJumping", false);
             OnLandParticle();
         }
-        else  if (canDoubleJump){
-            animator.SetBool("isFalling", false);
-            animator.SetBool("isJumping", true);
-        }
+  
 
 
 
@@ -339,14 +335,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        
-
-        if (IsJumping && RB.velocity.y <= 0 && iswasGrouded())
-        {
-            // Reset jump animation when landing after a jump
-            animator.SetBool("isJumping", false);
-            Debug.Log("DONOENEONE");
-        }
+     
 
         //Handle Run
         if (IsWallJumping)
@@ -369,7 +358,7 @@ public class PlayerMovement : MonoBehaviour
     //Methods which whandle input detected in Update()
     public void OnJumpInput()
     {
-        if (CanJump() || CanWallJump() || canDoubleJump)
+        if (CanJump() || CanWallJump())
         {
             LastPressedJumpTime = Data.jumpInputBufferTime;
             animator.SetBool("isJumping", true);
@@ -477,22 +466,13 @@ public class PlayerMovement : MonoBehaviour
         
             if (isGrounded)
             {
-                canDoubleJump = true;
             force -= RB.velocity.y;
             createDust();
             RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
 
             }
            
-            else
             
-                if (canDoubleJump)
-                {
-                    force -= RB.velocity.y;
-                    createDust();
-                    RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
-                    canDoubleJump = false;
-                }
             
         
         #endregion
@@ -609,10 +589,6 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
         isTouchingtheWalls = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _wallLayer);
 
-        if(isGrounded){
-            canDoubleJump = false;
-
-        }
 
     }
 
