@@ -15,8 +15,8 @@ public class PlayerCombat : MonoBehaviour
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
-    public float skillCooldown = 5f;
-    public float cooldown = 1.5f;
+    public float skill1Cooldown = 4f;
+    public float skill2Cooldown = 2f;
     float lastSkillTime = -999f;
     public bool skill1Enabled;
     public bool skill2Enabled;
@@ -49,7 +49,7 @@ public class PlayerCombat : MonoBehaviour
             isAttacking = true;
             charanim.SetTrigger("Attack");
         }
-        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= cooldown)
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= skill1Cooldown)
         {
             isAttacking = false;
             if (skill1Enabled)
@@ -60,7 +60,7 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
             }
         } 
-        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skillCooldown)
+        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown)
         {
             isAttacking = false;
             if (skill2Enabled)

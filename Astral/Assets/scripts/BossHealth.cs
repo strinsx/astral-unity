@@ -24,9 +24,14 @@ public class BossHealth : MonoBehaviour
     public bool isInvurnerable = false;
     public HealthBar healthBar;
     public GameObject bosshealthbar;
+    public AudioSource BackgroundRemove;
+    public AudioSource Victory;
+    [Header("---Portal---")]
+    public GameObject portal; 
 
     private void Start()
     {
+        portal.SetActive(false);
         anim = GetComponent<Animator>();
         currenthealth = health;
         healthBar.SetMaxHealth(health);
@@ -77,7 +82,19 @@ public class BossHealth : MonoBehaviour
             isAlive = false;
             StartCoroutine(DestroyGameob());
         }
-
+        if (health <= 0)
+        {
+            BackgroundRemove.volume = 0.4f;
+        }
+        if (health <= 0)
+        {
+            portal.SetActive(true);
+            Debug.Log("Portal");
+        }
+        if (health <= 0)
+        {
+            Victory.Play();
+        }
     }
 
     IEnumerator DestroyGameob()

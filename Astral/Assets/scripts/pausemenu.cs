@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class pausemenu : MonoBehaviour
 {
@@ -8,10 +9,15 @@ public class pausemenu : MonoBehaviour
     private bool isPaused = false;
 
     // Update is called once per frame
-    void Update()
-    { 
+    
+    void Start()
+    {
+  
     }
+    void Update()
 
+     {
+     }
     public void TogglePause()
     {
         isPaused = !isPaused;
@@ -19,7 +25,9 @@ public class pausemenu : MonoBehaviour
     }
     public void ResumeGame()
     {
-        isPaused = false;
-        Time.timeScale = 1;
-    }
+            isPaused = false;
+            Time.timeScale = 1;
+
+        }
+    
 }
