@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,11 @@ public class MinionAttack : MonoBehaviour
     public float attackRange = 1f;
     public LayerMask attackMask;
     public int attackDamage = 20;
-    
+    private CinemachineImpulseSource impulseSource;
+    public float shakeAmplitude = 1f;
+    public float shakeFrequency = 1f; 
+
+
 
 
 
@@ -21,6 +26,7 @@ public class MinionAttack : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerhealth = FindObjectOfType<PlayerHealthRafales>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
    public void Attack()
@@ -37,6 +43,9 @@ public class MinionAttack : MonoBehaviour
             if(playerhealth != null)
             {
                 playerhealth.TakeDamage(attackDamage);
+                impulseSource.m_ImpulseDefinition.m_AmplitudeGain = shakeAmplitude;
+                impulseSource.m_ImpulseDefinition.m_FrequencyGain = shakeFrequency;
+                CameraShakeManager.instance.CameraShake(impulseSource);
             }
         }
     } 

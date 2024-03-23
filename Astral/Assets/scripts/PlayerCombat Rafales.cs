@@ -11,12 +11,16 @@ public class PlayerCombat : MonoBehaviour
     public float radius;
     public LayerMask enemies;
     public float KBForce = 5;
+    public int regulardashDamage = 1;
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
     public float skillCooldown = 5f;
     public float cooldown = 1.5f;
     float lastSkillTime = -999f;
+    public bool skill1Enabled;
+    public bool skill2Enabled;
+    public bool skill3Enabled;
     public float skillActivationDelay = 0.5f;
     float lastSkillTime2 = -999f;
     [SerializeField] private AudioClip baselinetest;
@@ -48,18 +52,23 @@ public class PlayerCombat : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= cooldown)
         {
             isAttacking = false;
-            charanim.SetTrigger("Skills");
-     SoundEffectManager.instance.SkillCLip(baselinetest1 , transform , 1f);
-     lastSkillTime = Time.time;
-            skillActivationDelay = Time.time;
+            if (skill1Enabled)
+            {
+                charanim.SetTrigger("Skills");
+                SoundEffectManager.instance.SkillCLip(baselinetest1, transform, 1f);
+                lastSkillTime = Time.time;
+                skillActivationDelay = Time.time;
+            }
         } 
         else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skillCooldown)
         {
             isAttacking = false;
-            charanim.SetTrigger("Skill2");
-            lastSkillTime2 = Time.time;
-            skillActivationDelay = Time.time;
-
+            if (skill2Enabled)
+            {
+                charanim.SetTrigger("Skill2");
+                lastSkillTime2 = Time.time;
+                skillActivationDelay = Time.time;
+            }
         }
 
     }
@@ -78,7 +87,17 @@ public class PlayerCombat : MonoBehaviour
                 enemyRigidbody.AddForce(knockbackDirection * KBForce, ForceMode2D.Impulse);
             }
 
-            enemyCollider.GetComponent<MinionHealth>().health -= regularAttackDamage;
+            BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+
+            if (bossHealth != null)
+            {
+                bossHealth.health -= regularAttackDamage;
+            }
+            else
+            {
+                enemyCollider.GetComponent<MinionHealth>().health -= regularAttackDamage;
+            }
+
         }
     }
 
@@ -98,7 +117,16 @@ public class PlayerCombat : MonoBehaviour
                 enemyRigidbody.AddForce(knockbackDirection * skillKBForce, ForceMode2D.Impulse);
             }
 
-            enemyCollider.GetComponent<MinionHealth>().health -= skillDamage; 
+            BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+
+            if (bossHealth != null)
+            {
+                bossHealth.health -= skillDamage;
+            }
+            else
+            {
+                enemyCollider.GetComponent<MinionHealth>().health -= skillDamage;
+            }
         }
     }
 
@@ -117,7 +145,16 @@ public class PlayerCombat : MonoBehaviour
                 enemyRigidbody.AddForce(knockbackDirection * skillKBForce, ForceMode2D.Impulse);
             }
 
-            enemyCollider.GetComponent<MinionHealth>().health -= 100;
+            BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+
+            if (bossHealth != null)
+            {
+                bossHealth.health -= 200;
+            }
+            else
+            {
+                enemyCollider.GetComponent<MinionHealth>().health -= 100;
+            }
         }
     }
 
@@ -136,7 +173,19 @@ public class PlayerCombat : MonoBehaviour
                 Vector2 knockbackDirection = (enemyRigidbody.position - GetComponent<Rigidbody2D>().position).normalized;
                 enemyRigidbody.AddForce(knockbackDirection * 10, ForceMode2D.Impulse);
             }
-            enemyCollider.GetComponent<MinionHealth>().health -= 0.1f;
+
+            BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+
+            if (bossHealth != null)
+            {
+                bossHealth.health -= regulardashDamage;
+            }
+            else
+            {
+                enemyCollider.GetComponent<MinionHealth>().health -= regulardashDamage;
+            }
+
+
         }
 
     }
