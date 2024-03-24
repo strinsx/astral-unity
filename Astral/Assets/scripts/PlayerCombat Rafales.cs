@@ -15,8 +15,8 @@ public class PlayerCombat : MonoBehaviour
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
     public float skillKBForce = 20;
-    public float skill1Cooldown = 4f;
-    public float skill2Cooldown = 2f;
+    public float skill1Cooldown = 2f;
+    public float skill2Cooldown = 4f;
     float lastSkillTime = -999f;
     public bool skill1Enabled;
     public bool skill2Enabled;
@@ -25,6 +25,9 @@ public class PlayerCombat : MonoBehaviour
     float lastSkillTime2 = -999f;
     [SerializeField] private AudioClip baselinetest;
         [SerializeField] private AudioClip baselinetest1;
+    private bool attackkeypressed = true;
+    private float attackDelay = 0.1f;
+    private float currentDelayTimer = 0f;
 
 
     private void Awake()
@@ -44,12 +47,24 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.Z) && !attackkeypressed && !isAttacking)
         {
-            isAttacking = true;
-            charanim.SetTrigger("Attack");
+            attackkeypressed = true;
+            currentDelayTimer = attackDelay;
         }
-        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= skill1Cooldown)
+
+        if (attackkeypressed)
+        {
+            currentDelayTimer -= Time.deltaTime;
+
+            if(currentDelayTimer <= 0)
+            {
+                isAttacking = true;
+                charanim.SetTrigger("Attack");
+                attackkeypressed = false;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= 2)
         {
             isAttacking = false;
             if (skill1Enabled)
@@ -60,7 +75,7 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
             }
         } 
-        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown)
+        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= 4)
         {
             isAttacking = false;
             if (skill2Enabled)
@@ -121,11 +136,11 @@ public class PlayerCombat : MonoBehaviour
 
             if (bossHealth != null)
             {
-                bossHealth.health -= skillDamage;
+                bossHealth.health -= 100;
             }
             else
             {
-                enemyCollider.GetComponent<MinionHealth>().health -= skillDamage;
+                enemyCollider.GetComponent<MinionHealth>().health -= 30;
             }
         }
     }
@@ -149,11 +164,22 @@ public class PlayerCombat : MonoBehaviour
 
             if (bossHealth != null)
             {
-                bossHealth.health -= 200;
+                bossHealth.health -= 150;
             }
             else
             {
-                enemyCollider.GetComponent<MinionHealth>().health -= 100;
+                MinionHealth minionHealth = enemyCollider.GetComponent<MinionHealth>();
+                if(minionHealth != null)
+                {
+                    minionHealth.health -= 30;
+
+                    PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
+                    if (playerHealth != null)
+                    {
+                        playerHealth.RestoreHealth(2);
+                    }
+
+                }
             }
         }
     }
