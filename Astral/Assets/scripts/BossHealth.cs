@@ -24,7 +24,6 @@ public class BossHealth : MonoBehaviour
     public bool isInvurnerable = false;
     public HealthBar healthBar;
     public GameObject bosshealthbar;
-    public GameObject Skillobtaintext;
     public AudioSource BackgroundRemove;
     public AudioSource Victory;
     [Header("---Portal---")]
@@ -94,12 +93,12 @@ public class BossHealth : MonoBehaviour
 
     IEnumerator DestroyGameob()
     {
-
         portal.SetActive(true);
         Debug.Log("Portal");
 
         BackgroundRemove.volume = 0.4f;
         Victory.Play();
+
 
 
         yield return new WaitForSeconds(despawnae);

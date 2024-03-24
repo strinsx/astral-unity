@@ -26,34 +26,33 @@ public class zz : MonoBehaviour
     }
        public void FirstMapAstral()
     {
-        if (AudioManager.instance != null)
-        {
             AudioManager.instance.DestroyAudioManager();
-        }
-        else
-        {
-            Debug.LogError("AudioManager instance is null!");
-        }
         SceneManager.LoadSceneAsync(4);
         
     }   
        public void FirstBossMap(){
+
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(5); 
        }
     public void SecondMapBellum()
     {
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(6);
     }
     public void SecondBossMap()
     {
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(7);
     }
     public void ThirdMapRhaast()
     {
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(8);
     }
     public void ThirdBossMap()
     {
+        AudioManager.instance.DestroyAudioManager();
         SceneManager.LoadSceneAsync(9);
     }
     public void QuitGame()
