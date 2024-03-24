@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -114,18 +127,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 199
-        height: 98
+        y: 0
+        width: 200
+        height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.37}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1635874c6f46544082e24397004b8d4
-      internalID: 1353608297
+      spriteID: 0d2e2fa6e36d7454f8b29b2a9184818a
+      internalID: -644106724
       vertices: []
       indices: 
       edges: []
@@ -134,19 +147,19 @@ TextureImporter:
       name: BOSS_ATTACK_3FIX_1
       rect:
         serializedVersion: 2
-        x: 199
-        y: 2
-        width: 199
-        height: 98
+        x: 200
+        y: 0
+        width: 200
+        height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.37}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9a2d85c0e5097f459a5d3bd55e1b2be
-      internalID: 1589443142
+      spriteID: e30bd2afe1c96f248ab737aaf0d6e015
+      internalID: 1514737599
       vertices: []
       indices: 
       edges: []
@@ -155,19 +168,19 @@ TextureImporter:
       name: BOSS_ATTACK_3FIX_2
       rect:
         serializedVersion: 2
-        x: 398
-        y: 2
-        width: 199
-        height: 98
+        x: 400
+        y: 0
+        width: 200
+        height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.37}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7846b26ba37230249beea3ef95047af3
-      internalID: 1003032221
+      spriteID: 14a9805e106f48945b281a1bd42dc3e4
+      internalID: 2058886424
       vertices: []
       indices: 
       edges: []
@@ -176,19 +189,19 @@ TextureImporter:
       name: BOSS_ATTACK_3FIX_3
       rect:
         serializedVersion: 2
-        x: 597
-        y: 2
-        width: 199
-        height: 98
+        x: 600
+        y: 0
+        width: 200
+        height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.37}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e45315e54fb51da418a9ecdfc7c719a7
-      internalID: -879483101
+      spriteID: 0eca7620a955aa44abbcd65e5f78e27b
+      internalID: 943041949
       vertices: []
       indices: 
       edges: []
@@ -204,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BOSS_ATTACK_3FIX_0: 1353608297
-      BOSS_ATTACK_3FIX_1: 1589443142
-      BOSS_ATTACK_3FIX_2: 1003032221
-      BOSS_ATTACK_3FIX_3: -879483101
+      BOSS_ATTACK_3FIX_0: -644106724
+      BOSS_ATTACK_3FIX_1: 1514737599
+      BOSS_ATTACK_3FIX_2: 2058886424
+      BOSS_ATTACK_3FIX_3: 943041949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

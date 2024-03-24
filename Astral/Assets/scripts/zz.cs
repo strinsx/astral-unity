@@ -37,7 +37,7 @@ public class zz : MonoBehaviour
        }
     public void SecondMapBellum()
     {
-        AudioManager.instance.DestroyAudioManager();
+        DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(6);
     }
     public void SecondBossMap()
