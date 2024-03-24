@@ -39,9 +39,7 @@ public class UIAbilities : MonoBehaviour
         abilityimage2.fillAmount = 0;
         abilityimage3.fillAmount = 0;
 
-        abilityText1.text = "";
-        abilityText2.text = "";
-        abilityText3.text = "";
+
         
     }
 

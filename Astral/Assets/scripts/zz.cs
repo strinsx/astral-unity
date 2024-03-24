@@ -26,13 +26,13 @@ public class zz : MonoBehaviour
     }
        public void FirstMapAstral()
     {
-            AudioManager.instance.DestroyAudioManager();
+        DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(4);
         
     }   
        public void FirstBossMap(){
 
-        AudioManager.instance.DestroyAudioManager();
+        DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(5); 
        }
     public void SecondMapBellum()
@@ -52,13 +52,22 @@ public class zz : MonoBehaviour
     }
     public void ThirdBossMap()
     {
-        AudioManager.instance.DestroyAudioManager();
+        DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(9);
     }
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Quit");
+    }
+
+    private void DestroyAudioManagerExist() {
+    
+        if(AudioManager.instance != null)
+        {
+            AudioManager.instance.DestroyAudioManager();
+        }
+    
     }
 
 }
