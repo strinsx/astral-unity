@@ -24,13 +24,20 @@ public class zz : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
-       public void Firstmap()
+       public void FirstMapAstral()
     {
-        AudioManager.instance.DestroyAudioManager();
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.DestroyAudioManager();
+        }
+        else
+        {
+            Debug.LogError("AudioManager instance is null!");
+        }
         SceneManager.LoadSceneAsync(4);
         
     }   
-       public void secondmap(){
+       public void BossMap(){
         SceneManager.LoadSceneAsync(5); 
        }
     public void Fcutscene()

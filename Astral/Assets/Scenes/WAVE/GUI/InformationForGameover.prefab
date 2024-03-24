@@ -4280,8 +4280,6 @@ GameObject:
   - component: {fileID: 5807384240113924282}
   - component: {fileID: 8045729378921775880}
   - component: {fileID: 1927447055346738663}
-  - component: {fileID: 3402390579900901401}
-  - component: {fileID: 5309655474911859914}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -4437,32 +4435,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3402390579900901401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9166197453716181617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696a81daa5a4f443bca6e64ed834347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorPointAudio: {fileID: 0}
---- !u!114 &5309655474911859914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9166197453716181617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72df038d0889ae54fbe3e32c0d70ae5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverSound: {fileID: 0}
 --- !u!1 &9212176649394747366
 GameObject:
   m_ObjectHideFlags: 0
