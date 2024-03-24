@@ -81,25 +81,20 @@ public class BossHealth : MonoBehaviour
             Debug.Log("EnemyDead");
             isAlive = false;
             StartCoroutine(DestroyGameob());
+
+
         }
-        if (health <= 0)
-        {
-            BackgroundRemove.volume = 0.4f;
-        }
-        if (health <= 0)
-        {
-            portal.SetActive(true);
-            Debug.Log("Portal");
-        }
-        if (health <= 0)
-        {
-            Victory.Play();
-        }
+
     }
 
     IEnumerator DestroyGameob()
     {
-        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+
+        portal.SetActive(true);
+        Debug.Log("Portal");
+
+        BackgroundRemove.volume = 0.4f;
+        Victory.Play();
 
         yield return new WaitForSeconds(despawnae);
 
