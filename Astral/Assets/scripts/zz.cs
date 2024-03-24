@@ -37,12 +37,20 @@ public class zz : MonoBehaviour
         SceneManager.LoadSceneAsync(4);
         
     }   
-       public void BossMap(){
+       public void FirstBossMap(){
         SceneManager.LoadSceneAsync(5); 
        }
-    public void Fcutscene()
+    public void SecondMapBellum()
+    {
+        SceneManager.LoadSceneAsync(6);
+    }
+    public void SecondBossMap()
     {
         SceneManager.LoadSceneAsync(7);
+    }
+    public void Fcutscene()
+    {
+        SceneManager.LoadSceneAsync(8);
     }
     public void QuitGame()
     {

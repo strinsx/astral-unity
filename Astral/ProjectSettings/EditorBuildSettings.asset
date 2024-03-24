@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MAINMAPS/1stMap/Boss1_Chamber.unity
     guid: 238d2cd0022abde48870bd9d4d990aaa
+  - enabled: 1
+    path: Assets/Scenes/MAINMAPS/2ndMap/Bellum.unity
+    guid: fca20d2c0db84d644a147c95c96917ca
+  - enabled: 1
+    path: Assets/Scenes/MAINMAPS/2ndMap/2ndBossChamber.unity
+    guid: 076a18e0d193b9e42a497ebf32200534
   m_configObjects: {}
