@@ -9,8 +9,8 @@ public class EscapePanel : MonoBehaviour
 
     public GameObject Escape;
     public GameObject Background;
-    public AudioSource BackgroundAudio;
-    public AudioSource SoundEffectBoss;
+   public AudioSource BackgroundAudio;
+   public AudioSource SoundEffectBoss;
     // Start is called before the first frame update
     void Start()
     {
