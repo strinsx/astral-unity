@@ -9,6 +9,8 @@ public class EscapePanel : MonoBehaviour
 
     public GameObject Escape;
     public GameObject Background;
+    public AudioSource BackgroundAudio;
+    public AudioSource SoundEffectBoss;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class EscapePanel : MonoBehaviour
         {
             if (!isPaused)
             {
+                BackgroundAudio.Pause();
+                SoundEffectBoss.Pause();
                 Background.SetActive(true);
                 Escape.SetActive(true);
                 isPaused = true;
@@ -29,6 +33,8 @@ public class EscapePanel : MonoBehaviour
             }
             else
             {
+                BackgroundAudio.UnPause();
+                SoundEffectBoss.UnPause();
                 Background.SetActive(false);
                 Escape.SetActive(false);
                 isPaused = false;

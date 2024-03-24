@@ -48,9 +48,13 @@ public class zz : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(7);
     }
-    public void Fcutscene()
+    public void ThirdMapRhaast()
     {
         SceneManager.LoadSceneAsync(8);
+    }
+    public void ThirdBossMap()
+    {
+        SceneManager.LoadSceneAsync(9);
     }
     public void QuitGame()
     {
