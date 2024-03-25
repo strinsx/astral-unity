@@ -2333,7 +2333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550645cfec4098d45a3b242d3b7feee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disappearDelay: 5
+  disappearDelay: 10
 --- !u!114 &298330497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19864,8 +19864,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "the boss has been defeated find the portal in\n       order to progress
-    to the next realm"
+  m_text: "                     GAME ENDED, \n            YOU'VE DEFEATED ASTRAL\nFIND
+    THE PORTAL TO ESCAPE THE VOID"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
@@ -33580,7 +33580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1992671684
 Animator:
   serializedVersion: 5
