@@ -215,7 +215,7 @@ MonoBehaviour:
   damageparticles: {fileID: 6169485249954349454, guid: d6b5995f0c96c1e46b4465df0ffa2c54, type: 3}
   zxc: {fileID: 0}
   FloatingTextPrefab: {fileID: 0}
-  health: 100
+  health: 70
   currenthealth: 0
   main_death: {fileID: 0}
   animationcomponent: {fileID: 0}

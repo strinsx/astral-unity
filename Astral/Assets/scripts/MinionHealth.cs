@@ -57,6 +57,11 @@ public class MinionHealth : MonoBehaviour
                 _damageFlash.CallDps();
             }
 
+            if(health <= 150)
+        {
+            anim.SetBool("isEnraged", true);
+        }
+
             if (health <= 0)
             {
                 anim.SetBool("isDead", true);

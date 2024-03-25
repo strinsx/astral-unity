@@ -103,10 +103,16 @@ public class PlayerCombat : MonoBehaviour
             }
 
             BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+            AstralBossHealth astralHealth = enemyCollider.gameObject.GetComponent<AstralBossHealth>();
+
 
             if (bossHealth != null)
             {
                 bossHealth.health -= regularAttackDamage;
+            }
+            if(astralHealth != null)
+            {
+                astralHealth.health -= regularAttackDamage;
             }
             else
             {
@@ -133,10 +139,16 @@ public class PlayerCombat : MonoBehaviour
             }
 
             BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+            AstralBossHealth astralHealth = enemyCollider.gameObject.GetComponent<AstralBossHealth>();
+
 
             if (bossHealth != null)
             {
                 bossHealth.health -= 100;
+            }
+            if (astralHealth != null)
+            {
+                astralHealth.health -= 100;
             }
             else
             {
@@ -161,10 +173,22 @@ public class PlayerCombat : MonoBehaviour
             }
 
             BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+            AstralBossHealth astralHealth = enemyCollider.gameObject.GetComponent<AstralBossHealth>();
+
 
             if (bossHealth != null)
             {
                 bossHealth.health -= 150;
+            }
+            if (astralHealth != null)
+            {
+                astralHealth.health -= 150;
+
+                PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
+                if (playerHealth != null)
+                {
+                    playerHealth.RestoreHealth(25);
+                }
             }
             else
             {
@@ -180,6 +204,7 @@ public class PlayerCombat : MonoBehaviour
                     }
 
                 }
+
             }
         }
     }
@@ -201,10 +226,16 @@ public class PlayerCombat : MonoBehaviour
             }
 
             BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+            AstralBossHealth astralHealth = enemyCollider.gameObject.GetComponent<AstralBossHealth>();
+
 
             if (bossHealth != null)
             {
                 bossHealth.health -= regulardashDamage;
+            }
+            if (astralHealth != null)
+            {
+                astralHealth.health -= regulardashDamage;
             }
             else
             {

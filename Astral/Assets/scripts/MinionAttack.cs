@@ -48,5 +48,26 @@ public class MinionAttack : MonoBehaviour
                 CameraShakeManager.instance.CameraShake(impulseSource);
             }
         }
-    } 
+    }
+
+    public void SkillDamage()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x;
+        pos += transform.forward * attackOffset.y;
+
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, 2, attackMask);
+
+        if (colInfo != null)
+        {
+            colInfo.GetComponent<PlayerHealthRafales>();
+            if (playerhealth != null)
+            {
+                playerhealth.TakeDamage(75);
+                impulseSource.m_ImpulseDefinition.m_AmplitudeGain = shakeAmplitude;
+                impulseSource.m_ImpulseDefinition.m_FrequencyGain = shakeFrequency;
+                CameraShakeManager.instance.CameraShake(impulseSource);
+            }
+        }
+    }
 }

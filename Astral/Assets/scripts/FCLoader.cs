@@ -14,7 +14,7 @@ public class FCLoader : MonoBehaviour
     IEnumerator Wait_for_intro()
     {
         yield return new WaitForSeconds(wait_seconds);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
    

@@ -24,37 +24,50 @@ public class zz : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
-       public void FirstMapAstral()
+
+    public void FScene()
     {
         DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(4);
+    }
+    public void FirstMapAstral()
+    {
+        DestroyAudioManagerExist();
+        SceneManager.LoadSceneAsync(5);
         
     }   
-       public void FirstBossMap(){
+       public void FirstBossMap(){  
 
         DestroyAudioManagerExist();
-        SceneManager.LoadSceneAsync(5); 
+        SceneManager.LoadSceneAsync(6); 
        }
     public void SecondMapBellum()
     {
         DestroyAudioManagerExist();
-        SceneManager.LoadSceneAsync(6);
+        SceneManager.LoadSceneAsync(7);
     }
     public void SecondBossMap()
     {
-        AudioManager.instance.DestroyAudioManager();
-        SceneManager.LoadSceneAsync(7);
-    }
-    public void ThirdMapRhaast()
-    {
-        AudioManager.instance.DestroyAudioManager();
+        DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(8);
     }
-    public void ThirdBossMap()
+    public void ThirdMapRhaast()
     {
         DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(9);
     }
+    public void ThirdBossMap()
+    {
+        DestroyAudioManagerExist();
+        SceneManager.LoadSceneAsync(10);
+    }
+
+    public void AstralMap()
+    {
+        DestroyAudioManagerExist();
+        SceneManager.LoadSceneAsync(11);
+    }
+
     public void QuitGame()
     {
         Application.Quit();
