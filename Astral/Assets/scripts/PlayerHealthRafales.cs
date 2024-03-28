@@ -33,6 +33,10 @@ public class PlayerHealthRafales : MonoBehaviour
 
     private void Update()
     {
+                if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SaveHealth();
+        }
 
     }
 
@@ -73,6 +77,23 @@ public class PlayerHealthRafales : MonoBehaviour
         // UPDATES NOW YESYES
 
         healthBar.SetHealth(currentHealth);
+    }
+    public void SaveHealth()
+    {
+        PlayerPrefs.SetInt("PlayerHealth", currentHealth);
+        PlayerPrefs.Save();
+        Debug.Log("Health Saved: " + currentHealth);
+    }
+
+    // Load health from PlayerPrefs
+    public void LoadHealth()
+    {
+        if (PlayerPrefs.HasKey("PlayerHealth"))
+        {
+            currentHealth = PlayerPrefs.GetInt("PlayerHealth");
+            healthBar.SetHealth(currentHealth);
+            Debug.Log("Health Loaded: " + currentHealth);
+        }
     }
  
     

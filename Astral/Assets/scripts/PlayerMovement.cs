@@ -60,7 +60,9 @@ public class PlayerMovement : MonoBehaviour
     public float dashSpeed;
     public float dashTime;
     public float startDash;
+    public float dashEnergyCost;
     private int direction;
+    public EnergyBar energyBar;
     
 
     private AudioSource audioSource;
@@ -562,13 +564,17 @@ public class PlayerMovement : MonoBehaviour
     #endregion
     
 
-    private IEnumerator Dash()
+private IEnumerator Dash()
+{
+    if (energyBar != null && energyBar.CanAttack(dashEnergyCost))
     {
         isSkillKeyPressed = true;
 
         animator.SetTrigger("dash");
         SoundEffectManager.instance.JumpClip(dashSoundClip, transform, 1f);
 
+        // Deduct energy cost for dash
+        energyBar.UseEnergy(dashEnergyCost);
 
         RB.velocity = new Vector2(direction * dashSpeed, RB.velocity.y);
 
@@ -578,6 +584,11 @@ public class PlayerMovement : MonoBehaviour
 
         isSkillKeyPressed = false;
     }
+    else
+    {
+        Debug.Log("Not enough energy for dash!");
+    }
+}
 
     void wasCheck()
     {

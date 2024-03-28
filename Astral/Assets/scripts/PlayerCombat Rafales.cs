@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class PlayerCombat : MonoBehaviour
     private bool attackkeypressed = true;
     private float attackDelay = 0.1f;
     private float currentDelayTimer = 0f;
+    public EnergyBar energyBar;
 
 
     private void Awake()
@@ -64,7 +66,7 @@ public class PlayerCombat : MonoBehaviour
                 attackkeypressed = false;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= 2)
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= 2 && energyBar.CanAttack(20))
         {
             isAttacking = false;
             if (skill1Enabled)
@@ -73,9 +75,10 @@ public class PlayerCombat : MonoBehaviour
                 SoundEffectManager.instance.SkillCLip(baselinetest1, transform, 1f);
                 lastSkillTime = Time.time;
                 skillActivationDelay = Time.time;
+                energyBar.UseEnergy(20);
             }
         } 
-        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= 4)
+        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= 4 && energyBar.CanAttack(30))
         {
             isAttacking = false;
             if (skill2Enabled)
@@ -83,6 +86,7 @@ public class PlayerCombat : MonoBehaviour
                 charanim.SetTrigger("Skill2");
                 lastSkillTime2 = Time.time;
                 skillActivationDelay = Time.time;
+                energyBar.UseEnergy(30);
             }
         }
 
