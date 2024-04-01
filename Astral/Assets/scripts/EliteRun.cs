@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EliteRun : StateMachineBehaviour
@@ -12,6 +13,9 @@ public class EliteRun : StateMachineBehaviour
     Rigidbody2D rb;
     MinionFlip minion;
     public float attackRange = 10f;
+    public float attakcDistance = 2f;
+    public GameObject projectilePrefab;
+    public float bulletSpeed = 1f;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -27,6 +31,7 @@ public class EliteRun : StateMachineBehaviour
     {
         minion.Update();
 
+        Vector3 direction = (player.position - (Vector3)rb.position).normalized;
 
         Vector2 target = new Vector2(player.position.x, rb.position.y);
         Vector2 newpos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
@@ -34,6 +39,12 @@ public class EliteRun : StateMachineBehaviour
 
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
+
+            GameObject bullet = Instantiate(projectilePrefab, rb.position, Quaternion.identity);
+
+            bullet.transform.right = direction;
+
+
             animator.SetTrigger("Attack");
         }
     }

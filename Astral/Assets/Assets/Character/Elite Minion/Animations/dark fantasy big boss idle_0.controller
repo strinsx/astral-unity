@@ -299,8 +299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326fee52bd3aa6d42b678d097e1ad7fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 7
   attackRange: 3
+  attakcDistance: 2
+  projectilePrefab: {fileID: 6513216867240230067, guid: 5bad03a21fed9994f933184acbc98408, type: 3}
+  bulletSpeed: 1
 --- !u!1102 &6254458992393138609
 AnimatorState:
   serializedVersion: 6
