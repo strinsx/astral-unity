@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject UIGameOver;
+    public GameObject PauseSymbol;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,8 @@ public class GameOverManager : MonoBehaviour
     {
         
     }
-    public void Gameover(){
+    public void Gameover() {
+        PauseSymbol.SetActive(false);
       UIGameOver.SetActive(true);
     }
 }

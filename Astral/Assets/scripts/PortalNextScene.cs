@@ -11,6 +11,7 @@ public class PortalNextScene : MonoBehaviour
     private void Start()
     {
         sceneFader = FindObjectOfType<SceneFader>();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

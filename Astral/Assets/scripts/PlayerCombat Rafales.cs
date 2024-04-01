@@ -13,38 +13,45 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemies;
     public float KBForce = 2;
     public int regulardashDamage = 1;
-    public int regularAttackDamage = 10; 
+    public int regularAttackDamage = 10;
     public int skillDamage = 20;
     public float skillKBForce = 20;
     public float skill1Cooldown = 2f;
     public float skill2Cooldown = 4f;
     float lastSkillTime = -999f;
+    float lastSkillTime2 = -999f;
     public bool skill1Enabled;
     public bool skill2Enabled;
     public bool skill3Enabled;
     public float skillActivationDelay = 0.5f;
-    float lastSkillTime2 = -999f;
     [SerializeField] private AudioClip baselinetest;
-        [SerializeField] private AudioClip baselinetest1;
+    [SerializeField] private AudioClip baselinetest1;
     private bool attackkeypressed = true;
     private float attackDelay = 0.1f;
     private float currentDelayTimer = 0f;
     public EnergyBar energyBar;
-
+    public Image abilityImage1;
+    public Image abilityImage2;
+    public Text abilityText1;
+    public Text abilityText2;
+    private bool isSkill1Cooldown = false;
+    private bool isSkill2Cooldown = false;
+    private float currentSkill1Cooldown;
+    private float currentSkill2Cooldown;
 
     private void Awake()
     {
         instance = this;
     }
-
-    void Start()
+      void Start()
     {
         charanim = GetComponent<Animator>();
+        LoadSkillsCooldown();
     }
-
     private void Update()
     {
         Attack();
+        UpdateSkillCooldowns();
     }
 
     void Attack()
@@ -59,14 +66,14 @@ public class PlayerCombat : MonoBehaviour
         {
             currentDelayTimer -= Time.deltaTime;
 
-            if(currentDelayTimer <= 0)
+            if (currentDelayTimer <= 0)
             {
                 isAttacking = true;
                 charanim.SetTrigger("Attack");
                 attackkeypressed = false;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= 2 && energyBar.CanAttack(20))
+        else if (Input.GetKeyDown(KeyCode.W) && !isAttacking && Time.time - lastSkillTime >= skill1Cooldown && energyBar.CanAttack(20))
         {
             isAttacking = false;
             if (skill1Enabled)
@@ -76,9 +83,10 @@ public class PlayerCombat : MonoBehaviour
                 lastSkillTime = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(20);
+                StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1, abilityText1);
             }
-        } 
-        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= 4 && energyBar.CanAttack(30))
+        }
+        else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(30))
         {
             isAttacking = false;
             if (skill2Enabled)
@@ -87,10 +95,76 @@ public class PlayerCombat : MonoBehaviour
                 lastSkillTime2 = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(30);
+                StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2, abilityText2);
             }
         }
-        
+    }
 
+    void StartCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage, Text skillText)
+    {
+        isCooldown = true;
+        currentCooldown = maxCooldown;
+        UpdateSkillCooldownUI(skillImage, skillText, currentCooldown, maxCooldown);
+        SaveSkillsCooldown();
+    }
+
+    void UpdateSkillCooldowns()
+    {
+        UpdateCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1, abilityText1);
+        UpdateCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2, abilityText2);
+    }
+
+    void UpdateCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage, Text skillText)
+    {
+        if (isCooldown)
+        {
+            currentCooldown -= Time.deltaTime;
+            if (currentCooldown <= 0f)
+            {
+                isCooldown = false;
+                currentCooldown = 0f;
+                skillImage.fillAmount = 0f;
+                skillText.text = "";
+            }
+            else
+            {
+                UpdateSkillCooldownUI(skillImage, skillText, currentCooldown, maxCooldown);
+            }
+        }
+    }
+    void SaveSkillsCooldown()
+    {
+        // Save current cooldowns to PlayerPrefs
+        PlayerPrefs.SetFloat("Skill1Cooldown", currentSkill1Cooldown);
+        PlayerPrefs.SetFloat("Skill2Cooldown", currentSkill2Cooldown);
+        // Add more PlayerPrefs saves for additional skills if needed
+    }
+
+    void LoadSkillsCooldown()
+    {
+        // Load cooldowns from PlayerPrefs
+        currentSkill1Cooldown = PlayerPrefs.GetFloat("Skill1Cooldown", skill1Cooldown);
+        currentSkill2Cooldown = PlayerPrefs.GetFloat("Skill2Cooldown", skill2Cooldown);
+        // Add more PlayerPrefs loads for additional skills if needed
+    }
+
+    void UpdateSkillCooldownUI(Image skillImage, Text skillText, float currentCooldown, float maxCooldown)
+    {
+        skillImage.fillAmount = currentCooldown / maxCooldown;
+        skillText.text = Mathf.Ceil(currentCooldown).ToString();
+    }
+    public void EnableSkill1()
+    {
+        skill1Enabled = true;
+        PlayerPrefs.SetInt("Skill1Enabled", skill1Enabled ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    public void EnableSkill2()
+    {
+        skill2Enabled = true;
+        PlayerPrefs.SetInt("Skill2Enabled", skill2Enabled ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     public void OnRegularAttack()

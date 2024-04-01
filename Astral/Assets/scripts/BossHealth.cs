@@ -26,6 +26,7 @@ public class BossHealth : MonoBehaviour
     public GameObject bosshealthbar;
     public AudioSource BackgroundRemove;
     public AudioSource Victory;
+    public Animation Skillselection;
     [Header("---Portal---")]
     public GameObject portal; 
 
@@ -40,6 +41,7 @@ public class BossHealth : MonoBehaviour
         Vector2 attackDirection = (this.gameObject.transform.position - transform.position).normalized;
         knockback = GetComponent<KnockBackMainRafales>();
         isAlive = true;
+        Skillselection = GetComponent<Animation>();
 
 
     }
@@ -82,17 +84,13 @@ public class BossHealth : MonoBehaviour
             isAlive = false;
             StartCoroutine(DestroyGameob());
 
-
-        }
-        if (health <= 0)
-        {
-
         }
 
     }
 
     IEnumerator DestroyGameob()
     {
+
         portal.SetActive(true);
         Debug.Log("Portal");
 
