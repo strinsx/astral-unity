@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class FCLoader : MonoBehaviour
 {
     public float wait_seconds;
+    public Animator musicAnim;
     void Start()
     {
         StartCoroutine(Wait_for_intro());
@@ -13,6 +14,7 @@ public class FCLoader : MonoBehaviour
 
     IEnumerator Wait_for_intro()
     {
+        musicAnim.SetTrigger("fadeOut");
         yield return new WaitForSeconds(wait_seconds);
         SceneManager.LoadScene(5);
     }

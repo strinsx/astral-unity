@@ -11,7 +11,7 @@ public class PlayerCombat : MonoBehaviour
     public GameObject attackpoint;
     public float radius;
     public LayerMask enemies;
-    public float KBForce = 5;
+    public float KBForce = 2;
     public int regulardashDamage = 1;
     public int regularAttackDamage = 10; 
     public int skillDamage = 20;
@@ -89,6 +89,7 @@ public class PlayerCombat : MonoBehaviour
                 energyBar.UseEnergy(30);
             }
         }
+        
 
     }
 
