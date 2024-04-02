@@ -322,7 +322,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d4f9f1a8ebfa0b54ebbd2d413a153a5f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4ea4fe7bcf49eec43af9fbd62bbaa9b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -469,6 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wait_seconds: 40
   musicAnim: {fileID: 96966732}
+  deleteaudioCutscene: {fileID: 96966733}
 --- !u!1 &381022957
 GameObject:
   m_ObjectHideFlags: 0

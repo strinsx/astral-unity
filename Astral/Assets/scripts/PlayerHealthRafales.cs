@@ -28,7 +28,8 @@ public class PlayerHealthRafales : MonoBehaviour
         knocback  = GetComponent<KnockBackMainRafales>();
         animator = GetComponent<Animator>();
         mainChar = GameObject.Find("mainCharacter");
-        
+        LoadHealth();
+
     }
 
     private void Update()
@@ -95,6 +96,13 @@ public class PlayerHealthRafales : MonoBehaviour
             Debug.Log("Health Loaded: " + currentHealth);
         }
     }
- 
+  
+    public void RestartHeath()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+        PlayerPrefs.SetInt("PlayerHealth", currentHealth);
+        PlayerPrefs.Save();
+    }
     
 }

@@ -382,6 +382,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1546571780}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &37184182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12485,8 +12497,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19954991, y: 0.15420008, z: 0}
-    m_Extent: {x: 3.36185, y: 1.9205, z: 0}
+    m_Center: {x: -0.19905007, y: 0.15399998, z: 0}
+    m_Extent: {x: 3.3622499, y: 1.9201999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14763,8 +14775,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.43345, y: -0.18669999, z: 0}
-    m_Extent: {x: 6.7835503, y: 3.7905002, z: 0}
+    m_Center: {x: 2.4338503, y: -0.18710005, z: 0}
+    m_Extent: {x: 6.78345, y: 3.7915, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15166,6 +15178,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1013045001}
     m_Modifications:
+    - target: {fileID: 2537925225893660038, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
+      propertyPath: time
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3431128175239274754, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.451965
@@ -15216,7 +15232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7919086547210998115, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 144292934}
     m_Modifications:
+    - target: {fileID: 2537925225893660038, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
+      propertyPath: time
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3431128175239274754, guid: 63d5eb85a16eb114fbcc58c99d57f7c2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33333334
@@ -525,7 +529,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1073724092}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -533,10 +537,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: -1
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -2115236485
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!1 &146521408
 GameObject:
@@ -909,7 +913,7 @@ Transform:
   m_GameObject: {fileID: 321038509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 693, y: -938, z: -1.374931}
+  m_LocalPosition: {x: 693, y: -871, z: -1.374931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1114,7 +1118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 91.84593, y: 57}
+  m_AnchoredPosition: {x: 91.84595, y: 57}
   m_SizeDelta: {x: 19.2427, y: 648.2542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543701894
@@ -1189,8 +1193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -643, y: -1151}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -589, y: -1294}
+  m_SizeDelta: {x: 315.41, y: 199.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620350379
 MonoBehaviour:
@@ -1279,7 +1283,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -74.66785, w: -53.66739}
+  m_margin: {x: 0, y: 0, z: 6.800079, w: -2.750137}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1738,7 +1742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Team Leader\n\n\nProgrammer\n\n\n\n\n      GUI\n\n\n\n\n      SFX\n\n\n  
+  m_text: "Team Leader\n\n\nProgrammer\n\n\n\n\n      GUI\n\n\n\n\n      SFX\n\n\n\n  
     Animator\n\n\n\n\n   Designer\n\n\n\n\nMap Designer \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
@@ -2143,8 +2147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671, y: -1884}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -588.1, y: -1947}
+  m_SizeDelta: {x: 365.8, y: 123.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088245885
 MonoBehaviour:
@@ -2229,7 +2233,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -164.36436, w: -53.66739}
+  m_margin: {x: 0, y: 0, z: -5.935364, w: -9.454567}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2816,7 +2820,7 @@ MonoBehaviour:
 
     Suaiso, Johnric
 
-'
+    Rafales, Albert'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3657,8 +3661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -697, y: -1501}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -598.56, y: -1636}
+  m_SizeDelta: {x: 396.88, y: 195.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972253492
 MonoBehaviour:
@@ -3743,7 +3747,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -74.66785, w: -53.66739}
+  m_margin: {x: 0, y: 0, z: -6.778015, w: -2.7499619}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Levelloader : MonoBehaviour
 {
     public Animator transition;
-    public float time = 1f;
+    public float time = 0.5f;
 
     // Update is called once per frame
     void Update()

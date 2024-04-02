@@ -9,8 +9,15 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     void Start()
     {
-        int savedHealth = PlayerPrefs.GetInt("HealthBarValue", (int)slider.maxValue);
-        SetHealth(savedHealth);
+        int savedHealth = PlayerPrefs.GetInt("HealthBarValue", -1); // Use -1 as a flag to indicate no saved value
+        if (savedHealth != -1)
+        {
+            SetHealth(savedHealth);
+        }
+        else
+        {
+            SetHealth((int)slider.maxValue); // Set to max value if no saved value found
+        }
     }
 
     public void SetMaxHealth(int health)

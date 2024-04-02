@@ -9,6 +9,7 @@ public class EnergyBar : MonoBehaviour
     public float maxEnergy = 100f;
     public float energyRegenRate;
     private float currentEnergy;
+    private Coroutine energyCoroutine;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class EnergyBar : MonoBehaviour
         StartCoroutine(RegenerateEnergy());
     }
 
+
+
     IEnumerator RegenerateEnergy()
     {
         while (true)
@@ -27,6 +30,16 @@ public class EnergyBar : MonoBehaviour
             currentEnergy = Mathf.Min(currentEnergy + energyRegenRate, maxEnergy);
             energySlider.value = currentEnergy;
         }
+    }
+    private void OnDisable()
+    {
+        StopCoroutine(energyCoroutine);
+        PlayerPrefs.SetFloat("SaveEnergy", currentEnergy);
+    }
+
+    private void OnEnable()
+    {
+        energyCoroutine = StartCoroutine(RegenerateEnergy());
     }
 
     public bool CanAttack(float energyCost)
