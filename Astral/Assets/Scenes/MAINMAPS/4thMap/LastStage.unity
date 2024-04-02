@@ -2046,7 +2046,6 @@ MonoBehaviour:
   Background: {fileID: 9739131}
   MenuSymbol: {fileID: 740005768}
   HealthBar: {fileID: 210094755}
-  BossHealthbar: {fileID: 1312219992}
   Energybar: {fileID: 2110178998}
   Abilities: {fileID: 701138274}
   Character: {fileID: 1183208609}
@@ -27054,7 +27053,7 @@ PrefabInstance:
       objectReference: {fileID: 1873225829}
     - target: {fileID: 2208557264972612625, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: currentHealth
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4155819927434183331, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27246,9 +27245,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7237672276189533001, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1183208611}
-    - targetCorrespondingSourceObject: {fileID: 7237672276189533001, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1183208610}
   m_SourcePrefab: {fileID: 100100000, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
 --- !u!4 &1183208608 stripped
 Transform:
@@ -27260,18 +27256,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7237672276189533001, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
   m_PrefabInstance: {fileID: 1183208607}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1183208610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183208609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e17ec8610dc23549bc1655670069a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1183208611
 AudioSource:
   m_ObjectHideFlags: 0

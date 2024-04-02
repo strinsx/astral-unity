@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealthRafales : MonoBehaviour
 {
 
-    public int maxHealth = 100;
+    public int maxHealth = 250;
     public int currentHealth;
     public HealthBar healthBar;
     public bool alive;

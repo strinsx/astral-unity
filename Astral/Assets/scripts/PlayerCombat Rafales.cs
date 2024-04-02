@@ -32,8 +32,6 @@ public class PlayerCombat : MonoBehaviour
     public EnergyBar energyBar;
     public Image abilityImage1;
     public Image abilityImage2;
-    public Text abilityText1;
-    public Text abilityText2;
     private bool isSkill1Cooldown = false;
     private bool isSkill2Cooldown = false;
     private float currentSkill1Cooldown;
@@ -83,7 +81,7 @@ public class PlayerCombat : MonoBehaviour
                 lastSkillTime = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(20);
-                StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1, abilityText1);
+                StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
             }
         }
         else if (Input.GetKeyDown(KeyCode.R) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(30))
@@ -95,26 +93,26 @@ public class PlayerCombat : MonoBehaviour
                 lastSkillTime2 = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(30);
-                StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2, abilityText2);
+                StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
             }
         }
     }
 
-    void StartCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage, Text skillText)
+    void StartCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage)
     {
         isCooldown = true;
         currentCooldown = maxCooldown;
-        UpdateSkillCooldownUI(skillImage, skillText, currentCooldown, maxCooldown);
+        UpdateSkillCooldownUI(skillImage, currentCooldown, maxCooldown);
         SaveSkillsCooldown();
     }
 
     void UpdateSkillCooldowns()
     {
-        UpdateCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1, abilityText1);
-        UpdateCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2, abilityText2);
+        UpdateCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
+        UpdateCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
     }
 
-    void UpdateCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage, Text skillText)
+    void UpdateCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage)
     {
         if (isCooldown)
         {
@@ -124,11 +122,10 @@ public class PlayerCombat : MonoBehaviour
                 isCooldown = false;
                 currentCooldown = 0f;
                 skillImage.fillAmount = 0f;
-                skillText.text = "";
             }
             else
             {
-                UpdateSkillCooldownUI(skillImage, skillText, currentCooldown, maxCooldown);
+                UpdateSkillCooldownUI(skillImage, currentCooldown, maxCooldown);
             }
         }
     }
@@ -148,10 +145,9 @@ public class PlayerCombat : MonoBehaviour
         // Add more PlayerPrefs loads for additional skills if needed
     }
 
-    void UpdateSkillCooldownUI(Image skillImage, Text skillText, float currentCooldown, float maxCooldown)
+    void UpdateSkillCooldownUI(Image skillImage, float currentCooldown, float maxCooldown)
     {
         skillImage.fillAmount = currentCooldown / maxCooldown;
-        skillText.text = Mathf.Ceil(currentCooldown).ToString();
     }
     public void EnableSkill1()
     {
@@ -164,6 +160,12 @@ public class PlayerCombat : MonoBehaviour
     {
         skill2Enabled = true;
         PlayerPrefs.SetInt("Skill2Enabled", skill2Enabled ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+    public void EnableSkill3()
+    {
+        skill3Enabled = true;
+        PlayerPrefs.SetInt("Skill3Enabled", skill3Enabled ? 1 : 0);
         PlayerPrefs.Save();
     }
 

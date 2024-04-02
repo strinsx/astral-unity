@@ -11,7 +11,6 @@ public class EscapePanelStages : MonoBehaviour
     public GameObject Background;
     public GameObject MenuSymbol;
     public GameObject HealthBar;
-    public GameObject BossHealthbar;
     public GameObject Energybar;
     public GameObject Abilities;
     public GameObject Character;
@@ -36,7 +35,6 @@ public class EscapePanelStages : MonoBehaviour
                 Character.SetActive(false);
                 Abilities.SetActive(false);
                 HealthBar.SetActive(false);
-                BossHealthbar.SetActive(false);
                 Energybar.SetActive(false);
                 Background.SetActive(true);
                 Escape.SetActive(true);
@@ -51,7 +49,6 @@ public class EscapePanelStages : MonoBehaviour
                 Character.SetActive(true);
                 Abilities.SetActive(true);
                 HealthBar.SetActive(true);
-                BossHealthbar.SetActive(true);
                 Energybar.SetActive(true);
                 Background.SetActive(false);
                 Escape.SetActive(false);
