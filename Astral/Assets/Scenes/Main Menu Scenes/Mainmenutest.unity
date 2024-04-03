@@ -12497,8 +12497,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19905007, y: 0.15399998, z: 0}
-    m_Extent: {x: 3.3622499, y: 1.9201999, z: 0}
+    m_Center: {x: -0.19904995, y: 0.15465003, z: 0}
+    m_Extent: {x: 3.36135, y: 1.9196501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14003,7 +14003,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4ea4fe7bcf49eec43af9fbd62bbaa9b9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14775,8 +14775,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4338503, y: -0.18710005, z: 0}
-    m_Extent: {x: 6.78345, y: 3.7915, z: 0}
+    m_Center: {x: 2.4336498, y: -0.18629992, z: 0}
+    m_Extent: {x: 6.7837496, y: 3.791, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
