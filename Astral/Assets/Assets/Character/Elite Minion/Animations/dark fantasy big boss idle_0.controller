@@ -74,6 +74,20 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-3988628783274591680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63ef2fa2de136143bc37257fa88f70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  attackRange: 3
 --- !u!1101 &-2775448671450702189
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -81,10 +95,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Attacked
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4393762898495701652}
   m_Solo: 0
@@ -210,7 +221,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: -8905015484122956814}
   m_StateMachineBehaviours:
-  - {fileID: 4535155177982715073}
+  - {fileID: -3988628783274591680}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -287,23 +298,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &4535155177982715073
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326fee52bd3aa6d42b678d097e1ad7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  attackRange: 3
-  attakcDistance: 2
-  projectilePrefab: {fileID: 6513216867240230067, guid: 5bad03a21fed9994f933184acbc98408, type: 3}
-  bulletSpeed: 1
 --- !u!1102 &6254458992393138609
 AnimatorState:
   serializedVersion: 6

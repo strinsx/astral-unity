@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34cc5d3ce430f94ebe927a5de77dee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 10
   attackOffset: {x: 0, y: 0, z: 0}
   attackRange: 2
   attackMask:
