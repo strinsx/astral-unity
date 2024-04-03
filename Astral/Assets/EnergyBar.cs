@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class EnergyBar : MonoBehaviour
 {
     public Slider energySlider;
-    public float maxEnergy = 100f;
+    public float maxEnergy = 250f;
     public float energyRegenRate;
     private float currentEnergy;
+    public GameObject notEnoughEnergyIndicator;
     private Coroutine energyCoroutine;
+    public Camera mainCamera;
+
+
 
     void Start()
     {
@@ -29,6 +33,13 @@ public class EnergyBar : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             currentEnergy = Mathf.Min(currentEnergy + energyRegenRate, maxEnergy);
             energySlider.value = currentEnergy;
+            if (currentEnergy < 20)
+            {
+                notEnoughEnergyIndicator.SetActive(true);
+            } else
+            {
+                notEnoughEnergyIndicator.SetActive(false);
+            }
         }
     }
     private void OnDisable()

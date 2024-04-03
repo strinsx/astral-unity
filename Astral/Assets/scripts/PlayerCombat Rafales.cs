@@ -26,6 +26,7 @@ public class PlayerCombat : MonoBehaviour
     public float skillActivationDelay = 0.5f;
     [SerializeField] private AudioClip baselinetest;
     [SerializeField] private AudioClip baselinetest1;
+    [SerializeField] private AudioClip baselinetest2;
     private bool attackkeypressed = true;
     private float attackDelay = 0.1f;
     private float currentDelayTimer = 0f;
@@ -80,7 +81,7 @@ public class PlayerCombat : MonoBehaviour
                 SoundEffectManager.instance.SkillCLip(baselinetest1, transform, 1f);
                 lastSkillTime = Time.time;
                 skillActivationDelay = Time.time;
-                energyBar.UseEnergy(20);
+                energyBar.UseEnergy(40);
                 StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
             }
         }
@@ -90,9 +91,10 @@ public class PlayerCombat : MonoBehaviour
             if (skill2Enabled)
             {
                 charanim.SetTrigger("Skill2");
+                SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
                 lastSkillTime2 = Time.time;
                 skillActivationDelay = Time.time;
-                energyBar.UseEnergy(30);
+                energyBar.UseEnergy(60);
                 StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
             }
         }
@@ -139,10 +141,8 @@ public class PlayerCombat : MonoBehaviour
 
     void LoadSkillsCooldown()
     {
-        // Load cooldowns from PlayerPrefs
         currentSkill1Cooldown = PlayerPrefs.GetFloat("Skill1Cooldown", skill1Cooldown);
         currentSkill2Cooldown = PlayerPrefs.GetFloat("Skill2Cooldown", skill2Cooldown);
-        // Add more PlayerPrefs loads for additional skills if needed
     }
 
     void UpdateSkillCooldownUI(Image skillImage, float currentCooldown, float maxCooldown)
