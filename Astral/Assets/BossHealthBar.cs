@@ -18,6 +18,6 @@ public class BossHealthBar : MonoBehaviour
     public void SetHealth(float health)
     {
 
-        slider.value = health;
+        slider.value -= health;
     }
 }
