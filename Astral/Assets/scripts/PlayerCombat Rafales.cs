@@ -191,7 +191,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 bossHealth.health -= regularAttackDamage;
             }
-            if(astralHealth != null)
+           else if(astralHealth != null)
             {
                 astralHealth.health -= regularAttackDamage;
             }
@@ -227,7 +227,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 bossHealth.health -= 100;
             }
-            if (astralHealth != null)
+           else if (astralHealth != null)
             {
                 astralHealth.health -= 100;
             }
@@ -261,7 +261,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 bossHealth.health -= 150;
             }
-            if (astralHealth != null)
+          else  if (astralHealth != null)
             {
                 astralHealth.health -= 150;
 

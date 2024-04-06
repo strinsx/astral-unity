@@ -13,21 +13,17 @@ public class BossHealth : MonoBehaviour
     private Animator anim;
     private bool attacked;
     private float despawnae = 2f;
-    public AnimationClip main_death;
-    public Animation animationcomponent;
     private ParticleSystem damageparticleInstance;
     private CinemachineImpulseSource impulseSource;
     public DamageFlash1 _damageFlash;
     private Vector2 attackDirection;
-    public KnockBackMainRafales knockback;
     private bool isAlive;
     public bool isInvurnerable = false;
-    public HealthBar healthBar;
+    public BossHealthBar healthBar;
     public GameObject bosshealthbar;
     public AudioSource BackgroundRemove;
     public AudioSource Victory;
     [Header("TransparentImageWhenSkillUIAppear")]
-    public GameObject Healthbar;
     public GameObject Energybar;
     public GameObject Abilities;
     [Header("---Portal---")]
@@ -42,7 +38,6 @@ public class BossHealth : MonoBehaviour
         _damageFlash = GetComponent<DamageFlash1>();
         impulseSource = GetComponent<CinemachineImpulseSource>(); // Corrected the spelling
         Vector2 attackDirection = (this.gameObject.transform.position - transform.position).normalized;
-        knockback = GetComponent<KnockBackMainRafales>();
         isAlive = true;
 
 
@@ -86,20 +81,13 @@ public class BossHealth : MonoBehaviour
             isAlive = false;
             StartCoroutine(DestroyGameob());
 
+
         }
-        if (health <= 0)
-        {
-            Healthbar.SetActive(false);
-            Energybar.SetActive(false);
-            Abilities.SetActive(false);
-        }
+       
 
     }
 
-    public void activateenergybar()
-    {
-        Energybar.SetActive(true);
-    }
+   
     IEnumerator DestroyGameob()
     {
         portal.SetActive(true);
@@ -112,6 +100,8 @@ public class BossHealth : MonoBehaviour
 
         yield return new WaitForSeconds(despawnae);
 
+        Energybar.SetActive(false);
+        Abilities.SetActive(false);
         Destroy(this.gameObject);
         Destroy(bosshealthbar);
     }
