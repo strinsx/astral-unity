@@ -22,7 +22,7 @@ public class AstralBossHealth : MonoBehaviour
     public KnockBackMainRafales knockback;
     private bool isAlive;
     public bool isInvurnerable = false;
-    public HealthBar healthBar;
+    public BossHealthBar healthBar;
     public GameObject bosshealthbar;
     public AudioSource BackgroundRemove;
     public AudioSource Victory;
