@@ -19349,7 +19349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5721734443363344861, guid: e3a33d76ff42777438ac592c67c62768, type: 3}
       propertyPath: attackRange
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7397581829974224059, guid: e3a33d76ff42777438ac592c67c62768, type: 3}
       propertyPath: health
@@ -26914,7 +26914,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 45f748bfbad43e64cbc3f55fd07683e7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6ebf24d317964cd46b8be698590628de, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.642
   m_Pitch: 1
@@ -36458,6 +36458,7 @@ MonoBehaviour:
   bosshealthbar: {fileID: 1312219992}
   BackgroundRemove: {fileID: 376154750}
   Victory: {fileID: 1593403565}
+  baselinetest2: {fileID: 8300000, guid: af28f9ed1bfef6f4190a8ab717cb3a77, type: 3}
   portal: {fileID: 1992671683}
   spawnerManager: {fileID: 672323924}
   healthTrigger: 750
