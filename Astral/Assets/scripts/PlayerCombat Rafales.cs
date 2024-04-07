@@ -13,16 +13,20 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemies;
     public float KBForce = 2;
     public int regulardashDamage = 1;
+    private int skill3Damage = 40;
     public int regularAttackDamage = 10;
     public int skillDamage = 20;
     public float skillKBForce = 20;
     public float skill1Cooldown = 2f;
     public float skill2Cooldown = 4f;
+    public float skill3Cooldown = 2.5f;
     float lastSkillTime = -999f;
     float lastSkillTime2 = -999f;
+    float lastSkillTime3 = -999f;
     public bool skill1Enabled;
     public bool skill2Enabled;
     public bool skill3Enabled;
+    public bool skill4Enabled;
     public float skillActivationDelay = 0.5f;
     [SerializeField] private AudioClip baselinetest;
     [SerializeField] private AudioClip baselinetest1;
@@ -35,8 +39,10 @@ public class PlayerCombat : MonoBehaviour
     public Image abilityImage2;
     private bool isSkill1Cooldown = false;
     private bool isSkill2Cooldown = false;
+    private bool isSkill3Cooldown = false;
     private float currentSkill1Cooldown;
     private float currentSkill2Cooldown;
+    private float currentSkill3Cooldown;
 
     private void Awake()
     {
@@ -96,6 +102,19 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(60);
                 StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && !isAttacking && Time.time - lastSkillTime3 >= skill3Cooldown && energyBar.CanAttack(40))
+        {
+            isAttacking = false;
+            if(skill3Enabled)
+            {
+                charanim.SetTrigger("Skill3");
+                lastSkillTime3 = Time.time;
+                skillActivationDelay = Time.time;
+                energyBar.UseEnergy(80);
+                StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage2);
+
             }
         }
     }
@@ -290,7 +309,59 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    public void OnSkillJumpS()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackpoint.transform.position, radius, enemies);
 
+        foreach (Collider2D enemyCollider in enemy)
+        {
+            Debug.Log("HIT BY JUMP");
+            Rigidbody2D enemyRigidbody = enemyCollider.gameObject.GetComponent<Rigidbody2D>();
+            if (enemyRigidbody != null)
+            {
+                Vector2 knockbackDirection = (enemyRigidbody.position - GetComponent<Rigidbody2D>().position).normalized;
+                enemyRigidbody.AddForce(knockbackDirection * skillKBForce, ForceMode2D.Impulse);
+            }
+
+            BossHealth bossHealth = enemyCollider.gameObject.GetComponent<BossHealth>();
+            AstralBossHealth astralHealth = enemyCollider.gameObject.GetComponent<AstralBossHealth>();
+
+
+            if (bossHealth != null)
+            {
+                bossHealth.health -= skill3Damage;
+
+                PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
+                if (playerHealth != null)
+                {
+                    playerHealth.RestoreHealth(15);
+                }
+            }
+            if (astralHealth != null)
+            {
+                astralHealth.health -= skill3Damage;
+
+                PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
+                if (playerHealth != null)
+                {
+                    playerHealth.RestoreHealth(20);
+                }
+            }
+            else
+            {
+                enemyCollider.GetComponent<MinionHealth>().health -= skill3Damage;
+
+                PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
+                if (playerHealth != null)
+                {
+                    playerHealth.RestoreHealth(2);
+                }
+            }
+
+
+        }
+
+    }
 
     public void OnRegularDash()
     {
