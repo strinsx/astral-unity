@@ -14156,7 +14156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &413578512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27461,6 +27461,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2018516995}
     - target: {fileID: 5339003378723669938, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: abilityImage3
+      value: 
+      objectReference: {fileID: 1020115493}
+    - target: {fileID: 5339003378723669938, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: baselinetest1
       value: 
       objectReference: {fileID: 8300000, guid: 82e8e56dbc5fe7f4d8d1a42e6775a0ea, type: 3}
@@ -27474,6 +27478,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5339003378723669938, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
       propertyPath: skill2Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5339003378723669938, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
+      propertyPath: skill3Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5339003378723669938, guid: 1f7a4961196f81c4294dd23e620a9b7b, type: 3}
@@ -33107,7 +33115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713825804}
   m_Layer: 5
-  m_Name: Abilitydash (1)
+  m_Name: Ability3rd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

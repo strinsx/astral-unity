@@ -99,9 +99,6 @@ public class BossHealth : MonoBehaviour
 
 
         yield return new WaitForSeconds(despawnae);
-
-        Energybar.SetActive(false);
-        Abilities.SetActive(false);
         Destroy(this.gameObject);
         Destroy(bosshealthbar);
     }

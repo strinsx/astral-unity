@@ -37,6 +37,7 @@ public class PlayerCombat : MonoBehaviour
     public EnergyBar energyBar;
     public Image abilityImage1;
     public Image abilityImage2;
+    public Image abilityImage3;
     private bool isSkill1Cooldown = false;
     private bool isSkill2Cooldown = false;
     private bool isSkill3Cooldown = false;
@@ -113,7 +114,7 @@ public class PlayerCombat : MonoBehaviour
                 lastSkillTime3 = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(80);
-                StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage2);
+                StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage3);
 
             }
         }
@@ -131,6 +132,7 @@ public class PlayerCombat : MonoBehaviour
     {
         UpdateCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
         UpdateCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
+        UpdateCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage3);
     }
 
     void UpdateCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage)
