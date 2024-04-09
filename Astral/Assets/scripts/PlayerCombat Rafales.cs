@@ -35,7 +35,6 @@ public class PlayerCombat : MonoBehaviour
     private bool attackkeypressed = true;
     private float attackDelay = 0.1f;
     private float currentDelayTimer = 0f;
-    public Keybinds keybinds;
     public EnergyBar energyBar;
     public Image abilityImage1;
     public Image abilityImage2;
@@ -46,16 +45,16 @@ public class PlayerCombat : MonoBehaviour
     private float currentSkill1Cooldown;
     private float currentSkill2Cooldown;
     private float currentSkill3Cooldown;
-
+    public Keybinds keybinds;
     private void Awake()
     {
         instance = this;
+        keybinds = GetComponent<Keybinds>();
     }
       void Start()
     {
         charanim = GetComponent<Animator>();
         LoadSkillsCooldown();
-        keybinds = GetComponent<Keybinds>();
     }
     public void Update()
     {
@@ -80,6 +79,7 @@ public class PlayerCombat : MonoBehaviour
                 isAttacking = true;
                 charanim.SetTrigger("Attack");
                 attackkeypressed = false;
+                PlayerPrefs.Save();
             }
         }
         else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.firstskill.text)) && !isAttacking && Time.time - lastSkillTime >= skill1Cooldown && energyBar.CanAttack(40))
@@ -93,6 +93,7 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(40);
                 StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
+                PlayerPrefs.Save();
             }
         }
         else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.thirdskill.text)) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(60))
@@ -106,6 +107,7 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(60);
                 StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
+                PlayerPrefs.Save();
             }
         }
         else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.thirdskill.text)) && !isAttacking && Time.time - lastSkillTime3 >= skill3Cooldown && energyBar.CanAttack(80))
@@ -118,6 +120,7 @@ public class PlayerCombat : MonoBehaviour
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(80);
                 StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage3);
+                PlayerPrefs.Save();
 
             }
         }

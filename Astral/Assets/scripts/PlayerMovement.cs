@@ -6,6 +6,7 @@
 	Feel free to use this in your own games, and I'd love to see anything you make!
  */
 
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     public float startDash;
     public float dashEnergyCost;
     private int direction;
+    public Keybinds keybinds;
     public EnergyBar energyBar;
     
 
@@ -231,7 +233,7 @@ public class PlayerMovement : MonoBehaviour
 
         #region DASH
 
-        if(Input.GetKeyDown(KeyCode.Q) && Time.time >= startDash) 
+        if(Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.dashKeyText.text)) && Time.time >= startDash) 
         {
             direction = IsFacingRight ? 1 : -1;
             StartCoroutine(Dash());

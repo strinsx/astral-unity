@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.679
+  m_FalloffIntensity: 0.325
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.15
   m_LightVolumeIntensity: 1
@@ -4892,7 +4892,7 @@ MonoBehaviour:
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 1
-  m_ShadowIntensity: 0.633
+  m_ShadowIntensity: 0.595
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
@@ -4900,8 +4900,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 2.6
-  m_PointLightOuterRadius: 9.8
+  m_PointLightInnerRadius: 6.6
+  m_PointLightOuterRadius: 15.8
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -9870,11 +9870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2950276432591385540, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.53
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 2950276432591385540, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.99
+      value: 27.4
       objectReference: {fileID: 0}
     - target: {fileID: 2950276432591385540, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9917,6 +9917,10 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3508349512443827317, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      propertyPath: keybinds
+      value: 
+      objectReference: {fileID: 7571822809241273894}
+    - target: {fileID: 3508349512443827317, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       propertyPath: baselinetest
       value: 
       objectReference: {fileID: 8300000, guid: 6ef93220b6d0974468608edf372390ad, type: 3}
@@ -9928,6 +9932,18 @@ PrefabInstance:
       propertyPath: baselinetest1
       value: 
       objectReference: {fileID: 8300000, guid: 82e8e56dbc5fe7f4d8d1a42e6775a0ea, type: 3}
+    - target: {fileID: 3508349512443827317, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      propertyPath: baselinetest2
+      value: 
+      objectReference: {fileID: 8300000, guid: af28f9ed1bfef6f4190a8ab717cb3a77, type: 3}
+    - target: {fileID: 3508349512443827317, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      propertyPath: skill1Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508349512443827317, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      propertyPath: skill2Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4831142176798413156, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.009
@@ -10027,6 +10043,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2222168613533909134, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5459039114174280699}
+    - targetCorrespondingSourceObject: {fileID: 2222168613533909134, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7571822809241273894}
   m_SourcePrefab: {fileID: 100100000, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
 --- !u!4 &1216429726869380668 stripped
 Transform:
@@ -10098,6 +10117,9 @@ MonoBehaviour:
   dashSpeed: 150
   dashTime: 1
   startDash: 0.1
+  dashEnergyCost: 20
+  keybinds: {fileID: 7571822809241273894}
+  energyBar: {fileID: 0}
   jumnpSoundClip: {fileID: 8300000, guid: 68a58d26f5140564882e45c5681c4cf7, type: 3}
   landSoundsClip: {fileID: 8300000, guid: 2d54aad49400dbe408ff1280ae480ac6, type: 3}
   dashSoundClip: {fileID: 8300000, guid: c92be1d934167b149a22b01783f3f7f6, type: 3}
@@ -10208,6 +10230,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7571822809241273894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565517605173350358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce5abb61414f504c8d4d27d3ee0b9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1Attack: {fileID: 0}
+  firstskill: {fileID: 0}
+  secondskill: {fileID: 0}
+  thirdskill: {fileID: 0}
+  dashKeyText: {fileID: 0}
+  errorMessageText: {fileID: 0}
+  errorSoundClip: {fileID: 0}
+  errorMessageDisplayDuration: 2
 --- !u!4 &8870814295352196252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2950276432591385540, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
