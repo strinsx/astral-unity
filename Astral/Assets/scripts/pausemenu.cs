@@ -7,12 +7,14 @@ public class pausemenu : MonoBehaviour
 {
 
     private bool isPaused = false;
+    private float originalTimeScale = 1f;
 
     // Update is called once per frame
-    
+
     void Start()
     {
-  
+        originalTimeScale = Time.timeScale;
+
     }
     void Update()
 
@@ -21,13 +23,16 @@ public class pausemenu : MonoBehaviour
     public void TogglePause()
     {
         isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
+        if (isPaused)
+        {
+            Time.timeScale = 0.5f;
+        }
     }
     public void ResumeGame()
     {
-            isPaused = false;
-            Time.timeScale = 1;
+        isPaused = false;
+        Time.timeScale = 1f;
 
-        }
+    }
     
 }

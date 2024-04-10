@@ -12,7 +12,6 @@ public class EnergyBar : MonoBehaviour
     public GameObject notEnoughEnergyIndicator;
     private Coroutine energyCoroutine;
     public Camera mainCamera;
-    public Text hello;
 
 
 

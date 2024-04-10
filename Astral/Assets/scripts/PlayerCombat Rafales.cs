@@ -27,7 +27,6 @@ public class PlayerCombat : MonoBehaviour
     public bool skill1Enabled;
     public bool skill2Enabled;
     public bool skill3Enabled;
-    public bool skill4Enabled;
     public float skillActivationDelay = 0.5f;
     [SerializeField] private AudioClip baselinetest;
     [SerializeField] private AudioClip baselinetest1;
@@ -96,32 +95,32 @@ public class PlayerCombat : MonoBehaviour
                 PlayerPrefs.Save();
             }
         }
-        else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.thirdskill.text)) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(60))
+        else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.secondskill.text)) && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(60))
         {
             isAttacking = false;
             if (skill2Enabled)
             {
-                charanim.SetTrigger("Skill2");
-                SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
+                charanim.SetTrigger("Skill3");
                 lastSkillTime2 = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(60);
                 StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
                 PlayerPrefs.Save();
+
             }
         }
         else if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.thirdskill.text)) && !isAttacking && Time.time - lastSkillTime3 >= skill3Cooldown && energyBar.CanAttack(80))
         {
             isAttacking = false;
-            if(skill3Enabled)
+            if (skill3Enabled)
             {
-                charanim.SetTrigger("Skill3");
+                charanim.SetTrigger("Skill2");
+                SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
                 lastSkillTime3 = Time.time;
                 skillActivationDelay = Time.time;
                 energyBar.UseEnergy(80);
                 StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage3);
                 PlayerPrefs.Save();
-
             }
         }
     }

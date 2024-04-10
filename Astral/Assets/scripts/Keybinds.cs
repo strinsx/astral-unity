@@ -22,6 +22,8 @@ public class Keybinds : MonoBehaviour
 
     private void Start()
     {
+        errorSoundClip = GetComponent<AudioClip>();
+        audioSource = GetComponent<AudioSource>();
         LoadKeyBindings();
     }
 
@@ -35,7 +37,7 @@ public class Keybinds : MonoBehaviour
     }
     void UpdateKeyBinding(TextMeshProUGUI keyText, string keyName)
     {
-        if (keyText.text == "|")
+        if (keyText.text == "Wait.")
         {
             foreach (KeyCode keycode in Enum.GetValues(typeof(KeyCode)))
             {
@@ -125,43 +127,43 @@ public class Keybinds : MonoBehaviour
     {
         button1Attack.text = PlayerPrefs.GetString("Attack1", "Z");
         firstskill.text = PlayerPrefs.GetString("Firstskill", "W");
-        secondskill.text = PlayerPrefs.GetString("Secondskill", "R");
-        thirdskill.text = PlayerPrefs.GetString("ThirdSkill", "E");
+        secondskill.text = PlayerPrefs.GetString("Secondskill", "E");
+        thirdskill.text = PlayerPrefs.GetString("ThirdSkill", "R");
         dashKeyText.text = PlayerPrefs.GetString("DashKey", "Q");
     }
     public void Resetkeydefault()
     {
         PlayerPrefs.SetString("Attack1", "Z");
         PlayerPrefs.SetString("Firstskill", "W");
-        PlayerPrefs.SetString("Secondskill", "R");
-        PlayerPrefs.SetString("ThirdSkill", "E");
+        PlayerPrefs.SetString("Secondskill", "E");
+        PlayerPrefs.SetString("ThirdSkill", "R");
         PlayerPrefs.SetString("DashSkill", "Q");
 
         button1Attack.text = "Z";
         firstskill.text = "W";
-        secondskill.text = "R";
-        thirdskill.text = "E";
+        secondskill.text = "E";
+        thirdskill.text = "R";
         dashKeyText.text = "Q";
         PlayerPrefs.Save();
     } 
     public void Attackkey1()
     {
-        button1Attack.text = "|";
+        button1Attack.text = "Wait.";
     }
     public void First()
     {
-        firstskill.text = "|";
+        firstskill.text = "Wait.";
     }
     public void Second()
     {
-        secondskill.text = "|";
+        secondskill.text = "Wait.";
     }
     public void Third()
     {
-        thirdskill.text = "|";
+        thirdskill.text = "Wait.";
     }
     public void dash()
     {
-        dashKeyText.text = "|";
+        dashKeyText.text = "Wait.";
     }
 }

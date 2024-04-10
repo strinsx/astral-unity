@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class EscapePanelStages : MonoBehaviour
 {
     private bool isPaused = false;
+    private float originalTimeScale = 1f;
 
     public GameObject Escape;
     public GameObject Background;
@@ -20,7 +21,7 @@ public class EscapePanelStages : MonoBehaviour
     void Start()
     {
         Escape.SetActive(false);
-        
+        originalTimeScale = Time.timeScale;
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class EscapePanelStages : MonoBehaviour
                 Escape.SetActive(true);
                 MenuSymbol.SetActive(false);
                 isPaused = true;
-                Time.timeScale = 0;
+                Time.timeScale = 0.5f;
             }
             else
             {
@@ -54,7 +55,7 @@ public class EscapePanelStages : MonoBehaviour
                 Escape.SetActive(false);
                 MenuSymbol.SetActive(true);
                 isPaused = false;
-                Time.timeScale = 1;
+                Time.timeScale = originalTimeScale;
             }
 
         }
