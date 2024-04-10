@@ -145,7 +145,15 @@ public class Keybinds : MonoBehaviour
         thirdskill.text = "R";
         dashKeyText.text = "Q";
         PlayerPrefs.Save();
-    } 
+    }
+    public void SaveAllKeyBindingsRestartorquit()
+    {
+        SaveKeyBinding("Attack1", button1Attack.text);
+        SaveKeyBinding("Firstskill", firstskill.text);
+        SaveKeyBinding("Secondskill", secondskill.text);
+        SaveKeyBinding("ThirdSkill", thirdskill.text);
+        SaveKeyBinding("DashKey", dashKeyText.text);
+    }
     public void Attackkey1()
     {
         button1Attack.text = "Wait.";
