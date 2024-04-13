@@ -18,6 +18,8 @@ public class MinionAttack : MonoBehaviour
     public float shakeAmplitude = 1f;
     public float shakeFrequency = 1f; 
 
+     [SerializeField] private AudioClip attackSFX;
+
 
 
 
@@ -46,6 +48,7 @@ public class MinionAttack : MonoBehaviour
                 impulseSource.m_ImpulseDefinition.m_AmplitudeGain = shakeAmplitude;
                 impulseSource.m_ImpulseDefinition.m_FrequencyGain = shakeFrequency;
                 CameraShakeManager.instance.CameraShake(impulseSource);
+                SoundEffectManager.instance.SkillCLip(attackSFX, transform , 1f);
             }
         }
     }

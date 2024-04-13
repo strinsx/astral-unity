@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+  idleSound: {fileID: 8300000, guid: 2f4faaaa699802c4d8653f34f95796dd, type: 3}
   attackRange: 3
 --- !u!1107 &-621056570568555618
 AnimatorStateMachine:

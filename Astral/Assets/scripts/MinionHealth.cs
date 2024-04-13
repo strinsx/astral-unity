@@ -23,6 +23,8 @@ public class MinionHealth : MonoBehaviour
     private Vector2 attackDirection;
     public KnockBackMainRafales knockback;
     private bool isAlive;
+    [SerializeField] private AudioClip hurtSFX;
+     [SerializeField] private AudioClip deathSFX;
     
     private void Start()
     {
@@ -55,12 +57,9 @@ public class MinionHealth : MonoBehaviour
                 CameraShakeManager.instance.CameraShake(impulseSource);
                 SpawnDamageParticles(attackDirection);
                 _damageFlash.CallDps();
+                SoundEffectManager.instance.SkillCLip(hurtSFX, transform , 1f);
             }
 
-            if(health <= 150)
-        {
-            anim.SetBool("isEnraged", true);
-        }
 
             if (health <= 0)
             {
@@ -68,6 +67,7 @@ public class MinionHealth : MonoBehaviour
                 Debug.Log("EnemyDead");
                 isAlive = false;
                 StartCoroutine(DestroyGameob());
+                SoundEffectManager.instance.SkillCLip(deathSFX, transform, 1f);
             }
         
     }

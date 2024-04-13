@@ -22,7 +22,12 @@ public class BossHealth : MonoBehaviour
     public BossHealthBar healthBar;
     public GameObject bosshealthbar;
     public AudioSource BackgroundRemove;
-    public AudioSource Victory;
+
+    [Header("Boss SFX")]
+    [SerializeField] private AudioClip hurtSFX;
+    [SerializeField] private AudioClip deathSFX;
+
+     public AudioSource Victory;
     [Header("TransparentImageWhenSkillUIAppear")]
     public GameObject Energybar;
     public GameObject Abilities;
@@ -65,6 +70,7 @@ public class BossHealth : MonoBehaviour
             CameraShakeManager.instance.CameraShake(impulseSource);
             SpawnDamageParticles(attackDirection);
             _damageFlash.CallDps();
+            SoundEffectManager.instance.SkillCLip(hurtSFX, transform, 1f);
         
 
         }
@@ -80,7 +86,7 @@ public class BossHealth : MonoBehaviour
             Debug.Log("EnemyDead");
             isAlive = false;
             StartCoroutine(DestroyGameob());
-
+            SoundEffectManager.instance.SkillCLip(deathSFX, transform , 1f);
 
         }
        

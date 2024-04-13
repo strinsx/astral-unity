@@ -130,7 +130,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 30
+  m_GravityScale: 15
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -221,6 +221,8 @@ MonoBehaviour:
   animationcomponent: {fileID: 0}
   _damageFlash: {fileID: 1874596959738378479}
   knockback: {fileID: 0}
+  hurtSFX: {fileID: 8300000, guid: 1d314bd99d9c9114a84014a8938e230b, type: 3}
+  deathSFX: {fileID: 8300000, guid: 23e35d27444b37247a0f56b2be3bc640, type: 3}
 --- !u!114 &615103617947482564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +244,7 @@ MonoBehaviour:
   attackDamage: 3
   shakeAmplitude: 1
   shakeFrequency: 1
+  attackSFX: {fileID: 8300000, guid: d3e8162c5f6b6c94eaa82d8bfc158d6c, type: 3}
 --- !u!210 &8105427481128935510
 SortingGroup:
   m_ObjectHideFlags: 0

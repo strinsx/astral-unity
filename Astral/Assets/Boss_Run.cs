@@ -19,6 +19,7 @@ public class Boss_Run : StateMachineBehaviour
     public float rangebulletMultiplier;
     public float fireRate = 2f;
     private float nextFireTime = 0f;
+    [SerializeField] private AudioClip shootSFX;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -43,7 +44,7 @@ public class Boss_Run : StateMachineBehaviour
             if (Vector2.Distance(player.position, rb.position) <= attackRange)
             {
                 animator.SetTrigger("Attack");
-
+                SoundEffectManager.instance.SkillCLip(shootSFX, animator.transform, 1f);
                 GameObject newBullet = Instantiate(bullet, rb.position, Quaternion.identity);
                 Vector2 direction = ((Vector2)player.position - (Vector2)rb.position).normalized;
                 newBullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed * rangebulletMultiplier;

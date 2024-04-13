@@ -134,6 +134,7 @@ MonoBehaviour:
   attackDamage: 10
   shakeAmplitude: 1
   shakeFrequency: 1
+  attackSFX: {fileID: 8300000, guid: 4b7485a87a598204f90be1e2c4b8e342, type: 3}
 --- !u!114 &8097659082458413510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +169,8 @@ MonoBehaviour:
   animationcomponent: {fileID: 0}
   _damageFlash: {fileID: 0}
   knockback: {fileID: 0}
+  hurtSFX: {fileID: 8300000, guid: fa20938efd8709e44a7dc0c898a0df13, type: 3}
+  deathSFX: {fileID: 8300000, guid: dec0bfd1d1d37504684df77476364a1e, type: 3}
 --- !u!50 &8770100159476287832
 Rigidbody2D:
   serializedVersion: 4
