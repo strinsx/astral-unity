@@ -67,6 +67,11 @@ public class zz : MonoBehaviour
         DestroyAudioManagerExist();
         SceneManager.LoadSceneAsync(11);
     }
+    public void TutorialScene()
+    {
+        DestroyAudioManagerExist();
+        SceneManager.LoadSceneAsync(13);
+    }
 
     public void QuitGame()
     {

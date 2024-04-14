@@ -360,7 +360,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1169265487}
         m_TargetAssemblyTypeName: zz, Assembly-CSharp
-        m_MethodName: FScene
+        m_MethodName: TutorialScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -377,7 +377,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12497,8 +12497,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19904995, y: 0.15465003, z: 0}
-    m_Extent: {x: 3.36135, y: 1.9196501, z: 0}
+    m_Center: {x: -0.19999993, y: 0.15490001, z: 0}
+    m_Extent: {x: 3.3623, y: 1.9199, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14775,8 +14775,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4336498, y: -0.18629992, z: 0}
-    m_Extent: {x: 6.7837496, y: 3.791, z: 0}
+    m_Center: {x: 2.4335501, y: -0.18625009, z: 0}
+    m_Extent: {x: 6.78345, y: 3.79135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
