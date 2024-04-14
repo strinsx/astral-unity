@@ -1526,18 +1526,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 740005768}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1312219992}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1563,30 +1551,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2110178998}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1183208609}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2013,6 +1977,7 @@ MonoBehaviour:
   Character: {fileID: 1183208609}
   Backgroundsound: {fileID: 376154750}
   SoundEffect: {fileID: 1083420856}
+  gameover: {fileID: 0}
 --- !u!114 &235248927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18852,7 +18817,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dcc30cb7f31b9c94098fe95943679716, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 032c21c7993f73842b5475230fa829c3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26474,7 +26439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dcc30cb7f31b9c94098fe95943679716, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 032c21c7993f73842b5475230fa829c3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33888,6 +33853,10 @@ PrefabInstance:
       propertyPath: PauseSymbol
       value: 
       objectReference: {fileID: 740005768}
+    - target: {fileID: 2753047552272777434, guid: b4647dbe2511f6e4c984297b899089b2, type: 3}
+      propertyPath: Escapedisabled
+      value: 
+      objectReference: {fileID: 235248926}
     - target: {fileID: 7394272360252809907, guid: b4647dbe2511f6e4c984297b899089b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2157.2402

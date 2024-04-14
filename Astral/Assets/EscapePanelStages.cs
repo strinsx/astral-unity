@@ -16,7 +16,7 @@ public class EscapePanelStages : MonoBehaviour
     public GameObject Abilities;
     public GameObject Character;
     public AudioSource Backgroundsound, SoundEffect;
-  
+    public GameOverManager gameover;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class EscapePanelStages : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!gameover.gameovers() && Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused)
             {
@@ -57,7 +57,6 @@ public class EscapePanelStages : MonoBehaviour
                 isPaused = false;
                 Time.timeScale = originalTimeScale;
             }
-
         }
     }
 }

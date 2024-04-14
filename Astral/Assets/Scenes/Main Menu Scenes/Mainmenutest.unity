@@ -372,8 +372,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1763874266}
         m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12497,8 +12497,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19999993, y: 0.15490001, z: 0}
-    m_Extent: {x: 3.3623, y: 1.9199, z: 0}
+    m_Center: {x: -0.19940007, y: 0.15490007, z: 0}
+    m_Extent: {x: 3.3628001, y: 1.9198, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14775,8 +14775,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4335501, y: -0.18625009, z: 0}
-    m_Extent: {x: 6.78345, y: 3.79135, z: 0}
+    m_Center: {x: 2.43355, y: -0.18640006, z: 0}
+    m_Extent: {x: 6.7845497, y: 3.791, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
