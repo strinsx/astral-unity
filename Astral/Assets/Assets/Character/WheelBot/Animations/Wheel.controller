@@ -120,7 +120,7 @@ MonoBehaviour:
   bulletParent: {fileID: 987407677655561580, guid: 4bea7432bb87e9649a58c8a8ff05d458, type: 3}
   bulletSpeed: 10
   rangebulletMultiplier: 1
-  fireRate: 2
+  fireRate: 0.7
   shootSFX: {fileID: 8300000, guid: 6cdbbf2054845394c868b3e3a450cc25, type: 3}
 --- !u!1102 &-1764404164758661378
 AnimatorState:

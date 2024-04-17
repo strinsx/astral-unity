@@ -160,12 +160,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  attackRange: 40
+  attackRange: 30
   bullet: {fileID: 4101395465511110255, guid: b2ba74797e8734f4dbc28de311371d89, type: 3}
   bulletParent: {fileID: 4207372680967111989, guid: 6ab2b01a45d81ca4aaaf0a9fc2640808, type: 3}
   bulletSpeed: 10
   rangebulletMultiplier: 4
-  fireRate: 1
+  fireRate: 0.9
+  shootSFX: {fileID: 8300000, guid: 97d00f7b4e6aec54fa8fdc12b7e5dc90, type: 3}
 --- !u!1101 &-3375558191198342193
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -473,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  idleSound: {fileID: 0}
   attackRange: 3
 --- !u!1101 &6410725532287652387
 AnimatorStateTransition:
