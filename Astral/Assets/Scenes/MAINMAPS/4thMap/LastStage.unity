@@ -1978,7 +1978,7 @@ MonoBehaviour:
   Character: {fileID: 1183208609}
   Backgroundsound: {fileID: 376154750}
   SoundEffect: {fileID: 1083420856}
-  gameover: {fileID: 0}
+  gameover: {fileID: 1873225829}
 --- !u!114 &235248927
 MonoBehaviour:
   m_ObjectHideFlags: 0
