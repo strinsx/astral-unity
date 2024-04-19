@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 public class PlayerCombat : MonoBehaviour
 {
     public Animator charanim;
@@ -45,6 +46,11 @@ public class PlayerCombat : MonoBehaviour
     private float currentSkill2Cooldown;
     private float currentSkill3Cooldown;
     public Keybinds keybinds;
+
+    public float vibrationDuration = 0.5f; 
+    public float vibrationIntensity = 1.0f;
+
+    private Coroutine vibrationCoroutine;
     private void Awake()
     {
         instance = this;
@@ -123,7 +129,79 @@ public class PlayerCombat : MonoBehaviour
                 PlayerPrefs.Save();
             }
         }
+        if (Gamepad.current != null)
+        {
+            if (Gamepad.current.buttonWest.wasPressedThisFrame && !attackkeypressed && !isAttacking)
+            {
+       
+                attackkeypressed = true;
+                currentDelayTimer = attackDelay;
+            }
+                if (attackkeypressed)
+                {
+                    currentDelayTimer -= Time.deltaTime;
+
+                    if (currentDelayTimer <= 0)
+                    {
+                        isAttacking = true;
+                        charanim.SetTrigger("Attack");
+                        attackkeypressed = false;
+                        PlayerPrefs.Save();
+                    }
+               
+            }
+            else if (Gamepad.current.rightShoulder.wasPressedThisFrame && !isAttacking && Time.time - lastSkillTime >= skill1Cooldown && energyBar.CanAttack(40))
+            {
+                isAttacking = false;
+                if (skill1Enabled)
+                {
+                    TriggerVibration(vibrationDuration, vibrationIntensity);
+                    charanim.SetTrigger("Skills");
+                    SoundEffectManager.instance.SkillCLip(baselinetest1, transform, 1f);
+                    lastSkillTime = Time.time;
+                    skillActivationDelay = Time.time;
+                    energyBar.UseEnergy(40);
+                    StartCooldown(ref currentSkill1Cooldown, skill1Cooldown, ref isSkill1Cooldown, abilityImage1);
+                    PlayerPrefs.Save();
+                }
+
+            }
+            else if (Gamepad.current.rightTrigger.wasPressedThisFrame && !isAttacking && Time.time - lastSkillTime2 >= skill2Cooldown && energyBar.CanAttack(60))
+            {
+                isAttacking = false;
+                if (skill2Enabled)
+                {
+                    TriggerVibration(vibrationDuration, vibrationIntensity);
+                    charanim.SetTrigger("Skill3");
+                    lastSkillTime2 = Time.time;
+                    skillActivationDelay = Time.time;
+                    energyBar.UseEnergy(60);
+                    StartCooldown(ref currentSkill2Cooldown, skill2Cooldown, ref isSkill2Cooldown, abilityImage2);
+                    PlayerPrefs.Save();
+
+                }
+
+            }
+            else if (Gamepad.current.leftShoulder.wasPressedThisFrame && !isAttacking && Time.time - lastSkillTime3 >= skill3Cooldown && energyBar.CanAttack(80))
+            {
+
+                isAttacking = false;
+                if (skill3Enabled)
+                {
+                    TriggerVibration(vibrationDuration, vibrationIntensity);
+                    charanim.SetTrigger("Skill2");
+                    SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
+                    lastSkillTime3 = Time.time;
+                    skillActivationDelay = Time.time;
+                    energyBar.UseEnergy(80);
+                    StartCooldown(ref currentSkill3Cooldown, skill3Cooldown, ref isSkill3Cooldown, abilityImage3);
+                    PlayerPrefs.Save();
+                }
+            }
+        }
+
     }
+
 
     void StartCooldown(ref float currentCooldown, float maxCooldown, ref bool isCooldown, Image skillImage)
     {
@@ -405,8 +483,23 @@ public class PlayerCombat : MonoBehaviour
         }
 
     }
+    void TriggerVibration(float duration, float intensity)
+    {
+        Gamepad.current.SetMotorSpeeds(intensity, intensity); // Start vibration
+        if (vibrationCoroutine != null)
+        {
+            StopCoroutine(vibrationCoroutine); // Stop previous vibration coroutine if running
+        }
+        vibrationCoroutine = StartCoroutine(StopVibration(duration)); // Start coroutine to stop vibration after duration
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackpoint.transform.position, radius);
     }
+    IEnumerator StopVibration(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        Gamepad.current.SetMotorSpeeds(0, 0); // Stop vibration
+    }
+
 }

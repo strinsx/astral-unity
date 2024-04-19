@@ -9,6 +9,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -127,12 +128,19 @@ public class PlayerMovement : MonoBehaviour
             #endregion
 
             #region INPUT HANDLER
-            _moveInput.x = Input.GetAxisRaw("Horizontal");
-            _moveInput.y = Input.GetAxisRaw("Vertical");
-
+            if (Gamepad.current != null && Gamepad.current.leftStick.IsActuated())
+            {
+                _moveInput.x = Gamepad.current.leftStick.x.ReadValue();
+                _moveInput.y = Gamepad.current.leftStick.y.ReadValue();
+            }
+            else
+            {
+                _moveInput.x = Input.GetAxisRaw("Horizontal");
+                _moveInput.y = Input.GetAxisRaw("Vertical");
+            }
         }
 
-      
+
 
         Grounded();
 
@@ -177,6 +185,12 @@ public class PlayerMovement : MonoBehaviour
         {
             OnJumpUpInput();
         }
+        if (Gamepad.current.buttonSouth.wasPressedThisFrame) // Button South typically maps to the "A" button on Xbox and "X" button on PS4
+{
+    OnJumpInput();
+}
+
+
 
 
         #endregion
@@ -233,10 +247,14 @@ public class PlayerMovement : MonoBehaviour
 
         #region DASH
 
-        if(Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.dashKeyText.text)) && Time.time >= startDash) 
+        if ((Gamepad.current != null && Gamepad.current.leftTrigger.wasPressedThisFrame) ||
+            (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.dashKeyText.text)) && Time.time >= startDash))
         {
-            direction = IsFacingRight ? 1 : -1;
-            StartCoroutine(Dash());
+            if (Time.time >= startDash)
+            {
+                direction = IsFacingRight ? 1 : -1;
+                StartCoroutine(Dash());
+            }
         }
 
 

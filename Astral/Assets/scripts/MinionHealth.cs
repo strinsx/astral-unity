@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class MinionHealth : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class MinionHealth : MonoBehaviour
     private Vector2 attackDirection;
     public KnockBackMainRafales knockback;
     private bool isAlive;
+    private bool vibrationTriggered = false;
     [SerializeField] private AudioClip hurtSFX;
      [SerializeField] private AudioClip deathSFX;
     
@@ -57,11 +59,15 @@ public class MinionHealth : MonoBehaviour
                 CameraShakeManager.instance.CameraShake(impulseSource);
                 SpawnDamageParticles(attackDirection);
                 _damageFlash.CallDps();
-                SoundEffectManager.instance.SkillCLip(hurtSFX, transform , 1f);
+                 SoundEffectManager.instance.SkillCLip(hurtSFX, transform, 1f);
+            if (!vibrationTriggered)
+            {
+                StartCoroutine(TriggerVibration());
             }
+        }
 
 
-            if (health <= 0)
+        if (health <= 0)
             {
                 anim.SetBool("isDead", true);
                 Debug.Log("EnemyDead");
@@ -71,6 +77,15 @@ public class MinionHealth : MonoBehaviour
             }
         
     }
+    IEnumerator TriggerVibration()
+    {
+        vibrationTriggered = true;
+        Gamepad.current.SetMotorSpeeds(0.5f, 0.5f);
+        yield return new WaitForSeconds(0.5f); 
+        Gamepad.current.SetMotorSpeeds(0, 0); 
+        vibrationTriggered = false;
+    }
+
 
     IEnumerator DestroyGameob()
     {

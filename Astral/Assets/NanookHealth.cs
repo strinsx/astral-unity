@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class NanookHealth : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class NanookHealth : MonoBehaviour
     public bool isInvurnerable = false;
     public HealthBar healthBar;
     public GameObject bosshealthbar;
+    public bool vibrationTriggered = false;
 
     private void Start()
     {
@@ -61,6 +63,10 @@ public class NanookHealth : MonoBehaviour
             CameraShakeManager.instance.CameraShake(impulseSource);
             SpawnDamageParticles(attackDirection);
             _damageFlash.CallDps();
+            if (!vibrationTriggered)
+            {
+                StartCoroutine(TriggerVibration());
+            }
 
 
         }
@@ -73,6 +79,14 @@ public class NanookHealth : MonoBehaviour
             StartCoroutine(DestroyGameob());
         }
 
+    }
+    IEnumerator TriggerVibration()
+    {
+        vibrationTriggered = true;
+        Gamepad.current.SetMotorSpeeds(0.5f, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        Gamepad.current.SetMotorSpeeds(0, 0);
+        vibrationTriggered = false;
     }
 
     IEnumerator DestroyGameob()

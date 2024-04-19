@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class BossHealth : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class BossHealth : MonoBehaviour
     public GameObject Abilities;
     [Header("---Portal---")]
     public GameObject portal;
+
+    public bool vibrationTriggered = false;
 
     private void Start()
     {
@@ -71,6 +74,10 @@ public class BossHealth : MonoBehaviour
             SpawnDamageParticles(attackDirection);
             _damageFlash.CallDps();
             SoundEffectManager.instance.SkillCLip(hurtSFX, transform, 1f);
+            if (!vibrationTriggered)
+            {
+                StartCoroutine(TriggerVibration());
+            }
         
 
         }
@@ -87,13 +94,20 @@ public class BossHealth : MonoBehaviour
             isAlive = false;
             StartCoroutine(DestroyGameob());
             SoundEffectManager.instance.SkillCLip(deathSFX, transform , 1f);
-
         }
        
 
     }
 
-   
+
+    IEnumerator TriggerVibration()
+    {
+        vibrationTriggered = true;
+        Gamepad.current.SetMotorSpeeds(0.7f, 0.7f);
+        yield return new WaitForSeconds(0.4f);
+        Gamepad.current.SetMotorSpeeds(0, 0);
+        vibrationTriggered = false;
+    }
     IEnumerator DestroyGameob()
     {
         portal.SetActive(true);

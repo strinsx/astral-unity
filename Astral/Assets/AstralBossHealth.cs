@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class AstralBossHealth : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class AstralBossHealth : MonoBehaviour
     public BossSpawnerManager spawnerManager;
     public int healthTrigger = 750;
     private bool hasSpawneBosses = false;
+
+    public bool vibrationTriggered = false;
 
 
     private void Start()
@@ -71,7 +74,10 @@ public class AstralBossHealth : MonoBehaviour
             CameraShakeManager.instance.CameraShake(impulseSource);
             SpawnDamageParticles(attackDirection);
             _damageFlash.CallDps();
-
+            if (!vibrationTriggered)
+            {
+                StartCoroutine(TriggerVibration());
+            }
 
         }
 
@@ -98,6 +104,14 @@ public class AstralBossHealth : MonoBehaviour
 
         }
 
+    }
+    IEnumerator TriggerVibration()
+    {
+        vibrationTriggered = true;
+        Gamepad.current.SetMotorSpeeds(1f, 1f);
+        yield return new WaitForSeconds(1f);
+        Gamepad.current.SetMotorSpeeds(0, 0);
+        vibrationTriggered = false;
     }
 
     IEnumerator DestroyGameob()

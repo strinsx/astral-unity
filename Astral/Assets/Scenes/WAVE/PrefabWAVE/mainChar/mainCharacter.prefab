@@ -10045,6 +10045,12 @@ PrefabInstance:
       addedObject: {fileID: 5459039114174280699}
     - targetCorrespondingSourceObject: {fileID: 2222168613533909134, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 6242691657916472078}
+    - targetCorrespondingSourceObject: {fileID: 2222168613533909134, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9062623950987975811}
+    - targetCorrespondingSourceObject: {fileID: 2222168613533909134, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7571822809241273894}
   m_SourcePrefab: {fileID: 100100000, guid: e86b6f69fc5c1504f96868c5efe2edb6, type: 3}
 --- !u!4 &1216429726869380668 stripped
@@ -10114,11 +10120,11 @@ MonoBehaviour:
   dust: {fileID: 7357699330003326527}
   onLand: {fileID: 5246533001918123505}
   canDoubleJump: 0
-  dashSpeed: 150
+  dashSpeed: 170
   dashTime: 1
   startDash: 0.1
   dashEnergyCost: 20
-  keybinds: {fileID: 7571822809241273894}
+  keybinds: {fileID: 0}
   energyBar: {fileID: 0}
   jumnpSoundClip: {fileID: 8300000, guid: 68a58d26f5140564882e45c5681c4cf7, type: 3}
   landSoundsClip: {fileID: 8300000, guid: 2d54aad49400dbe408ff1280ae480ac6, type: 3}
@@ -10230,6 +10236,85 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6242691657916472078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565517605173350358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c082206b0ec92844ba4ccd00dd0dbeb4, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9062623950987975811}
+        m_TargetAssemblyTypeName: Gamepad, Assembly-CSharp
+        m_MethodName: Moves
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d1b0708e-2892-4fd7-8408-353f9bd127c4
+    m_ActionName: PlayerOnGround/Move[/XInputControllerWindows/leftStick,/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9062623950987975811}
+        m_TargetAssemblyTypeName: Gamepad, Assembly-CSharp
+        m_MethodName: jumping
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8ee34c1a-11ed-4fea-843f-f22a8437876e
+    m_ActionName: Player/Jump[/XInputControllerWindows/buttonSouth,/DualShock4GamepadHID/buttonSouth,/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &9062623950987975811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565517605173350358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6272b31b2e5b9dc479ef71bbf28eadc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  groundCheck: {fileID: 0}
+  groundlayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7571822809241273894
 MonoBehaviour:
   m_ObjectHideFlags: 0
