@@ -125,7 +125,7 @@ public class Keybinds : MonoBehaviour
     }
     void LoadKeyBindings()
     {
-        button1Attack.text = PlayerPrefs.GetString("Attack1", "Z");
+        button1Attack.text = PlayerPrefs.GetString("Attack1", "F");
         firstskill.text = PlayerPrefs.GetString("Firstskill", "W");
         secondskill.text = PlayerPrefs.GetString("Secondskill", "E");
         thirdskill.text = PlayerPrefs.GetString("ThirdSkill", "R");
@@ -133,13 +133,13 @@ public class Keybinds : MonoBehaviour
     }
     public void Resetkeydefault()
     {
-        PlayerPrefs.SetString("Attack1", "Z");
+        PlayerPrefs.SetString("Attack1", "F");
         PlayerPrefs.SetString("Firstskill", "W");
         PlayerPrefs.SetString("Secondskill", "E");
         PlayerPrefs.SetString("ThirdSkill", "R");
         PlayerPrefs.SetString("DashSkill", "Q");
 
-        button1Attack.text = "Z";
+        button1Attack.text = "F";
         firstskill.text = "W";
         secondskill.text = "E";
         thirdskill.text = "R";
