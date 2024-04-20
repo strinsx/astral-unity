@@ -64,8 +64,12 @@ public class PlayerMovement : MonoBehaviour
     public float startDash;
     public float dashEnergyCost;
     private int direction;
+    private float vibrationDurationDash = 0.5f;
+    private float vibrationIntensityDash = 0.4f;
     public Keybinds keybinds;
     public EnergyBar energyBar;
+
+    private Coroutine vibrationCoroutine;
     
 
     private AudioSource audioSource;
@@ -253,10 +257,26 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Time.time >= startDash)
             {
+                TriggerVibration(vibrationDurationDash, vibrationIntensityDash);
                 direction = IsFacingRight ? 1 : -1;
                 StartCoroutine(Dash());
             }
         }
+        void TriggerVibration(float duration, float intensity)
+        {
+            Gamepad.current.SetMotorSpeeds(intensity, intensity); // Start vibration
+            if (vibrationCoroutine != null)
+            {
+                StopCoroutine(vibrationCoroutine); // Stop previous vibration coroutine if running
+            }
+            vibrationCoroutine = StartCoroutine(StopVibration(duration)); // Start coroutine to stop vibration after duration
+        }
+        IEnumerator StopVibration(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            Gamepad.current.SetMotorSpeeds(0, 0); // Stop vibration
+        }
+
 
 
         #endregion
@@ -605,10 +625,12 @@ private IEnumerator Dash()
         yield return new WaitForSeconds(dashTime);
 
         isSkillKeyPressed = false;
+        
     }
     else
     {
-        Debug.Log("Not enough energy for dash!");
+            Gamepad.current.SetMotorSpeeds(0, 0);
+            Debug.Log("Not enough energy for dash!");
     }
 }
 

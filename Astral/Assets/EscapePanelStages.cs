@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 public class EscapePanelStages : MonoBehaviour
 {
@@ -29,34 +30,34 @@ public class EscapePanelStages : MonoBehaviour
     {
         if (!gameover.gameovers() && Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!isPaused)
-            {
-                SoundEffect.Pause();
-                Backgroundsound.Pause();
-                Character.SetActive(false);
-                Abilities.SetActive(false);
-                HealthBar.SetActive(false);
-                Energybar.SetActive(false);
-                Background.SetActive(true);
-                Escape.SetActive(true);
-                MenuSymbol.SetActive(false);
-                isPaused = true;
-                Time.timeScale = 0.5f;
-            }
-            else
-            {
-                SoundEffect.UnPause();
-                Backgroundsound.UnPause();
-                Character.SetActive(true);
-                Abilities.SetActive(true);
-                HealthBar.SetActive(true);
-                Energybar.SetActive(true);
-                Background.SetActive(false);
-                Escape.SetActive(false);
-                MenuSymbol.SetActive(true);
-                isPaused = false;
-                Time.timeScale = originalTimeScale;
+                if (!isPaused)
+                {
+                    SoundEffect.Pause();
+                    Backgroundsound.Pause();
+                    Character.SetActive(false);
+                    Abilities.SetActive(false);
+                    HealthBar.SetActive(false);
+                    Energybar.SetActive(false);
+                    Background.SetActive(true);
+                    Escape.SetActive(true);
+                    MenuSymbol.SetActive(false);
+                    isPaused = true;
+                    Time.timeScale = 0f;
+                }
+                else 
+                {
+                    SoundEffect.UnPause();
+                    Backgroundsound.UnPause();
+                    Character.SetActive(true);
+                    Abilities.SetActive(true);
+                    HealthBar.SetActive(true);
+                    Energybar.SetActive(true);
+                    Background.SetActive(false);
+                    Escape.SetActive(false);
+                    MenuSymbol.SetActive(true);
+                    isPaused = false;
+                    Time.timeScale = originalTimeScale;
+                }
             }
         }
     }
-}

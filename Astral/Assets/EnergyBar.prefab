@@ -70,7 +70,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -1, y: -0}
+  m_AnchoredPosition: {x: -1, y: 0}
   m_SizeDelta: {x: 0, y: -1.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5232310592013497339
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energySlider: {fileID: 2735129955260632760}
   maxEnergy: 250
-  energyRegenRate: 2
+  energyRegenRate: 1
   notEnoughEnergyIndicator: {fileID: 1408962024777493476}
   mainCamera: {fileID: 0}
 --- !u!1 &7146680985835806175
@@ -750,6 +750,10 @@ PrefabInstance:
     - target: {fileID: 1026955465483815936, guid: 7c72af25eadacc6409a25145b3ff8732, type: 3}
       propertyPath: m_Name
       value: not enough
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026955465483815936, guid: 7c72af25eadacc6409a25145b3ff8732, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1290365259689544546, guid: 7c72af25eadacc6409a25145b3ff8732, type: 3}
       propertyPath: m_Pivot.x

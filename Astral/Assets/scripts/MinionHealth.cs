@@ -80,7 +80,7 @@ public class MinionHealth : MonoBehaviour
     IEnumerator TriggerVibration()
     {
         vibrationTriggered = true;
-        Gamepad.current.SetMotorSpeeds(0.5f, 0.5f);
+        Gamepad.current.SetMotorSpeeds(1f, 1f);
         yield return new WaitForSeconds(0.5f); 
         Gamepad.current.SetMotorSpeeds(0, 0); 
         vibrationTriggered = false;

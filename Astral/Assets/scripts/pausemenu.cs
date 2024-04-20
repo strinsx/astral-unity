@@ -25,7 +25,7 @@ public class pausemenu : MonoBehaviour
         isPaused = !isPaused;
         if (isPaused)
         {
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0f;
         }
     }
     public void ResumeGame()
