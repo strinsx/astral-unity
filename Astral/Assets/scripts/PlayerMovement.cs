@@ -185,10 +185,11 @@ public class PlayerMovement : MonoBehaviour
         {
             OnJumpUpInput();
         }
-        if (Gamepad.current.buttonSouth.wasPressedThisFrame) // Button South typically maps to the "A" button on Xbox and "X" button on PS4
-{
-    OnJumpInput();
-}
+        if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+        {
+
+             OnJumpInput();
+        }
 
 
 
@@ -636,4 +637,3 @@ private IEnumerator Dash()
     }
 }
 
-// created by Dawnosaur :D
