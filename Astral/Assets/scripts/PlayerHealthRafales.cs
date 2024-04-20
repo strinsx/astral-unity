@@ -59,7 +59,7 @@ public class PlayerHealthRafales : MonoBehaviour
             //gamemanager.enabled = true;
             gamemanager.Gameover();
             Debug.Log("Dead");
-        }
+        }   
 
         else 
         {

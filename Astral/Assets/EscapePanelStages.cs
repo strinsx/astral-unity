@@ -28,36 +28,63 @@ public class EscapePanelStages : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameover.gameovers() && Input.GetKeyDown(KeyCode.Escape))
+        //XBOX/PS4 controller which is Key "Startbutton"to pause and unpause
+        if (!gameover.gameovers() && Gamepad.current != null)
         {
+            if (Gamepad.current.startButton.wasPressedThisFrame)
+            {
                 if (!isPaused)
                 {
-                    SoundEffect.Pause();
-                    Backgroundsound.Pause();
-                    Character.SetActive(false);
-                    Abilities.SetActive(false);
-                    HealthBar.SetActive(false);
-                    Energybar.SetActive(false);
-                    Background.SetActive(true);
-                    Escape.SetActive(true);
-                    MenuSymbol.SetActive(false);
-                    isPaused = true;
-                    Time.timeScale = 0f;
+                    PauseGame();
                 }
                 else 
                 {
-                    SoundEffect.UnPause();
-                    Backgroundsound.UnPause();
-                    Character.SetActive(true);
-                    Abilities.SetActive(true);
-                    HealthBar.SetActive(true);
-                    Energybar.SetActive(true);
-                    Background.SetActive(false);
-                    Escape.SetActive(false);
-                    MenuSymbol.SetActive(true);
-                    isPaused = false;
-                    Time.timeScale = originalTimeScale;
+                    ResumeGame();
                 }
             }
         }
+
+        //keyboard controller which is Key "Escape" to pause and unpause
+        if (!gameover.gameovers() && Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!isPaused)
+            {
+                PauseGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
+        }
     }
+
+    void PauseGame()
+    {
+        SoundEffect.Pause();
+        Backgroundsound.Pause();
+        Character.SetActive(false);
+        Abilities.SetActive(false);
+        HealthBar.SetActive(false);
+        Energybar.SetActive(false);
+        Background.SetActive(true);
+        Escape.SetActive(true);
+        MenuSymbol.SetActive(false);
+        isPaused = true;
+        Time.timeScale = 0f;
+    }
+
+    void ResumeGame()
+    {
+        SoundEffect.UnPause();
+        Backgroundsound.UnPause();
+        Character.SetActive(true);
+        Abilities.SetActive(true);
+        HealthBar.SetActive(true);
+        Energybar.SetActive(true);
+        Background.SetActive(false);
+        Escape.SetActive(false);
+        MenuSymbol.SetActive(true);
+        isPaused = false;
+        Time.timeScale = originalTimeScale;
+    }
+}

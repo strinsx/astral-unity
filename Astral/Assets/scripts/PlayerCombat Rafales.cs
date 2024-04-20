@@ -47,8 +47,8 @@ public class PlayerCombat : MonoBehaviour
     private float currentSkill3Cooldown;
     public Keybinds keybinds;
 
-    public float vibrationDuration = 0.5f; 
-    public float vibrationIntensity = 1.0f;
+    private float vibrationDuration = 0.5f; 
+    private float vibrationIntensity = 0.6f;
 
     private Coroutine vibrationCoroutine;
     private void Awake()
