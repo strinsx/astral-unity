@@ -16,7 +16,6 @@ public class EscapePanelStages : MonoBehaviour
     public GameObject Energybar;
     public GameObject Abilities;
     public GameObject Character;
-    public AudioSource Backgroundsound, SoundEffect;
     public GameOverManager gameover;
     // Start is called before the first frame update
     void Start()
@@ -60,8 +59,6 @@ public class EscapePanelStages : MonoBehaviour
 
     void PauseGame()
     {
-        SoundEffect.Pause();
-        Backgroundsound.Pause();
         Character.SetActive(false);
         Abilities.SetActive(false);
         HealthBar.SetActive(false);
@@ -75,8 +72,6 @@ public class EscapePanelStages : MonoBehaviour
 
     void ResumeGame()
     {
-        SoundEffect.UnPause();
-        Backgroundsound.UnPause();
         Character.SetActive(true);
         Abilities.SetActive(true);
         HealthBar.SetActive(true);

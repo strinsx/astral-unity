@@ -360,7 +360,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1169265487}
         m_TargetAssemblyTypeName: zz, Assembly-CSharp
-        m_MethodName: TutorialScene
+        m_MethodName: FScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12650,8 +12650,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19939995, y: 0.1548, z: 0}
-    m_Extent: {x: 3.362, y: 1.9195001, z: 0}
+    m_Center: {x: -0.19955003, y: 0.15394998, z: 0}
+    m_Extent: {x: 3.3622499, y: 1.91955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14875,8 +14875,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.4340498, y: -0.18694997, z: 0}
-    m_Extent: {x: 6.78405, y: 3.79125, z: 0}
+    m_Center: {x: 2.43425, y: -0.18700004, z: 0}
+    m_Extent: {x: 6.7835503, y: 3.7913, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

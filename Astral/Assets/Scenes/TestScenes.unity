@@ -233,17 +233,6 @@ Transform:
   - {fileID: 1556237259}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &210497168 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1143836737457173868, guid: 23851d6576ce9b54dbba829be5660aef, type: 3}
-  m_PrefabInstance: {fileID: 627447417}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8a2fe84d4659944924d3c93d480bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &250363353
 GameObject:
   m_ObjectHideFlags: 3
@@ -864,11 +853,11 @@ PrefabInstance:
     - target: {fileID: 389977749484533628, guid: d8ea742328df95f44a265138319f4600, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 210497168}
+      objectReference: {fileID: 0}
     - target: {fileID: 389977749484533628, guid: d8ea742328df95f44a265138319f4600, type: 3}
       propertyPath: healthbar
       value: 
-      objectReference: {fileID: 210497168}
+      objectReference: {fileID: 0}
     - target: {fileID: 389977749484533628, guid: d8ea742328df95f44a265138319f4600, type: 3}
       propertyPath: maxHealth
       value: 250

@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     void Start()
     {
-        int savedHealth = PlayerPrefs.GetInt("HealthBarValue", -1); // Use -1 as a flag to indicate no saved value
+        int savedHealth = PlayerPrefs.GetInt("ddada", -1); // Use -1 as a flag to indicate no saved value
         if (savedHealth != -1)
         {
             SetHealth(savedHealth);

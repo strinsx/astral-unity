@@ -439,7 +439,7 @@ public class PlayerCombat : MonoBehaviour
                 PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                 if (playerHealth != null)
                 {
-                    playerHealth.RestoreHealth(10);
+                    playerHealth.RestoreHealth(5);
                 }
             }
 

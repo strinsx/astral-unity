@@ -57,16 +57,28 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scenes/Tutorialscene.unity
     guid: ab65fb6b5cc2a9e48a46ab7bd1f0fb34
   - enabled: 1
+    path: Assets/Scenes/CUTSCENES/Cutscene2.unity
+    guid: 21801936cd7d89c45939399634b2c94b
+  - enabled: 1
+    path: Assets/Scenes/CUTSCENES/Cutscene3.unity
+    guid: 05ff8d735ebdf1e4ab5617b4279abee4
+  - enabled: 1
     path: Assets/Scenes/CUTSCENES/Cutscene 4.unity
     guid: 27a1529853d33a24ea84bec5d1ecf48a
   - enabled: 1
     path: Assets/Scenes/CUTSCENES/Cutscene 5.unity
     guid: a040caa86b9bc9444bc2ad65d9ce87e5
   - enabled: 1
-    path: Assets/Scenes/CUTSCENES/Cutscene2.unity
-    guid: 21801936cd7d89c45939399634b2c94b
+    path: Assets/Scenes/CUTSCENES/Cutscene6.unity
+    guid: c789954b5cc2e8a469667243153616b7
   - enabled: 1
-    path: Assets/Scenes/CUTSCENES/Cutscene3.unity
-    guid: 05ff8d735ebdf1e4ab5617b4279abee4
+    path: Assets/Scenes/CUTSCENES/Cutscene7.unity
+    guid: b1f8fa359850e51459b50617e6fe8364
+  - enabled: 1
+    path: Assets/Scenes/CUTSCENES/Cutscene 8.unity
+    guid: 1b158a085c81aed4e8ecfb8c27552c45
+  - enabled: 1
+    path: Assets/Scenes/Comingsoon2/Astral2Coming.unity
+    guid: 42c29e8d3090fbc4b97c9a5c12b148be
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: af15af1c439e94c4d9d87f54285c5fd6, type: 2}

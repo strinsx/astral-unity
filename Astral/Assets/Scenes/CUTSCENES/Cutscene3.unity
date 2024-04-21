@@ -467,10 +467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13f0c1081af0954998e298211a99585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wait_seconds: 40
+  wait_seconds: 25
   musicAnim: {fileID: 96966732}
   deleteaudioCutscene: {fileID: 96966733}
-  nextscene: 9
+  nextscene: 8
 --- !u!1 &381022957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1116,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 7018980327609102256, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
     value: {fileID: 166526478}
+  - key: {fileID: -1982635734472970946, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 8466926272733134847, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3346589155235181724, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &1744787323

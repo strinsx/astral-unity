@@ -26,7 +26,7 @@ public class Keybinds : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         LoadKeyBindings();
     }
-
+        
     private void Update()
     {
         UpdateKeyBinding(button1Attack, "Attack1");
