@@ -8,6 +8,7 @@ public class FCLoader : MonoBehaviour
     public float wait_seconds;
     public Animator musicAnim;
     public AudioSource deleteaudioCutscene;
+    public int nextscene;
     void Start()
     {
         StartCoroutine(Wait_for_intro());
@@ -17,9 +18,9 @@ public class FCLoader : MonoBehaviour
     {
         musicAnim.SetTrigger("fadeOut");
         yield return new WaitForSeconds(wait_seconds);
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(nextscene);
 
-        if (wait_seconds == 40)
+        if (wait_seconds == 30)
         {
             Destroy(gameObject);
             deleteaudioCutscene.Stop();

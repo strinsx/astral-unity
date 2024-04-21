@@ -470,6 +470,7 @@ MonoBehaviour:
   wait_seconds: 40
   musicAnim: {fileID: 96966732}
   deleteaudioCutscene: {fileID: 96966733}
+  nextscene: 9
 --- !u!1 &381022957
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -804, y: 519}
+  m_AnchoredPosition: {x: 0, y: 500}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &733659532
@@ -749,15 +750,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52
-  m_fontSizeBase: 52
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -835,7 +836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -825.00006, y: 514}
+  m_AnchoredPosition: {x: 0, y: 500}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1337123730
@@ -931,15 +932,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1106,11 +1107,11 @@ PlayableDirector:
   - key: {fileID: 46297098289867434, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
     value: {fileID: 1744787323}
   - key: {fileID: 5931994297229307508, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1337123730}
   - key: {fileID: -8149899932213737336, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 2110089740}
   - key: {fileID: 5989423729910625328, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 733659532}
   - key: {fileID: -6664226050931621685, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
     value: {fileID: 0}
   - key: {fileID: 7018980327609102256, guid: 9abcf3525ad29c041935606d15e036de, type: 2}
@@ -1394,7 +1395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -840.00006, y: 516}
+  m_AnchoredPosition: {x: 0, y: 500}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2110089740
@@ -1495,15 +1496,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52
-  m_fontSizeBase: 52
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
