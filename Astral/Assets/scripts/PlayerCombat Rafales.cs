@@ -372,7 +372,7 @@ public class PlayerCombat : MonoBehaviour
                 PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                 if (playerHealth != null)
                 {
-                    playerHealth.RestoreHealth(25);
+                    playerHealth.RestoreHealth(50);
                 }
             }
             else
@@ -385,7 +385,7 @@ public class PlayerCombat : MonoBehaviour
                     PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                     if (playerHealth != null)
                     {
-                        playerHealth.RestoreHealth(2);
+                        playerHealth.RestoreHealth(10);
                     }
 
                 }
@@ -419,7 +419,7 @@ public class PlayerCombat : MonoBehaviour
                 PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                 if (playerHealth != null)
                 {
-                    playerHealth.RestoreHealth(15);
+                    playerHealth.RestoreHealth(40);
                 }
             }
             if (astralHealth != null)
@@ -429,7 +429,7 @@ public class PlayerCombat : MonoBehaviour
                 PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                 if (playerHealth != null)
                 {
-                    playerHealth.RestoreHealth(20);
+                    playerHealth.RestoreHealth(50);
                 }
             }
             else
@@ -439,7 +439,7 @@ public class PlayerCombat : MonoBehaviour
                 PlayerHealthRafales playerHealth = GetComponent<PlayerHealthRafales>();
                 if (playerHealth != null)
                 {
-                    playerHealth.RestoreHealth(2);
+                    playerHealth.RestoreHealth(10);
                 }
             }
 
