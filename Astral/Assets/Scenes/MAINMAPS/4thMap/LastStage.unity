@@ -18971,7 +18971,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5732b895953ca9a48bce5c32cbd861c2, type: 2}
     - target: {fileID: 2663478148636506628, guid: e3a33d76ff42777438ac592c67c62768, type: 3}
       propertyPath: m_Name
-      value: EnemyAstral
+      value: Astralis
       objectReference: {fileID: 0}
     - target: {fileID: 2900286147656734270, guid: e3a33d76ff42777438ac592c67c62768, type: 3}
       propertyPath: m_BodyType
@@ -20547,7 +20547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                     GAME ENDED, \n            YOU'VE DEFEATED ASTRAL\nFIND
+  m_text: "                      GAME ENDED, \n         YOU'VE DEFEATED ASTRALIS\nFIND
     THE PORTAL TO ESCAPE THE VOID"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}

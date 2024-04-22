@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a105ca314cc19ab4c8ece59d7ba9dd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopSceneBuildIndex: 0
 --- !u!95 &433284149
 Animator:
   serializedVersion: 5
@@ -572,8 +573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wait_seconds: 25
-  musicAnim: {fileID: 433284149}
-  deleteaudioCutscene: {fileID: 433284150}
   nextscene: 21
 --- !u!4 &599726879
 Transform:
@@ -848,7 +847,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Following these events, \nAstral regained his memories and emotions, \nbecoming
-    the new gatekeeper of the realm, \nwhile the enemy Astral slowly disappeared.\r\n"
+    the new gatekeeper of the realm, \nwhile the Astralis slowly disappeared.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}

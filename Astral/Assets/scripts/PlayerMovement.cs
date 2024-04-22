@@ -252,8 +252,7 @@ public class PlayerMovement : MonoBehaviour
 
         #region DASH
 
-        if ((Gamepad.current != null && Gamepad.current.leftTrigger.wasPressedThisFrame) ||
-            (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.dashKeyText.text)) && Time.time >= startDash))
+        if (Gamepad.current != null && Gamepad.current.leftTrigger.wasPressedThisFrame)
         {
             if (Time.time >= startDash)
             {
@@ -262,12 +261,22 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(Dash());
             }
         }
+        if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.dashKeyText.text)) && Time.time >= startDash)
+        {
+            if (Time.time >= startDash)
+            {
+
+                direction = IsFacingRight ? 1 : -1;
+                StartCoroutine(Dash());
+            }
+        }
+
         void TriggerVibration(float duration, float intensity)
         {
             Gamepad.current.SetMotorSpeeds(intensity, intensity); // Start vibration
             if (vibrationCoroutine != null)
             {
-                StopCoroutine(vibrationCoroutine); // Stop previous vibration coroutine if running
+                StopCoroutine(vibrationCoroutine); // Stop vibration
             }
             vibrationCoroutine = StartCoroutine(StopVibration(duration)); // Start coroutine to stop vibration after duration
         }
