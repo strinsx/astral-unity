@@ -30,7 +30,6 @@ public class AstralBossHealth : MonoBehaviour
     [SerializeField] private AudioClip baselinetest2;
     [Header("---Portal---")]
     public GameObject portal;
-    public BossSpawnerManager spawnerManager;
     public int healthTrigger = 750;
     private bool hasSpawneBosses = false;
 
@@ -84,7 +83,6 @@ public class AstralBossHealth : MonoBehaviour
         if (health <= healthTrigger && !hasSpawneBosses)
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
-            spawnerManager.SpawnStageBoss(0);
             hasSpawneBosses = true;
             SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
 

@@ -1788,37 +1788,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65b67a98c2e5c4044869e1c77006b466, type: 3}
---- !u!1 &184659864
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 184659865}
-  m_Layer: 0
-  m_Name: Spawnpoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &184659865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184659864}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.01, y: -0.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 672323925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &196048021
 GameObject:
   m_ObjectHideFlags: 0
@@ -18878,57 +18847,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671569400}
   m_CullTransparentMesh: 1
---- !u!1 &672323923
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 672323925}
-  - component: {fileID: 672323924}
-  m_Layer: 0
-  m_Name: BossSpawnerManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &672323924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672323923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f20005a18dbf646a87a1cdf4bfd971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stageBosses:
-  - {fileID: 3602877212108788869, guid: f6ce84fa9ad4f294297cda750805fdae, type: 3}
-  - {fileID: 3602877212108788869, guid: f6ce84fa9ad4f294297cda750805fdae, type: 3}
-  spawnPoints:
-  - {fileID: 184659865}
-  numberOfBosses: 2
---- !u!4 &672323925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672323923}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.41, y: -40.481247, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 184659865}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &675201158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34868,7 +34786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1921246414083336060, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
       propertyPath: m_text
-      value: Astral
+      value: astralis
       objectReference: {fileID: 0}
     - target: {fileID: 1921246414083336060, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
       propertyPath: m_fontSize
@@ -35079,12 +34997,20 @@ PrefabInstance:
       value: 4.6
       objectReference: {fileID: 0}
     - target: {fileID: 9106425141265774521, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 153.337
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106425141265774521, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 26.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106425141265774521, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 61.5
+      value: 36.5
       objectReference: {fileID: 0}
     - target: {fileID: 9106425141265774521, guid: 5938123b50e37894ca30c8cf5db2b3ab, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 8.5
+      value: 23.462
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36536,8 +36462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageparticles: {fileID: 7460038389859723549, guid: da5bc25254d79014e8657de3ca1dca48, type: 3}
-  health: 1200
-  currenthealth: 1500
+  health: 1800
+  currenthealth: 1800
   main_death: {fileID: 0}
   animationcomponent: {fileID: 0}
   _damageFlash: {fileID: 2091021363}
@@ -36549,7 +36475,6 @@ MonoBehaviour:
   Victory: {fileID: 1593403565}
   baselinetest2: {fileID: 8300000, guid: af28f9ed1bfef6f4190a8ab717cb3a77, type: 3}
   portal: {fileID: 1992671683}
-  spawnerManager: {fileID: 672323924}
   healthTrigger: 750
   vibrationTriggered: 0
 --- !u!1 &2091780580
@@ -37174,7 +37099,6 @@ SceneRoots:
   - {fileID: 675201158}
   - {fileID: 948381222}
   - {fileID: 300593387}
-  - {fileID: 672323925}
   - {fileID: 1992671688}
   - {fileID: 497703759}
   - {fileID: 624831687}
