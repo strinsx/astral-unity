@@ -271,7 +271,6 @@ GameObject:
   - component: {fileID: 96966734}
   - component: {fileID: 96966733}
   - component: {fileID: 96966732}
-  - component: {fileID: 96966731}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -279,19 +278,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &96966731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96966730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a105ca314cc19ab4c8ece59d7ba9dd17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneIndexToDestroy: 5
 --- !u!95 &96966732
 Animator:
   serializedVersion: 5
@@ -471,7 +457,8 @@ MonoBehaviour:
   wait_seconds: 24
   musicAnim: {fileID: 96966732}
   deleteaudioCutscene: {fileID: 96966733}
-  nextscene: 20
+  nextscene: 13
+  stopMusicSceneName: Astral
 --- !u!1 &381022957
 GameObject:
   m_ObjectHideFlags: 0

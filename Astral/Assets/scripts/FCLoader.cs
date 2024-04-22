@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class FCLoader : MonoBehaviour
 {
     public float wait_seconds;
-    public Animator musicAnim;
-    public AudioSource deleteaudioCutscene;
     public int nextscene;
     void Start()
     {
@@ -16,14 +14,12 @@ public class FCLoader : MonoBehaviour
 
     IEnumerator Wait_for_intro()
     {
-        musicAnim.SetTrigger("fadeOut");
         yield return new WaitForSeconds(wait_seconds);
         SceneManager.LoadScene(nextscene);
 
         if (wait_seconds == 30)
         {
             Destroy(gameObject);
-            deleteaudioCutscene.Stop();
         }
     }
 

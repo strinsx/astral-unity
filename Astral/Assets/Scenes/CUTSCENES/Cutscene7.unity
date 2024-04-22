@@ -574,7 +574,7 @@ MonoBehaviour:
   wait_seconds: 25
   musicAnim: {fileID: 433284149}
   deleteaudioCutscene: {fileID: 433284150}
-  nextscene: 12
+  nextscene: 21
 --- !u!4 &599726879
 Transform:
   m_ObjectHideFlags: 0
