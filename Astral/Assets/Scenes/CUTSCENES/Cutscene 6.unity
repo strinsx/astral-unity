@@ -1287,7 +1287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "After everything that \nhappen astral found the \nmotivation to venture
-    into the new gate."
+    into the new gate to seek \nanswers."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
@@ -1394,10 +1394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wait_seconds: 40
-  musicAnim: {fileID: 586326761}
-  deleteaudioCutscene: {fileID: 586326762}
   nextscene: 19
-  stopMusicSceneName: 
 --- !u!4 &1229709674
 Transform:
   m_ObjectHideFlags: 0
@@ -1503,7 +1500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Astral was confused and try's to gather\n information from qliopoth,\n
+  m_text: "Astral was confused and tries to gather\n information from qliopoth,\n
     while all of that was happening, \nastral felt a heavy\n \rpressure \naround
     the next gate,\n and notices that qliopoth is\n disolving into white pieces.\r\n"
   m_isRightToLeft: 0
@@ -1691,7 +1688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Qliopoth says that\n \"why do i feel like i know you \nfrom somewhere
+  m_text: "Qliopoth says that\n \"Why do i feel like i know you \nfrom somewhere
     before?!!!\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}

@@ -19,7 +19,7 @@ public class MovingOrb : MonoBehaviour
             if (playerhealth != null)
             {
 
-                if(Random.value < 0.5f)
+                if(Random.Range(0f, 1f) < 0.5f)
                 {
                     int healthRestore = Random.Range(1, healthRestoreAmount + 1);
                     SoundEffectManager.instance.SkillCLip(obtainedmove, transform, 1f);

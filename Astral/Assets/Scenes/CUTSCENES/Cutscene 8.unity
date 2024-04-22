@@ -833,7 +833,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: When wll they be able to break the loop?
+  m_text: 'Being that Astral was turning to be the next Astralis
+
+    While Astralis
+    was now the one that
+
+    lost his memories and skills and become
+
+    the unknown
+    entity.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
@@ -1271,9 +1279,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The following events becomes more clear, The \nEnemy Astral's Memories
-    was removed and spawn\nsomewhere in the bottom of the realm called\n \"Grid\"
-    while Player's\nAstral was slowly becoming the next gatekeeper of\nthe void"
+  m_text: "The following events becomes more clear. Astralis\nMemories was removed
+    and spawn\nsomewhere in the bottom of the realm called\n \"Grid\" while \nAstral
+    was slowly becoming the next gatekeeper of\nthe void"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
@@ -1459,7 +1467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To be continued..
+  m_text: When will they be able to break the cycle?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
   m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
