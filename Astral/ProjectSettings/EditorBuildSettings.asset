@@ -81,7 +81,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CUTSCENES/Cutscene 8.unity
     guid: 1b158a085c81aed4e8ecfb8c27552c45
   - enabled: 1
-    path: Assets/Scenes/Comingsoon2/Astral2Coming.unity
+    path: Assets/Scenes/Ending/Astral2Coming.unity
     guid: 42c29e8d3090fbc4b97c9a5c12b148be
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: af15af1c439e94c4d9d87f54285c5fd6, type: 2}

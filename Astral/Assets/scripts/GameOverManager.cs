@@ -7,6 +7,11 @@ public class GameOverManager : MonoBehaviour
 {
     public GameObject UIGameOver;
     public GameObject PauseSymbol;
+    public GameObject Energybar;
+    public GameObject Healthbar;
+    public GameObject Abilities;
+    public GameObject Bosshealth;
+
     public EscapePanelStages Escapedisabled;
     private bool ifgameover = false;
     // Start is called before the first frame update
@@ -24,8 +29,10 @@ public class GameOverManager : MonoBehaviour
     {
         PauseSymbol.SetActive(false);
         UIGameOver.SetActive(true);
-
-        ifgameover = true;
+        Healthbar.SetActive(false);
+        Energybar.SetActive(false);
+        Abilities.SetActive(false);
+        Bosshealth.SetActive(false);
 
     }
     public bool gameovers()

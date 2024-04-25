@@ -179,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
         if (_moveInput.x != 0)
             CheckDirectionToFace(_moveInput.x > 0);
 
-        if ( Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
+        if ( Input.GetKeyDown(KeyCode.Space))
         {
             OnJumpInput();
 

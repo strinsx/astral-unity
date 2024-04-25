@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerHealthRafales : MonoBehaviour
@@ -16,10 +17,11 @@ public class PlayerHealthRafales : MonoBehaviour
     GameObject mainChar;
     public HealthBar healthbar;
     public GameOverManager gamemanager;
+    private float autosavetime = 0.1f;
 
     // Start is called before the first frame update
 
-   
+
     void Start()
     {
         
@@ -29,16 +31,18 @@ public class PlayerHealthRafales : MonoBehaviour
         animator = GetComponent<Animator>();
         mainChar = GameObject.Find("mainCharacter");
         LoadHealth();
+        StartCoroutine(AutoSaveHealth());
 
     }
 
-    private void Update()
+    IEnumerator AutoSaveHealth()
     {
-                if (Input.GetKeyDown(KeyCode.Space))
+        while (true)
         {
             SaveHealth();
-        }
+            yield return new WaitForSeconds(autosavetime);
 
+        }
     }
 
     // Update is called once per frame

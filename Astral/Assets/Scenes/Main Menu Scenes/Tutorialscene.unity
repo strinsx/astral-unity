@@ -8372,6 +8372,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819389513}
+        m_TargetAssemblyTypeName: PlayerHealthRafales, Assembly-CSharp
+        m_MethodName: RestartHeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1091531059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10236,6 +10248,7 @@ GameObject:
   - component: {fileID: 1819389506}
   - component: {fileID: 1819389511}
   - component: {fileID: 1819389512}
+  - component: {fileID: 1819389513}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10388,6 +10401,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63dc39359eab3b9498baee30e62a3ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1819389513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819389505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c8e329358802440be1762f6809da43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 250
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  alive: 0
+  healthbar: {fileID: 0}
+  gamemanager: {fileID: 0}
 --- !u!1 &1820252289
 GameObject:
   m_ObjectHideFlags: 0

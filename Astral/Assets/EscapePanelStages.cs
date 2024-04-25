@@ -17,48 +17,62 @@ public class EscapePanelStages : MonoBehaviour
     public GameObject Abilities;
     public GameObject Character;
     public GameOverManager gameover;
-    // Start is called before the first frame update
+    public GameObject settingsPanel;
+    public GameObject keybindPanel;
+    public GameObject informationPanel;
+    public GameObject yorno;
+    public GameObject skillselection;
+
     void Start()
     {
         Escape.SetActive(false);
         originalTimeScale = Time.timeScale;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //XBOX/PS4 controller which is Key "Startbutton"to pause and unpause
-        if (!gameover.gameovers() && Gamepad.current != null)
+        if (!gameover.gameovers())
         {
-            if (Gamepad.current.startButton.wasPressedThisFrame)
+            if (!IsAnyUIPanelActive())
             {
-                if (!isPaused)
+                if (Gamepad.current != null && Gamepad.current.startButton.wasPressedThisFrame)
                 {
-                    PauseGame();
+                    TogglePausemenu();
                 }
-                else 
+
+                if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    ResumeGame();
+                    TogglePausemenu();
                 }
             }
         }
+    }
 
-        //keyboard controller which is Key "Escape" to pause and unpause
-        if (!gameover.gameovers() && Input.GetKeyDown(KeyCode.Escape))
+    bool IsAnyUIPanelActive()
+    {
+        return settingsPanel != null && settingsPanel.activeSelf ||
+               keybindPanel != null && keybindPanel.activeSelf ||
+               informationPanel != null && informationPanel.activeSelf ||
+               yorno != null && yorno.activeSelf ||
+               skillselection != null && skillselection.activeSelf;
+    }
+
+    void TogglePausemenu()
+    {
+        if (!isPaused)
         {
-            if (!isPaused)
-            {
-                PauseGame();
-            }
-            else
-            {
-                ResumeGame();
-            }
+            PauseGame();
+        }
+        else
+        {
+            ResumeGame();
         }
     }
 
     void PauseGame()
     {
+
         Character.SetActive(false);
         Abilities.SetActive(false);
         HealthBar.SetActive(false);
@@ -72,6 +86,7 @@ public class EscapePanelStages : MonoBehaviour
 
     void ResumeGame()
     {
+
         Character.SetActive(true);
         Abilities.SetActive(true);
         HealthBar.SetActive(true);

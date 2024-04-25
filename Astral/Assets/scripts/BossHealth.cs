@@ -34,6 +34,7 @@ public class BossHealth : MonoBehaviour
     public GameObject Abilities;
     [Header("---Portal---")]
     public GameObject portal;
+    public GameObject Skillselection;
 
     public bool vibrationTriggered = false;
 
@@ -103,7 +104,7 @@ public class BossHealth : MonoBehaviour
     IEnumerator TriggerVibration()
     {
         vibrationTriggered = true;
-        Gamepad.current.SetMotorSpeeds(0.7f, 0.7f);
+        Gamepad.current.SetMotorSpeeds(1.0f, 1.0f);
         yield return new WaitForSeconds(0.4f);
         Gamepad.current.SetMotorSpeeds(0, 0);
         vibrationTriggered = false;
@@ -111,6 +112,7 @@ public class BossHealth : MonoBehaviour
     IEnumerator DestroyGameob()
     {
         portal.SetActive(true);
+        Skillselection.SetActive(true);
         Debug.Log("Portal");
 
         BackgroundRemove.volume = 0.4f;
