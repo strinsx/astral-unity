@@ -254,8 +254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1399.9999, y: -4219}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1439, y: -4590}
+  m_SizeDelta: {x: 1203.3, y: 717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239740552
 MonoBehaviour:
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -74.66785, w: -53.66739}
+  m_margin: {x: 0, y: 0, z: 5.951355, w: -8.878876}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -421,15 +421,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Special Thanks to
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
-  m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -667,8 +667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821, y: -910}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1414, y: -1355}
+  m_SizeDelta: {x: 1298.1, y: 955.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582970460
 MonoBehaviour:
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -110.33714, w: -171.37457}
+  m_margin: {x: 0, y: 0, z: -4.0884247, w: -7.1729126}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -802,8 +802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1293.9999, y: -5445}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1329, y: -5657}
+  m_SizeDelta: {x: 1389.4, y: 639.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727516682
 MonoBehaviour:
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "    Ramos, James\n  Castro, Zhylexille\n  Payno, Jhon mark"
+  m_text: "    Ramos, James\n    Castro, Zhylexille\n    Payno, Jhon mark"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -74.66785, w: -53.66739}
+  m_margin: {x: 0, y: 0, z: -3.0448606, w: -29.792725}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1551,7 +1551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1399.9999, y: -3633}
+  m_AnchoredPosition: {x: 1396, y: -3642}
   m_SizeDelta: {x: 997.454, y: 322.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579858312
@@ -1833,8 +1833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 918.9999, y: -2266}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1416, y: -2579}
+  m_SizeDelta: {x: 1236, y: 607.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636911912
 MonoBehaviour:
@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -95.58824, w: -130.5668}
+  m_margin: {x: 0, y: 11.5638275, z: -2.34642, w: -7.9992075}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2264,15 +2264,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Contributors
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
-  m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2744,8 +2744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1566.9999, y: -1956}
-  m_SizeDelta: {x: 564.933, y: 1336.4}
+  m_AnchoredPosition: {x: 1435.2, y: -3272}
+  m_SizeDelta: {x: 489.8, y: 2154.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995661347
 MonoBehaviour:
@@ -2767,18 +2767,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Team Leader\n\n\nProgrammer\n\n\n\n\n\n      GUI\n\n\n\n\n      SFX\n\n\n  
-    Animator\n\n\n\n\n   Designer\n\n\n\n\nMap Designer \n\n\n\n\n\n\n"
+  m_text: "Team Leader\n\n\nProgrammer\n\n\n\n\n\n       GUI\n\n\n\n\n       SFX\n\n\n   
+    Animator\n\n\n\n\n    Designer\n\n\n\n\nMap Designer \n\n\n\n\n\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
-  m_sharedMaterial: {fileID: -812434144830157118, guid: 0f58d3afef6d3654fb4e8fef5a8d4290, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2831,7 +2831,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.673433, y: 10.748039, z: 128.15442, w: 3.0708466}
+  m_margin: {x: 9.673433, y: 10.748039, z: 3.5789566, w: 3.0708466}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2902,7 +2902,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Payno, Jhon mark\n  Rafales, Albert"
+  m_text: 'Payno, Jhon mark
+
+    Rafales, Albert'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
