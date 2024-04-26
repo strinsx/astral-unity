@@ -27,10 +27,9 @@ public class AstralBossHealth : MonoBehaviour
     public GameObject bosshealthbar;
     public AudioSource BackgroundRemove;
     public AudioSource Victory;
-    [SerializeField] private AudioClip baselinetest2;
     [Header("---Portal---")]
     public GameObject portal;
-    public int healthTrigger = 750;
+    public int healthTrigger = 1000;
     private bool hasSpawneBosses = false;
 
     public bool vibrationTriggered = false;
@@ -84,7 +83,6 @@ public class AstralBossHealth : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
             hasSpawneBosses = true;
-            SoundEffectManager.instance.SkillCLip(baselinetest2, transform, 1f);
 
         }
 

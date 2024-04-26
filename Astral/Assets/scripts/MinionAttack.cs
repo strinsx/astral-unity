@@ -16,9 +16,10 @@ public class MinionAttack : MonoBehaviour
     public int attackDamage = 20;
     private CinemachineImpulseSource impulseSource;
     public float shakeAmplitude = 1f;
-    public float shakeFrequency = 1f; 
+    public float shakeFrequency = 1f;
 
-     [SerializeField] private AudioClip attackSFX;
+    [SerializeField] private AudioClip attackSFX;
+    [SerializeField] private AudioClip ultiattackSFX;
 
 
 
@@ -38,8 +39,9 @@ public class MinionAttack : MonoBehaviour
         pos += transform.forward * attackOffset.y;
 
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        SoundEffectManager.instance.SkillCLip(attackSFX, transform, 1f);
 
-        if(colInfo != null)
+        if (colInfo != null)
         {
             colInfo.GetComponent<PlayerHealthRafales>();
             if(playerhealth != null)
@@ -48,7 +50,7 @@ public class MinionAttack : MonoBehaviour
                 impulseSource.m_ImpulseDefinition.m_AmplitudeGain = shakeAmplitude;
                 impulseSource.m_ImpulseDefinition.m_FrequencyGain = shakeFrequency;
                 CameraShakeManager.instance.CameraShake(impulseSource);
-                SoundEffectManager.instance.SkillCLip(attackSFX, transform , 1f);
+          
             }
         }
     }
@@ -60,6 +62,8 @@ public class MinionAttack : MonoBehaviour
         pos += transform.forward * attackOffset.y;
 
         Collider2D colInfo = Physics2D.OverlapCircle(pos, 2, attackMask);
+        SoundEffectManager.instance.SkillCLip(ultiattackSFX, transform, 1f);
+
 
         if (colInfo != null)
         {
@@ -70,6 +74,8 @@ public class MinionAttack : MonoBehaviour
                 impulseSource.m_ImpulseDefinition.m_AmplitudeGain = shakeAmplitude;
                 impulseSource.m_ImpulseDefinition.m_FrequencyGain = shakeFrequency;
                 CameraShakeManager.instance.CameraShake(impulseSource);
+
+
             }
         }
     }

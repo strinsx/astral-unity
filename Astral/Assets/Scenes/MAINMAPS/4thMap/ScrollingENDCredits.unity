@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13f0c1081af0954998e298211a99585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wait_seconds: 45
+  wait_seconds: 44.7
   nextscene: 22
 --- !u!1 &1456295480
 GameObject:

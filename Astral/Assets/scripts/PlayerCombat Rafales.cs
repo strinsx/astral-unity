@@ -69,6 +69,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
+        //KEYBOARD CONTROLLER
         if (Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), keybinds.button1Attack.text)) && !attackkeypressed && !isAttacking)
         {
             attackkeypressed = true;
@@ -129,6 +130,8 @@ public class PlayerCombat : MonoBehaviour
                 PlayerPrefs.Save();
             }
         }
+
+        //GAMEPAD/XBOX/PS4 CONTROLLER
         if (Gamepad.current != null)
         {
             if (Gamepad.current.buttonWest.wasPressedThisFrame && !attackkeypressed && !isAttacking)
@@ -237,10 +240,9 @@ public class PlayerCombat : MonoBehaviour
     }
     void SaveSkillsCooldown()
     {
-        // Save current cooldowns to PlayerPrefs
         PlayerPrefs.SetFloat("Skill1Cooldown", currentSkill1Cooldown);
         PlayerPrefs.SetFloat("Skill2Cooldown", currentSkill2Cooldown);
-        // Add more PlayerPrefs saves for additional skills if needed
+        PlayerPrefs.SetFloat("Skill3Cooldown", currentSkill3Cooldown);
     }
 
     void LoadSkillsCooldown()
@@ -485,12 +487,12 @@ public class PlayerCombat : MonoBehaviour
     }
     void TriggerVibration(float duration, float intensity)
     {
-        Gamepad.current.SetMotorSpeeds(intensity, intensity); // Start vibration
+        Gamepad.current.SetMotorSpeeds(intensity, intensity);
         if (vibrationCoroutine != null)
         {
-            StopCoroutine(vibrationCoroutine); // Stop previous vibration coroutine if running
+            StopCoroutine(vibrationCoroutine); 
         }
-        vibrationCoroutine = StartCoroutine(StopVibration(duration)); // Start coroutine to stop vibration after duration
+        vibrationCoroutine = StartCoroutine(StopVibration(duration)); 
     }
     private void OnDrawGizmos()
     {
@@ -499,7 +501,7 @@ public class PlayerCombat : MonoBehaviour
     IEnumerator StopVibration(float duration)
     {
         yield return new WaitForSeconds(duration);
-        Gamepad.current.SetMotorSpeeds(0, 0); // Stop vibration
+        Gamepad.current.SetMotorSpeeds(0, 0);
     }
 
 }
