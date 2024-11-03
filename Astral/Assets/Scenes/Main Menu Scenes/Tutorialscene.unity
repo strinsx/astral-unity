@@ -552,6 +552,7 @@ GameObject:
   - component: {fileID: 121792369}
   - component: {fileID: 121792368}
   - component: {fileID: 121792367}
+  - component: {fileID: 121792371}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -681,7 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1792453, g: 0.1750178, b: 0.1750178, a: 1}
+  m_Color: {r: 0.08627451, g: 0.08235294, b: 0.08235294, a: 0.7882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -706,6 +707,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121792365}
   m_CullTransparentMesh: 1
+--- !u!111 &121792371
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121792365}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 35fa7ed4d5390b043ac5c84cfeff1051, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 35fa7ed4d5390b043ac5c84cfeff1051, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &122889226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.091224626, b: 0.091224626, a: 0.44705883}
+  m_Color: {r: 0.08627451, g: 0.08235294, b: 0.08235294, a: 0.7882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8277,6 +8294,7 @@ GameObject:
   - component: {fileID: 1091531059}
   - component: {fileID: 1091531058}
   - component: {fileID: 1091531061}
+  - component: {fileID: 1091531062}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -8397,7 +8415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1792453, g: 0.1750178, b: 0.1750178, a: 1}
+  m_Color: {r: 0.08627451, g: 0.08235294, b: 0.08235294, a: 0.7882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8443,6 +8461,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &1091531062
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091531056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4e200a1a263730640a16cdaa176cc39c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4e200a1a263730640a16cdaa176cc39c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1207190543
 GameObject:
   m_ObjectHideFlags: 0
@@ -9717,6 +9751,7 @@ GameObject:
   - component: {fileID: 1706944129}
   - component: {fileID: 1706944128}
   - component: {fileID: 1706944131}
+  - component: {fileID: 1706944132}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -9895,6 +9930,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &1706944132
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706944126}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4e200a1a263730640a16cdaa176cc39c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4e200a1a263730640a16cdaa176cc39c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1715861577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10956,7 +11007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.44705883}
+  m_Color: {r: 0.08627451, g: 0.08235294, b: 0.08235294, a: 0.7882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
