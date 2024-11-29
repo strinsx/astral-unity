@@ -1,6 +1,10 @@
 # ASTRAL
 2D Wave Base Pixel Art Game
 
+**TECHSTACK**
+
+UNITY, C# 
+
 # SNEAKPEAKS
 
 
