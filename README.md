@@ -1,7 +1,12 @@
 # ASTRAL
 2D Wave Base Pixel Art Game
 
-#SNEAKPEAKS
+# SNEAKPEAKS
+
+
+
+
+
 ![1](https://github.com/user-attachments/assets/48fdd595-af6a-43bb-8810-cae193a0645d)
 
 ![2](https://github.com/user-attachments/assets/b11a7079-ebf6-4179-bb51-5e4af8d3eeb9)
