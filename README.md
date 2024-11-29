@@ -1,2 +1,3 @@
-**ASTRAL WAVE BASE 2 DIMENSIONAL GAME
-**
+# ASTRAL
+2 Dimensional Wave Base Pixel Art Game
+
